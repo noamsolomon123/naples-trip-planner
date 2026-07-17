@@ -109,7 +109,7 @@ header.hero{
 }
 
 /* ---------- SECTIONS ---------- */
-section{padding:42px 0 10px}
+section{padding:42px 0 10px;scroll-margin-top:60px}
 h2.sec{
   font-family:'Suez One',serif;
   font-size:2rem;
@@ -276,6 +276,8 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
 /* ---------- JOURNEY ANIMATION ---------- */
 .jrn-wrap{position:relative;height:76vh;min-height:540px;border:2px solid var(--ink);border-radius:8px;overflow:hidden;box-shadow:7px 7px 0 rgba(32,36,44,.12);background:#a9d7ec}
 #journeymap{position:absolute;inset:0;z-index:1}
+.jrn-wrap:fullscreen{height:100%!important;width:100%!important;border:none;border-radius:0}
+.jrn-wrap:-webkit-full-screen{height:100%!important;width:100%!important;border:none;border-radius:0}
 .jrn-panel{position:absolute;top:0;right:0;bottom:0;width:264px;z-index:20;background:rgba(250,245,234,.95);backdrop-filter:blur(6px);border-left:2px solid var(--ink);display:flex;flex-direction:column}
 .jrn-panel h3{font-family:'Suez One',serif;font-size:1.02rem;padding:12px 14px 9px;border-bottom:2px solid var(--ink)}
 .jrn-list{overflow-y:auto;flex:1;padding:6px}
@@ -310,6 +312,117 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
   .jrn-panel.open{transform:translateX(0)}
   .jrn-toggle{display:flex;position:absolute;top:14px;right:14px;z-index:25;background:var(--lemon);border:2px solid var(--ink);border-radius:8px;padding:8px 11px;font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:.8rem;cursor:pointer;align-items:center}
   .jrn-badge{max-width:calc(100% - 130px);font-size:.74rem}
+}
+
+/* ================= MOBILE RESPONSIVE (added) ================= */
+/* Prevent any horizontal page scroll */
+html,body{max-width:100%;overflow-x:hidden}
+
+/* ---------- WIDE TABLES: scroll on small screens ---------- */
+/* Wrapper keeps the <table> a real table (columns align) while only the
+   wrapper scrolls horizontally. Falls back gracefully if a table has no wrapper. */
+.table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:700px){
+  .table-scroll table{min-width:560px;margin:14px 0}
+  .table-scroll th,.table-scroll td{white-space:nowrap}
+  /* safety net for any un-wrapped table */
+  table{max-width:100%}
+}
+
+/* ---------- TABLETS & SMALL (≤700px) ---------- */
+@media (max-width:700px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  nav .wrap{padding:0 12px}
+  /* comfortable tap targets in nav */
+  nav a{padding:12px 11px;min-height:44px;display:flex;align-items:center}
+  section{scroll-margin-top:56px}
+  h2.sec{font-size:1.6rem}
+  header.hero{padding:52px 0 38px}
+  .hero .sub{font-size:1.05rem}
+  .hero .meta{gap:8px;font-size:.8rem}
+  .hero .meta span{padding:5px 11px}
+  /* card grids: smaller mins so they never overflow */
+  .budget-grid{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+  .top10{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+  .route-line .stop{min-width:130px}
+  /* map heights a bit shorter on tablets (inline style override) */
+  #tripmap{height:420px!important}
+}
+
+/* ---------- PHONES (≤480px) ---------- */
+@media (max-width:480px){
+  body{font-size:15.5px;line-height:1.6}
+  .wrap{padding:0 13px}
+  nav .wrap{padding:0 10px;gap:2px}
+  nav a{padding:11px 9px;font-size:.8rem}
+  section{padding:34px 0 8px;scroll-margin-top:54px}
+  h2.sec{font-size:1.4rem;gap:10px}
+  .sec-note{font-size:.92rem}
+
+  /* Hero fits 360px */
+  header.hero{padding:44px 0 32px}
+  .hero .kicker{letter-spacing:.22em;font-size:.68rem}
+  .hero h1{font-size:clamp(2.1rem,10vw,3rem);word-break:break-word}
+  .hero .sub{font-size:1rem;margin-top:14px}
+  .hero .meta{margin-top:20px;gap:7px;font-size:.74rem}
+  .hero .meta span{padding:4px 10px}
+  .hero .sun{width:200px;height:200px;top:-70px;left:-70px}
+
+  /* Route stops full width */
+  .route-line{flex-direction:column}
+  .route-line .stop{min-width:0;flex:1 1 100%;margin:8px 0}
+
+  /* Budget cards single column */
+  .budget-grid{grid-template-columns:1fr;gap:10px}
+  .b-card .amt{font-size:1.35rem}
+  .b-total{padding:16px}
+  .b-total .t{font-size:1.35rem}
+
+  /* Days */
+  .day{margin:20px 0;box-shadow:5px 5px 0 rgba(32,36,44,.12)}
+  .day-head{gap:12px;padding:14px 14px}
+  .day-num{min-width:48px;height:48px;font-size:1.8rem}
+  .day-head h3{font-size:1.15rem}
+  .day-body{padding:6px 14px 14px}
+  .slot p{font-size:.94rem}
+
+  /* Pocket / cards */
+  .pocket{padding:15px 15px}
+
+  /* Top10 */
+  .top10 li{font-size:.92rem}
+
+  /* Map heights (inline style override) */
+  #tripmap{height:360px!important}
+
+  /* Tables stay scrollable (inherited from ≤700px) with tighter cells */
+  th{padding:8px 9px;font-size:.74rem}
+  td{padding:7px 9px;font-size:.86rem}
+
+  /* Print button smaller so it doesn't cover content */
+  .print-btn{bottom:14px;left:14px;padding:9px 14px;font-size:.82rem}
+
+  /* ---------- JOURNEY animation fit on phones ---------- */
+  .jrn-wrap{height:78vh;min-height:460px}
+  .jrn-panel{width:min(230px,82vw)}
+  .jrn-toggle{top:10px;right:10px;padding:7px 10px;font-size:.76rem;min-height:40px}
+  .jrn-badge{
+    top:10px;left:10px;
+    max-width:calc(100% - 118px);
+    font-size:.7rem;padding:7px 10px;
+  }
+  .jrn-ctrl{bottom:10px;left:10px;gap:5px;padding:6px 9px}
+  .jrn-ctrl button{width:38px;height:38px;font-size:1rem}
+  .jrn-ctrl button.sm{width:30px;height:30px;font-size:.8rem}
+  .jrn-ctrl .lab{min-width:44px;font-size:.72rem}
+}
+
+/* ---------- VERY NARROW (≤360px) safety ---------- */
+@media (max-width:360px){
+  .hero h1{font-size:clamp(1.9rem,11vw,2.6rem)}
+  .jrn-badge{max-width:calc(100% - 108px)}
 }
 </style>
 </head>
@@ -368,6 +481,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
 <section id="bookings">
   <h2 class="sec">🏆 ההזמנות שלנו</h2>
   <p class="sec-note">ארבע הלינות סגורות · שער €1≈3.45₪ · <b>לחיצה על שם המלון = עמוד ההזמנה</b>. סה"כ <b>~1,783₪ לזוג ל־7 לילות</b> (~255₪/לילה).</p>
+  <div class="table-scroll">
   <table>
     <tr><th>#</th><th>לילות</th><th>מלון</th><th>סטטוס</th><th>₪</th><th>הגעה</th><th>ביטול חינם עד</th></tr>
     <tr><td>1</td><td>🏙️ נאפולי<br>17–20.10 (3)</td><td><a class="pl" href="https://www.booking.com/hotel/it/palazzo-rota-superior.html" target="_blank">Palazzo Rota GuestHouse</a></td><td>✅ שולם</td><td><b>684</b></td><td>~15:30</td><td>12.10.2026</td></tr>
@@ -375,6 +489,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
     <tr><td>3</td><td>🌊 סלרנו<br>22–23.10 (1)</td><td><a class="pl" href="https://www.booking.com/hotel/it/antichi-riverberi-in-station.html" target="_blank">B&B Antichi Riverberi in Station</a></td><td>💵 מזומן בקבלה</td><td><b>224</b></td><td>~18:30</td><td><b>15.10.2026</b></td></tr>
     <tr><td>4</td><td>✈️ נאפולי אחרון<br>23–24.10 (1)</td><td><a class="pl" href="https://www.airbnb.com/rooms/24624764" target="_blank">Convitalia Napoli Garibaldi</a></td><td>🏕️ מחנה בסיס</td><td><b>245</b></td><td>~20:15</td><td>תלוי מדיניות מארח</td></tr>
   </table>
+  </div>
   <div class="warn" style="margin-top:4px"><b>✅ אלה 4 המקומות שאנחנו ישנים בהם · סה"כ 1,783₪ לזוג ל־7 לילות.</b> אם בסוף נרצה לחסוך בלילה האחרון — יש אלטרנטיבות זולות יותר בכרטיס "לילה אחרון" למטה (Dama 148₪ / Zara 204₪), אבל ברירת המחדל = Convitalia 245₪.</div>
 
   <div class="two-col">
@@ -450,6 +565,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
       <button class="sm" id="jrnPrev" title="עצירה קודמת">⏮</button>
       <button class="sm" id="jrnNext" title="עצירה הבאה">⏭</button>
       <button class="sm" id="jrnReset" title="חזרה להתחלה">↺</button>
+      <button class="sm" id="jrnFull" title="מסך מלא">⛶</button>
       <span class="lab" id="jrnLab">0 / 19</span>
     </div>
   </div>
@@ -605,6 +721,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
 <!-- TRANSPORT -->
 <section id="transport">
   <h2 class="sec">🚌 טבלת תחבורה (לאדם)</h2>
+  <div class="table-scroll">
   <table>
     <tr><th>קטע</th><th>קו</th><th>זמן</th><th>€</th><th>₪</th></tr>
     <tr><td>שדה"ת ⇄ נאפולי</td><td>Alibus</td><td>20 דק'</td><td>5</td><td>17</td></tr>
@@ -617,6 +734,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
     <tr><td>סלרנו ← נאפולי (ערב יום 7)</td><td>רכבת Trenitalia</td><td>35–45 דק'</td><td>5.60–6.60</td><td>19–23</td></tr>
     <tr><td>נאפולי ← שדה"ת, 03:30</td><td>מונית — Tariffa fissa (למונית, לא לאדם)</td><td>15 דק'</td><td>20–28</td><td>69–97</td></tr>
   </table>
+  </div>
   <p class="sec-note">חוקי ברזל: כרטיס SITA מראש בטבקריה · כרטיס נייר מתקפים במכונה · מעבורות אוקטובר — לוודא בבוקר, לא לתכנן על ההפלגה האחרונה · שביתות: scioperi.mit.gov.it לילה לפני כל יום מעבר · ראשון = לוח מופחת.</p>
 </section>
 
@@ -794,6 +912,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
 <!-- BOOK -->
 <section id="book">
   <h2 class="sec">📲 מה מזמינים מראש</h2>
+  <div class="table-scroll">
   <table>
     <tr><th>מה</th><th>מתי</th><th>איפה</th><th>הערה</th></tr>
     <tr><td>🌋 <b>וזוב — חובה אונליין!</b></td><td>~3–4 שבועות לפני</td><td>Vivaticket</td><td><b>אין קופה בשער.</b> סלוט 10:30 ליום 5</td></tr>
@@ -804,6 +923,7 @@ nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
     <tr><td>🚕 מונית לשדה"ת 03:30</td><td>ערב קודם</td><td>דרך המלון</td><td>Tariffa fissa ~€20–28</td></tr>
     <tr><td>📱 eSIM</td><td>לפני הטיסה</td><td>Airalo / Saily</td><td>~€12 ל־10GB</td></tr>
   </table>
+  </div>
 </section>
 
 <!-- POCKET -->
@@ -1040,6 +1160,13 @@ map.fitBounds([[40.60,13.95],[40.90,14.80]],{padding:[20,20]});
   document.getElementById('jrnPrev').onclick=()=>{if(playing||cur<=0)return;jumpTo(cur-1);};
   function jumpTo(i){playing=false;stepping=false;stopRaf();updateBtn();cur=i;setActive(i);trailTo(i);mover.setLatLng(STOPS[i].ll);setGfx(i===0?'plane':STOPS[i].mode,i>0?bearing(STOPS[i-1].ll,STOPS[i].ll):null);map.flyTo(STOPS[i].ll,FZ,{duration:.8});}
   window.jrnJump=jumpTo;
+
+  // fullscreen
+  const wrap=document.querySelector('.jrn-wrap'),fullBtn=document.getElementById('jrnFull');
+  const isFs=()=>document.fullscreenElement||document.webkitFullscreenElement;
+  fullBtn.onclick=()=>{try{if(!isFs()){const rq=wrap.requestFullscreen||wrap.webkitRequestFullscreen;if(rq){const p=rq.call(wrap);if(p&&p.catch)p.catch(()=>{});}}else{const ex=document.exitFullscreen||document.webkitExitFullscreen;if(ex)ex.call(document);}}catch(e){}};
+  function onFs(){const f=isFs();fullBtn.textContent=f?'✕':'⛶';fullBtn.title=f?'יציאה ממסך מלא':'מסך מלא';setTimeout(()=>map.invalidateSize(),140);setTimeout(()=>map.invalidateSize(),480);}
+  document.addEventListener('fullscreenchange',onFs);document.addEventListener('webkitfullscreenchange',onFs);
 
   setGfx('plane');setActive(0);trailTo(0);
   setTimeout(()=>map.invalidateSize(),300);
