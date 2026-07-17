@@ -1,0 +1,1201 @@
+- generic [active] [ref=f42e1]:
+  - link "Skip to main content" [ref=f42e3] [cursor=pointer]:
+    - /url: "#basiclayout"
+  - banner [ref=f42e1965]:
+    - generic [ref=f42e1966]:
+      - navigation [ref=f42e1967]:
+        - link "Booking.com" [ref=f42e1971] [cursor=pointer]:
+          - /url: https://www.booking.com/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+        - generic [ref=f42e1974]:
+          - link "Log in or create an account" [ref=f42e1976] [cursor=pointer]:
+            - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UssCZCOAbrU3eeFDQV_xwodeLNCMg3HlINyAg60yPqxBnb6gbcRGs1a-cIKJKorT0otVKaRzZuvoWS3S3553Mb2CYYN6DvBBgFrchjmjr44YEEczyBWaJUNPwezYqogBnPcFfau3oFom8Uwcu7CeBDJoeDhFQ_95MTw4kXgCIs5QmWVIRH-ZnfRfRXNHtpnuzmhicZ-auq7qI-LZneIE2srkou42WJpwvWqqLUH-NkX_6-eEial8dQlYKB6oGV4vsnPZdY3Kd7qSUk_bHiQRsg6hbbJqb6lzs1278keE-CO7gFbuIqXmmQMEKo39toLj2XtTk6PXHTjizdalFpgOL2kmrOi541YDyQVWyGZ5zGSiPX9oBxz9-uJW5TOLotVxCWeD0-vnjHMNpT0eP-txkDph5RoWTYYySTEb87s0JglxAVVZ_yx3_XjCstTcGw%3D%3D*eyJpZCI6InRyYXZlbGxlcl9oZWFkZXIifQ%3D%3D
+            - status [ref=f42e1982]
+          - button "Menu" [ref=f42e1984] [cursor=pointer]
+      - navigation "What are you looking for?" [ref=f42e1989]:
+        - menubar [ref=f42e1991]:
+          - menuitem "Stays" [ref=f42e1992] [cursor=pointer]
+          - menuitem "Flights" [ref=f42e1998] [cursor=pointer]
+          - menuitem "Car rental" [ref=f42e2004] [cursor=pointer]
+          - menuitem "Attractions" [ref=f42e2010] [cursor=pointer]
+          - menuitem "Airport taxis" [ref=f42e2016] [cursor=pointer]
+  - region "Search properties" [ref=f42e2024]:
+    - generic [ref=f42e2025]:
+      - generic [ref=f42e2029]:
+        - generic [ref=f42e2034]:
+          - generic [ref=f42e2035]: Enter destination
+          - combobox "Enter destination" [ref=f42e2039]: Salerno
+        - button [ref=f42e2041] [cursor=pointer]:
+          - img "Clear" [ref=f42e2042]
+      - button "Select dates Thu 22 Oct — Fri 23 Oct" [ref=f42e2047] [cursor=pointer]:
+        - generic [ref=f42e2052]:
+          - generic [ref=f42e2053]: Select dates
+          - generic [ref=f42e2054]: Thu 22 Oct — Fri 23 Oct
+      - generic [ref=f42e2060] [cursor=pointer]:
+        - generic [ref=f42e2061]: Select occupancy
+        - 'button "Number of travellers and rooms. Currently selected: 2 adults · 0 children · 1 room" [ref=f42e2063]':
+          - generic [ref=f42e2064]: 2 adults · 0 children · 1 room
+      - button "Search" [ref=f42e2070] [cursor=pointer]
+  - generic [ref=f42e128]:
+    - navigation "Breadcrumbs" [ref=f42e2073]:
+      - list [ref=f42e2074]:
+        - listitem [ref=f42e2075]:
+          - link "Home" [ref=f42e2076] [cursor=pointer]:
+            - /url: https://www.booking.com/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+        - listitem [ref=f42e2081]:
+          - link "Hotels" [ref=f42e2082] [cursor=pointer]:
+            - /url: https://www.booking.com/hotel/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+        - listitem [ref=f42e2087]:
+          - link "All B&Bs" [ref=f42e2088] [cursor=pointer]:
+            - /url: https://www.booking.com/bed-and-breakfast/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+        - listitem [ref=f42e2093]:
+          - link "Italy" [ref=f42e2094] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&dest_id=104&dest_type=country&nflt=sth%3D2
+        - listitem [ref=f42e2099]:
+          - link "Campania" [ref=f42e2100] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&dest_id=898&dest_type=region&nflt=sth%3D2
+        - listitem [ref=f42e2105]:
+          - link "Salerno" [ref=f42e2106] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&dest_id=-127126&dest_type=city&nflt=sth%3D2
+        - listitem [ref=f42e2111]:
+          - heading "B&B Antichi Riverberi in Station (Bed and breakfast) (Italy) deals" [level=1] [ref=f42e2113]
+    - generic [ref=f42e174]:
+      - main [ref=f42e175]:
+        - generic [ref=f42e176]:
+          - generic [ref=f42e177]:
+            - generic [ref=f42e178]:
+              - navigation "Internal page link" [ref=f42e2116]:
+                - list [ref=f42e2118]:
+                  - listitem [ref=f42e2119]:
+                    - link "Overview" [ref=f42e2120] [cursor=pointer]:
+                      - /url: "#hotelTmpl"
+                  - listitem [ref=f42e2123]:
+                    - link "Info & prices" [ref=f42e2124] [cursor=pointer]:
+                      - /url: "#availability"
+                  - listitem [ref=f42e2127]:
+                    - link "Facilities" [ref=f42e2128] [cursor=pointer]:
+                      - /url: "#hp_facilities_box"
+                  - listitem [ref=f42e2131]:
+                    - link "House rules" [ref=f42e2132] [cursor=pointer]:
+                      - /url: "#policies"
+                  - listitem [ref=f42e2135]:
+                    - link "Important & legal info" [ref=f42e2136] [cursor=pointer]:
+                      - /url: "#important_info"
+                  - listitem [ref=f42e2139]:
+                    - link "Guest reviews (388)" [ref=f42e2140] [cursor=pointer]:
+                      - /url: "#blockdisplay4"
+              - generic [ref=f42e210]:
+                - generic [ref=f42e211]:
+                  - button "Save this item to a trip list" [ref=f42e2147] [cursor=pointer]
+                  - button "Share this property" [ref=f42e2156] [cursor=pointer]
+                  - button "Reserve" [ref=f42e234] [cursor=pointer]
+                  - button "We Price Match" [ref=f42e2162] [cursor=pointer]
+                - generic [ref=f42e246]:
+                  - button "4 out of 5 quality rating" [ref=f42e2170] [cursor=pointer]:
+                    - img "4 out of 5 quality rating" [ref=f42e2171]
+                  - heading "B&B Antichi Riverberi in Station" [level=2] [ref=f42e2200]
+                - generic [ref=f42e2203]:
+                  - link "B&B Antichi Riverberi in Station, Salerno - Check location" [ref=f42e2204] [cursor=pointer]:
+                    - /url: "#map_opened-map_trigger_header_pin"
+                  - generic [ref=f42e2209]:
+                    - button [ref=f42e2211] [cursor=pointer]:
+                      - generic [ref=f42e2212]:
+                        - text: Via Alfonso Balzico 26, 84122 Salerno, Italy
+                        - generic [ref=f42e2213]:
+                          - generic [ref=f42e2214]:
+                            - text: Excellent location — rated 9.4/10!
+                            - generic [ref=f42e2215]: (score from 381 reviews)
+                          - generic [ref=f42e2216]: Real guests • Real stays • Real opinions
+                    - text: –
+                    - link "Excellent location - show map" [ref=f42e2217] [cursor=pointer]:
+                      - /url: "#map_opened-map_trigger_header"
+                    - text: –
+                    - button [ref=f42e2219] [cursor=pointer]:
+                      - generic [ref=f42e2220]:
+                        - text: Railway access
+                        - generic [ref=f42e2221]: 500 m walking from Salerno Train Station station
+              - generic "Photo gallery of B&B Antichi Riverberi in Station" [ref=f42e304]:
+                - region "Photo gallery for B&B Antichi Riverberi in Station" [ref=f42e2222]:
+                  - generic [ref=f42e2225]:
+                    - generic [ref=f42e2226]:
+                      - button [ref=f42e2228] [cursor=pointer]:
+                        - img "Double bed with upholstered headboard, textured plaster wall, bedside lamps, round side table and folded towels on polka-dot cover at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2230]
+                      - generic [ref=f42e2231]:
+                        - button [ref=f42e2233] [cursor=pointer]:
+                          - img "Double bed with folded towels, bedside lamps and side tables on textured purple wall, white door and small chair at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2235]
+                        - button [ref=f42e2237] [cursor=pointer]:
+                          - img "Double room with green textured accent wall, padded headboard, wall-mounted TV, bedside sconce and desk with chair at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2239]
+                    - generic [ref=f42e2240]:
+                      - button [ref=f42e2242] [cursor=pointer]:
+                        - img "Double bed with green textured accent wall, wardrobe with green curtains, wall AC, bedside lamp and balcony door at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2244]
+                      - button [ref=f42e2246] [cursor=pointer]:
+                        - img "Double bed with white linens and brown throw, green accent wall, wardrobe with glass doors, balcony door with sheer curtain at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2248]
+                      - button [ref=f42e2250] [cursor=pointer]:
+                        - img "Double bed with folded towels, purple sheer curtains, wall AC, bedside lamp and full-length wardrobe in a bright bedroom at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2252]
+                      - button [ref=f42e2254] [cursor=pointer]:
+                        - img "Wall-mounted toilet and bidet with single-handle faucet, set against a patterned half-and-half tile wall with a small window at B&B Antichi Riverberi in Station in Salerno" [ref=f42e2256]
+                      - generic [ref=f42e2257]:
+                        - button [ref=f42e2258] [cursor=pointer]:
+                          - img "Double bed with white linens against textured purple textured wall, purple curtains, glass bedside table with lamp and radiator at B&B Antichi Riverberi in Station in Salerno +6 photos" [ref=f42e2260]
+                        - generic: +6 photos
+              - generic [ref=f42e346]:
+                - generic [ref=f42e349]:
+                  - link "Scored 8.7 Rated fabulous" [ref=f42e351] [cursor=pointer]:
+                    - /url: "#blockdisplay4"
+                    - generic [ref=f42e2262]:
+                      - generic [ref=f42e2263]: Scored 8.7
+                      - generic [ref=f42e2264]: "8.7"
+                      - generic [ref=f42e2265]: Rated fabulous
+                      - generic [ref=f42e2266]:
+                        - generic [ref=f42e2267]: Fabulous
+                        - generic [ref=f42e2268]: 388 reviews
+                  - separator [ref=f42e361]
+                  - generic [ref=f42e2269]:
+                    - heading "Guests who stayed here loved" [level=3] [ref=f42e2270]
+                    - generic [ref=f42e2271]:
+                      - region "Guests who stayed here loved" [ref=f42e2272]:
+                        - group [ref=f42e2273]:
+                          - generic [ref=f42e2275]:
+                            - generic [ref=f42e2276]: “Great comfortable modern apartment close to the station and ferry to the Amalfi coast. Excellent breakfast at the café next door with amazing fresh...”
+                            - generic [ref=f42e2284]:
+                              - text: Tim
+                              - img "United Kingdom" [ref=f42e2285]
+                              - generic [ref=f42e2286]: United Kingdom
+                        - group [ref=f42e2287]:
+                          - generic [ref=f42e2289]:
+                            - generic [ref=f42e2290]: “All good apart from the air conditioner which we couldn’t turn it on and had to leave the windows open and the mosquitos were all in over us during...”
+                            - generic [ref=f42e2298]:
+                              - text: Maryam
+                              - img "Canada" [ref=f42e2299]
+                              - generic [ref=f42e2300]: Canada
+                        - group [ref=f42e2301]:
+                          - generic [ref=f42e2303]:
+                            - generic [ref=f42e2304]: “My second stay, and we will stay again. Lovley staff, thank you Ismael, hope I've spelt it right. Great location, close to the old city, train...”
+                            - generic [ref=f42e2312]:
+                              - text: Brendan
+                              - img "Ireland" [ref=f42e2313]
+                              - generic [ref=f42e2314]: Ireland
+                        - group [ref=f42e2315]:
+                          - generic [ref=f42e2317]:
+                            - generic [ref=f42e2318]: “The location is great, near the city center, with restaurants, mini markets, and the train station nearby. The staff is super friendly. Breakfast...”
+                            - generic [ref=f42e2326]:
+                              - text: Jenifer
+                              - img "Portugal" [ref=f42e2327]
+                              - generic [ref=f42e2328]: Portugal
+                        - group [ref=f42e2329]:
+                          - generic [ref=f42e2331]:
+                            - generic [ref=f42e2332]: “Everything was good and Ishmail and all staff were very helpful”
+                            - generic [ref=f42e2340]:
+                              - text: Janie
+                              - img "United Kingdom" [ref=f42e2341]
+                              - generic [ref=f42e2342]: United Kingdom
+                        - group [ref=f42e2343]:
+                          - generic [ref=f42e2345]:
+                            - generic [ref=f42e2346]: “We spent one night here, before catching a train the next morning. The room was as described. Clean & tidy. The bed was comfortable. A...”
+                            - generic [ref=f42e2354]:
+                              - text: Paul
+                              - img "New Zealand" [ref=f42e2355]
+                              - generic [ref=f42e2356]: New Zealand
+                        - group [ref=f42e2357]:
+                          - generic [ref=f42e2359]:
+                            - generic [ref=f42e2360]: “Clean, nice Italian breakfast and kind and responsive hosts!”
+                            - generic [ref=f42e2368]:
+                              - text: Elitsa
+                              - img "Bulgaria" [ref=f42e2369]
+                              - generic [ref=f42e2370]: Bulgaria
+                        - group [ref=f42e2371]:
+                          - generic [ref=f42e2373]:
+                            - generic [ref=f42e2374]: “The host was very attentive and kept in touch before and during the stay. No request was too much and he went out of his way to look after us.”
+                            - generic [ref=f42e2382]:
+                              - text: Trefor
+                              - img "United Kingdom" [ref=f42e2383]
+                              - generic [ref=f42e2384]: United Kingdom
+                        - group [ref=f42e2385]:
+                          - generic [ref=f42e2387]:
+                            - generic [ref=f42e2388]: “Very easy walk from train station & ferries to the Amalfi coast. Nice room & spacious bathroom, very clean, good hot shower. There's a...”
+                            - generic [ref=f42e2396]:
+                              - text: Maya
+                              - img "United Kingdom" [ref=f42e2397]
+                              - generic [ref=f42e2398]: United Kingdom
+                        - group [ref=f42e2399]:
+                          - generic [ref=f42e2401]:
+                            - generic [ref=f42e2402]: “I wanted somewhere for 1 night near the station as I had an early train booked and this was great for that reason. Room was clean and the...”
+                            - generic [ref=f42e2410]:
+                              - text: Lisa
+                              - img "United Kingdom" [ref=f42e2411]
+                              - generic [ref=f42e2412]: United Kingdom
+                      - button "Next" [ref=f42e2413] [cursor=pointer]
+                  - separator [ref=f42e371]
+                  - generic [ref=f42e372]:
+                    - paragraph [ref=f42e373]: Staff
+                    - generic "Scored 9.4" [ref=f42e375]: "9.4"
+                - button [ref=f42e2419] [cursor=pointer]:
+                  - button "Show on map" [ref=f42e2425]
+            - generic [ref=f42e2428]:
+              - heading "Property highlights" [level=3] [ref=f42e2432]
+              - generic [ref=f42e2434]:
+                - region [ref=f42e2435]:
+                  - group [ref=f42e2436]:
+                    - button "Very good breakfast Italian" [ref=f42e2438] [cursor=pointer]:
+                      - generic [ref=f42e2443]:
+                        - generic [ref=f42e2444]: Very good breakfast
+                        - generic [ref=f42e2445]: Italian
+                  - group [ref=f42e2450]:
+                    - button "Parking" [ref=f42e2452] [cursor=pointer]
+                  - group [ref=f42e2463]:
+                    - button "View all" [ref=f42e2465] [cursor=pointer]
+                - button "Next facility" [ref=f42e2472] [cursor=pointer]
+          - generic [ref=f42e426]:
+            - generic [ref=f42e427]:
+              - generic [ref=f42e428]:
+                - generic [ref=f42e430]:
+                  - paragraph [ref=f42e431]:
+                    - text: You might be eligible for a Genius discount at B&B Antichi Riverberi in Station. To check if a Genius discount is available for your selected dates
+                    - link "sign in" [ref=f42e432] [cursor=pointer]:
+                      - /url: https://account.booking.com/auth/oauth2?bkng_action=hotel&lang=en-gb&aid=304142&client_id=vO1Kblk7xX9tUn2cpZLS&response_type=sso&dt=1784282843&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&state=Uu4CZCOAbrU3eeGzAvvH0pVbLyaT4igut2XacIBo-9TmXJ8HpLLMR8FmjFl-YYPt6mPgi5cr9bfFVw-F3ptoVq6OFniks1e-upfnwivXqelnyOoJpjSWvhpGUO9wTkaxVy1p7nPymE_8G5RWebxW3uRM7aXrf41mKJpPo7EcTqR3WSskQBS224-BPQuVw8hJjrhfYp_TO5NSoiJoB7IyAcu4Qu19zbdoo69s3fmnvJN_T4z-1iAGb40Hz0WdCkbv0LzDlPSDV8AvGdJe28pDOlcCSgi22W4dRztxTNGekoxKEy6MCU2NLaix8-CmGx_gyb3LUyoEh9GjlAGk4aQ1j7GGVOZryIJkk0V50dsUglJvKVHrZAQYRElu57h7wnvBD1HdicMyeXcVLPEemSBami_YeFRy2AhVCcRWyBnN4fKh8aqSzF3DFtRgvcsIu95_iich1FBJGvRholcaX6F9Of7J1kuvYSUDLel8tWbXzveF
+                    - text: .
+                  - paragraph [ref=f42e433]: Genius discounts at this property are subject to book dates, stay dates and other available deals.
+                  - generic [ref=f42e434]:
+                    - generic [ref=f42e2477]:
+                      - heading "About this property" [level=3] [ref=f42e2478]
+                      - paragraph [ref=f42e2479]: "Comfortable Accommodations: B&B Antichi Riverberi in Station in Salerno offers air-conditioned rooms with private bathrooms, including walk-in showers and bidets. Each room features a work desk, TV, and free toiletries. Essential Facilities: Guests enjoy a terrace and free WiFi. The property includes a lift for easy access. Breakfast and Amenities: A traditional Italian breakfast is served daily. Additional amenities include a hairdryer, shower, and free toiletries. Prime Location: Located less than 1 km from Lido La Conchiglia and Salerno Cathedral, the bed and breakfast is a 10-minute walk from the Provincial Pinacotheca of Salerno. Salerno Costa d'Amalfi Airport is 22 km away. Guest Satisfaction: Highly rated for its convenient location, public transport options, and room cleanliness."
+                      - paragraph [ref=f42e2480]: Couples particularly like the location — they rated it 9.6 for a two-person trip.
+                      - paragraph [ref=f42e2481]: Distance in property description is calculated using © OpenStreetMap
+                    - button "Show me more" [ref=f42e2482] [cursor=pointer]
+                - generic [ref=f42e2485]:
+                  - heading "Most popular facilities" [level=3] [ref=f42e2486]
+                  - list [ref=f42e2488]:
+                    - listitem [ref=f42e2489]:
+                      - generic [ref=f42e2490]: Non-smoking rooms
+                    - listitem [ref=f42e2498]:
+                      - generic [ref=f42e2499]: Parking
+                    - listitem [ref=f42e2507]:
+                      - generic [ref=f42e2508]: Free WiFi
+                    - listitem [ref=f42e2516]:
+                      - generic [ref=f42e2517]: Terrace
+                    - listitem [ref=f42e2525]:
+                      - generic [ref=f42e2526]: Lift
+                    - listitem [ref=f42e2534]:
+                      - button "Very good breakfast" [ref=f42e2542] [cursor=pointer]
+              - generic [ref=f42e507]:
+                - generic [ref=f42e508]:
+                  - heading "Perfect for a 1-night stay!" [level=4] [ref=f42e509]
+                  - paragraph [ref=f42e510]:
+                    - generic [ref=f42e514]: Situated in the best rated area in Salerno, this property has an excellent location score of 9.4
+                - generic [ref=f42e515]:
+                  - heading "Breakfast info" [level=4] [ref=f42e516]
+                  - paragraph [ref=f42e517]:
+                    - generic [ref=f42e518]: Italian
+                - generic:
+                  - list
+                - button "Reserve" [ref=f42e520] [cursor=pointer]
+            - separator [ref=f42e522]
+            - generic [ref=f42e2553]:
+              - generic [ref=f42e2555]:
+                - heading "Sign in, save money" [level=3] [ref=f42e2556]
+                - generic [ref=f42e2557]: To see if you can save 10% or more at this property, sign in
+                - generic [ref=f42e2559]:
+                  - link "Sign in to Booking.com." [ref=f42e2560] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UssCZCOAbrU3eeFDQV_xwodeLNCMg3HlINyAg60yPqxBnb6gbcRGs1a-cIKJKorT0otVKaRzZuvoWS3S3553Mb2CYYN6DvBBgFrchjmjr44YEEczyBWaJUNPwezYqogBnPcFfau3oFom8Uwcu7CeBDJoeDhFQ_95MTw4kXgCIs5QmWVIRH-ZnfRfRXNHtpnuzmhicZ-auq7qI-LZneIE2srkou42WJpwvWqqLUH-NkX_6-eEial8dQlYKB6oGV4vsnPZdY3Kd7qSUk_bHiQRsg6hbbJqb6lzs1278keE-CO7gFbuIqXmmQMEKo39toLj2XtTk6PXHTjizdalFpgOL2kmrOi541YDyQVWyGZ5zGSiPX9oBxz9-uJW5TOLotVxCWeD0-vnjHMNpT0eP-txkDph5RoWTYYySTEb87s0JglxAVVZ_yx3_XjCstTcGw%3D%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+                    - generic [ref=f42e2561]: Sign in
+                  - link "Create a free account" [ref=f42e2562] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UssCZCOAbrU3eeFDQV_xwodeLNCMg3HlINyAg60yPqxBnb6gbcRGs1a-cIKJKorT0otVKaRzZuvoWS3S3553Mb2CYYN6DvBBgFrchjmjr44YEEczyBWaJUNPwezYqogBnPcFfau3oFom8Uwcu7CeBDJoeDhFQ_95MTw4kXgCIs5QmWVIRH-ZnfRfRXNHtpnuzmhicZ-auq7qI-LZneIE2srkou42WJpwvWqqLUH-NkX_6-eEial8dQlYKB6oGV4vsnPZdY3Kd7qSUk_bHiQRsg6hbbJqb6lzs1278keE-CO7gFbuIqXmmQMEKo39toLj2XtTk6PXHTjizdalFpgOL2kmrOi541YDyQVWyGZ5zGSiPX9oBxz9-uJW5TOLotVxCWeD0-vnjHMNpT0eP-txkDph5RoWTYYySTEb87s0JglxAVVZ_yx3_XjCstTcGw%3D%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+              - img "Sign in, save money" [ref=f42e2567]
+            - generic [ref=f42e548]:
+              - generic [ref=f42e549]:
+                - heading "Availability" [level=2] [ref=f42e550]
+                - button "We Price Match" [ref=f42e2569] [cursor=pointer]
+              - generic [ref=f42e2578]:
+                - generic [ref=f42e2579]:
+                  - button "Select dates" [ref=f42e2583] [cursor=pointer]:
+                    - generic [ref=f42e2584]: Thu 22 Oct - Fri 23 Oct
+                  - button "Select occupancy" [ref=f42e2593] [cursor=pointer]:
+                    - generic [ref=f42e2594]: 2 adults · 0 children · 1 room
+                - button "Change search" [ref=f42e2601] [cursor=pointer]
+              - generic [ref=f42e595]:
+                - table [ref=f42e597]:
+                  - caption [ref=f42e598]: Select a room type and the number of rooms you want to reserve.
+                  - rowgroup [ref=f42e599]:
+                    - row [ref=f42e600]:
+                      - columnheader "Room type" [ref=f42e601]
+                      - columnheader "Number of guests" [ref=f42e602]
+                      - columnheader "Today's price" [ref=f42e603]
+                      - columnheader "Your choices" [ref=f42e604]
+                      - columnheader "Select amount" [ref=f42e605]
+                  - rowgroup [ref=f42e606]:
+                    - row [ref=f42e607]:
+                      - rowheader "Standard Twin Room We have 1 left Choose your bed (if available) 1 double bed 1 single bed 17 m² Air conditioning Private bathroom Flat-screen TV Free WiFi Included facilities" [ref=f42e608]:
+                        - generic [ref=f42e609]:
+                          - link "Standard Twin Room" [ref=f42e611] [cursor=pointer]:
+                            - /url: "#RD472474201"
+                          - generic [ref=f42e612]: We have 1 left
+                          - generic [ref=f42e619]:
+                            - generic [ref=f42e620]: Choose your bed (if available)
+                            - generic [ref=f42e621]:
+                              - radio "1 double bed" [ref=f42e623]
+                              - list [ref=f42e624]:
+                                - listitem [ref=f42e625] [cursor=pointer]:
+                                  - generic [ref=f42e626]:
+                                    - text: 1 double bed
+                                    - generic [ref=f42e627]: 녌
+                            - generic [ref=f42e628]:
+                              - radio "1 single bed" [ref=f42e630]
+                              - list [ref=f42e631]:
+                                - listitem [ref=f42e632] [cursor=pointer]:
+                                  - generic [ref=f42e633]:
+                                    - text: 1 single bed
+                                    - generic [ref=f42e634]: 끉
+                          - generic [ref=f42e636]:
+                            - list [ref=f42e637]:
+                              - listitem [ref=f42e638]:
+                                - generic [ref=f42e639]: 17 m²
+                              - listitem [ref=f42e642]:
+                                - generic [ref=f42e643]: Air conditioning
+                              - listitem [ref=f42e646]:
+                                - generic [ref=f42e647]: Private bathroom
+                              - listitem [ref=f42e650]:
+                                - generic [ref=f42e651]: Flat-screen TV
+                              - listitem [ref=f42e654]:
+                                - generic [ref=f42e655]: Free WiFi
+                            - separator [ref=f42e658]
+                            - list "Included facilities" [ref=f42e659]:
+                              - listitem [ref=f42e660]:
+                                - generic [ref=f42e661]: Shower
+                              - listitem [ref=f42e665]:
+                                - generic [ref=f42e666]: Toilet
+                              - listitem [ref=f42e670]:
+                                - generic [ref=f42e671]: Towels
+                              - listitem [ref=f42e675]:
+                                - generic [ref=f42e676]: Linen
+                              - listitem [ref=f42e680]:
+                                - generic [ref=f42e681]: Desk
+                              - listitem [ref=f42e685]:
+                                - generic [ref=f42e686]: TV
+                              - listitem [ref=f42e690]:
+                                - generic [ref=f42e691]: Internet facilities
+                              - listitem [ref=f42e695]:
+                                - generic [ref=f42e696]: Satellite channels
+                              - listitem [ref=f42e700]:
+                                - generic [ref=f42e701]: Heating
+                              - listitem [ref=f42e705]:
+                                - generic [ref=f42e706]: Hairdryer
+                              - listitem [ref=f42e710]:
+                                - generic [ref=f42e711]: Cable channels
+                              - listitem [ref=f42e715]:
+                                - generic [ref=f42e716]: Wireless Internet
+                              - listitem [ref=f42e720]:
+                                - generic [ref=f42e721]: Toilet paper
+                      - 'cell "Max persons: 2" [ref=f42e725]':
+                        - generic [ref=f42e727]:
+                          - generic [ref=f42e728]:
+                            - generic [ref=f42e729]: "1"
+                            - generic [ref=f42e730]: "1"
+                          - generic [ref=f42e731]: "Max persons: 2"
+                      - cell "Price € 72 Includes taxes and charges" [ref=f42e732]:
+                        - generic [ref=f42e734]:
+                          - generic [ref=f42e736]:
+                            - generic [ref=f42e737]: € 72
+                            - generic [ref=f42e738]: Price € 72
+                          - generic [ref=f42e739]: Includes taxes and charges
+                      - cell "Very good breakfast included Free cancellation before 15 October 2026 Pay the property before arrival No credit card needed Genius discount may be available when you sign in. More details on meals and cancellation and prepayment policies" [ref=f42e740]:
+                        - generic [ref=f42e741]:
+                          - list [ref=f42e742]:
+                            - listitem [ref=f42e743]:
+                              - generic [ref=f42e747]:
+                                - generic [ref=f42e748]: Very good breakfast
+                                - text: included
+                            - listitem [ref=f42e749]:
+                              - generic [ref=f42e758]:
+                                - strong [ref=f42e759]: Free cancellation
+                                - text: before 15 October 2026
+                            - listitem [ref=f42e760]:
+                              - generic [ref=f42e761]:
+                                - generic [ref=f42e762]: •
+                                - generic [ref=f42e764]: Pay the property before arrival
+                            - listitem [ref=f42e768]:
+                              - strong [ref=f42e778]: No credit card needed
+                            - listitem [ref=f42e779]:
+                              - generic "Genius discount may be available when you sign in." [ref=f42e783]: discount may be available
+                          - button "More details on meals and cancellation and prepayment policies" [ref=f42e794] [cursor=pointer]
+                      - cell [ref=f42e798]:
+                        - generic [ref=f42e799]:
+                          - generic: Select rooms
+                          - combobox "Select rooms" [ref=f42e801]:
+                            - option "0" [selected]
+                            - option "1 (€ 72)"
+                    - row [ref=f42e802]:
+                      - 'cell "Max persons: 1 Only for 1 guest" [ref=f42e803]':
+                        - generic [ref=f42e805]:
+                          - generic [ref=f42e806]: "1"
+                          - generic [ref=f42e808]: "Max persons: 1"
+                        - generic [ref=f42e809]: Only for 1 guest
+                      - cell "Price € 60 Includes taxes and charges" [ref=f42e812]:
+                        - generic [ref=f42e814]:
+                          - generic [ref=f42e816]:
+                            - generic [ref=f42e817]: € 60
+                            - generic [ref=f42e818]: Price € 60
+                          - generic [ref=f42e819]: Includes taxes and charges
+                      - cell "Very good breakfast included Free cancellation before 15 October 2026 Pay the property before arrival No credit card needed Genius discount may be available when you sign in. More details on meals and cancellation and prepayment policies" [ref=f42e820]:
+                        - generic [ref=f42e821]:
+                          - list [ref=f42e822]:
+                            - listitem [ref=f42e823]:
+                              - generic [ref=f42e827]:
+                                - generic [ref=f42e828]: Very good breakfast
+                                - text: included
+                            - listitem [ref=f42e829]:
+                              - generic [ref=f42e838]:
+                                - strong [ref=f42e839]: Free cancellation
+                                - text: before 15 October 2026
+                            - listitem [ref=f42e840]:
+                              - generic [ref=f42e841]:
+                                - generic [ref=f42e842]: •
+                                - generic [ref=f42e844]: Pay the property before arrival
+                            - listitem [ref=f42e848]:
+                              - strong [ref=f42e858]: No credit card needed
+                            - listitem [ref=f42e859]:
+                              - generic "Genius discount may be available when you sign in." [ref=f42e863]: discount may be available
+                          - button "More details on meals and cancellation and prepayment policies" [ref=f42e874] [cursor=pointer]
+                      - cell [ref=f42e878]:
+                        - generic [ref=f42e879]:
+                          - generic: Select rooms
+                          - combobox "Select rooms" [ref=f42e881]:
+                            - option "0" [selected]
+                            - option "1 (€ 60)"
+                - generic [ref=f42e884]:
+                  - button "I'll reserve" [ref=f42e886] [cursor=pointer]
+                  - list [ref=f42e889]:
+                    - listitem [ref=f42e890]: You won't be charged yet
+            - generic [ref=f42e898]:
+              - strong [ref=f42e899]: No credit card needed
+              - text: All options are bookable without a credit card.
+            - generic [ref=f42e2604]:
+              - generic [ref=f42e2606]:
+                - generic [ref=f42e2607]:
+                  - heading "Guest reviews" [level=2] [ref=f42e2609]
+                  - button "See availability" [ref=f42e2611] [cursor=pointer]
+                - generic [ref=f42e2615]:
+                  - button "Scored 8.7 Rated fabulous" [ref=f42e2616] [cursor=pointer]:
+                    - generic [ref=f42e2617]:
+                      - generic [ref=f42e2618]: Scored 8.7
+                      - generic [ref=f42e2619]: "8.7"
+                      - generic [ref=f42e2620]: Rated fabulous
+                      - generic [ref=f42e2621]:
+                        - generic [ref=f42e2622]: Fabulous
+                        - generic [ref=f42e2623]: · 388 reviews
+                  - button "Read all reviews" [ref=f42e2624] [cursor=pointer]
+                - group "Review categories" [ref=f42e2627]:
+                  - heading "Categories:" [level=3] [ref=f42e2629]
+                  - generic [ref=f42e2630]:
+                    - generic "Average rating out of 10" [ref=f42e2632]:
+                      - generic [ref=f42e2633]:
+                        - generic [ref=f42e2634]:
+                          - generic [ref=f42e2635]: Staff
+                          - generic [ref=f42e2638]: "9.4"
+                        - meter "Staff" [ref=f42e2640]
+                    - generic "Average rating out of 10" [ref=f42e2643]:
+                      - generic [ref=f42e2644]:
+                        - generic [ref=f42e2645]:
+                          - generic [ref=f42e2646]: Facilities
+                          - generic [ref=f42e2649]: "8.8"
+                        - meter "Facilities" [ref=f42e2651]
+                    - generic "Average rating out of 10" [ref=f42e2654]:
+                      - generic [ref=f42e2655]:
+                        - generic [ref=f42e2656]:
+                          - generic [ref=f42e2657]: Cleanliness
+                          - generic [ref=f42e2660]: "9.0"
+                        - meter "Cleanliness" [ref=f42e2662]
+                    - generic "Average rating out of 10" [ref=f42e2665]:
+                      - generic [ref=f42e2666]:
+                        - generic [ref=f42e2667]:
+                          - generic [ref=f42e2668]: Comfort
+                          - generic [ref=f42e2671]: "8.8"
+                        - meter "Comfort" [ref=f42e2673]
+                    - generic "Average rating out of 10" [ref=f42e2676]:
+                      - generic [ref=f42e2677]:
+                        - generic [ref=f42e2678]:
+                          - generic [ref=f42e2679]: Value for money
+                          - generic [ref=f42e2682]: "8.8"
+                        - meter "Value for money" [ref=f42e2684]
+                    - generic "Average rating out of 10" [ref=f42e2687]:
+                      - generic [ref=f42e2688]:
+                        - generic [ref=f42e2689]:
+                          - generic [ref=f42e2690]: Location
+                          - generic [ref=f42e2693]: "9.4"
+                        - meter "Location" [ref=f42e2695]
+                    - generic "Average rating out of 10" [ref=f42e2698]:
+                      - generic [ref=f42e2699]:
+                        - generic [ref=f42e2700]:
+                          - generic [ref=f42e2701]: Free WiFi
+                          - generic [ref=f42e2704]: "8.5"
+                        - meter "Free WiFi" [ref=f42e2706]
+                - group "Select topics to read reviews:" [ref=f42e2709]:
+                  - heading "Select topics to read reviews:" [level=3] [ref=f42e2712]
+                  - group "Select topics to read reviews:" [ref=f42e2714]:
+                    - generic [ref=f42e2715]:
+                      - checkbox "Location" [ref=f42e2716]
+                      - generic [ref=f42e2717] [cursor=pointer]: Location
+                    - generic [ref=f42e2722]:
+                      - checkbox "Room" [ref=f42e2723]
+                      - generic [ref=f42e2724] [cursor=pointer]: Room
+                    - generic [ref=f42e2729]:
+                      - checkbox "Breakfast" [ref=f42e2730]
+                      - generic [ref=f42e2731] [cursor=pointer]: Breakfast
+                    - generic [ref=f42e2736]:
+                      - checkbox "Clean" [ref=f42e2737]
+                      - generic [ref=f42e2738] [cursor=pointer]: Clean
+                    - generic [ref=f42e2743]:
+                      - checkbox "Bus" [ref=f42e2744]
+                      - generic [ref=f42e2745] [cursor=pointer]: Bus
+                - generic [ref=f42e2751]:
+                  - generic [ref=f42e2752]:
+                    - heading "See what guests loved the most:" [level=3] [ref=f42e2753]
+                    - generic [ref=f42e2754]:
+                      - region "See what guests loved the most:" [ref=f42e2755]:
+                        - group [ref=f42e2756]:
+                          - generic [ref=f42e2758]:
+                            - generic [ref=f42e2760]:
+                              - generic [ref=f42e2761]: T
+                              - generic [ref=f42e2763]:
+                                - generic [ref=f42e2764]: Tim
+                                - generic [ref=f42e2765]:
+                                  - img "United Kingdom" [ref=f42e2766]
+                                  - generic [ref=f42e2767]: United Kingdom
+                            - generic [ref=f42e2768]: Great comfortable modern apartment close to the station and ferry to the Amalfi coast. Excellent breakfast at the café next door with amazing fresh pastries and coffee. Good communication and facilities.
+                            - generic [ref=f42e2776]: The reliance on WhatsApp for messages and lack of contact with the owner. Instructions were good for arrival but confusing for the first time and a little strange with a mixture of passcodes for the entrance to multiple apartments which is then replaced by a keycard. While the communication was good it felt unwelcoming and impartial. Technology is not everything. In Italy especially, human contact is highly valued.
+                            - button "Read more of Tim's review" [ref=f42e2785] [cursor=pointer]: Read more
+                        - group [ref=f42e2786]:
+                          - generic [ref=f42e2788]:
+                            - generic [ref=f42e2793]:
+                              - generic [ref=f42e2794]: Maryam
+                              - generic [ref=f42e2795]:
+                                - img "Canada" [ref=f42e2796]
+                                - generic [ref=f42e2797]: Canada
+                            - generic [ref=f42e2798]: All good apart from the air conditioner which we couldn’t turn it on and had to leave the windows open and the mosquitos were all in over us during the night
+                            - button "Read more of Maryam's review" [ref=f42e2807] [cursor=pointer]: Read more
+                        - group [ref=f42e2808]:
+                          - generic [ref=f42e2810]:
+                            - generic [ref=f42e2812]:
+                              - generic [ref=f42e2813]: B
+                              - generic [ref=f42e2815]:
+                                - generic [ref=f42e2816]: Brendan
+                                - generic [ref=f42e2817]:
+                                  - img "Ireland" [ref=f42e2818]
+                                  - generic [ref=f42e2819]: Ireland
+                            - generic [ref=f42e2820]: My second stay, and we will stay again. Lovley staff, thank you Ismael, hope I&#39;ve spelt it right. Great location, close to the old city, train station and ferry port and is a family run B&amp;B. So much nicer place to base yourself for exploring the Amalfi coast than Sorrento. Wish we had stayed down there for longer after moving on. Sorrento is just a tourist trap, maybe 95% of people you see, nothing but restaurants and gift shops, never again. Like being on a Cruise ship.. As a tip visit for September 21st,the feast of Saint Martin, great procession where the locals carry the relics through the town ending with a mega fireworks display on the promenade, hardly saw a tourist, a much nicer Italian experience.
+                            - generic [ref=f42e2828]: Not a lot
+                            - button "Read more of Brendan's review" [ref=f42e2837] [cursor=pointer]: Read more
+                        - group [ref=f42e2838]:
+                          - generic [ref=f42e2840]:
+                            - generic [ref=f42e2845]:
+                              - generic [ref=f42e2846]: Jenifer
+                              - generic [ref=f42e2847]:
+                                - img "Portugal" [ref=f42e2848]
+                                - generic [ref=f42e2849]: Portugal
+                            - generic [ref=f42e2850]: The location is great, near the city center, with restaurants, mini markets, and the train station nearby. The staff is super friendly. Breakfast is straightforward but tasty, with croissants and cappuccinos served at a time that suits you. The place is clean, comfy, and well-maintained, with good air conditioning and a spacious bathroom. I&#39;d definitely recommend it.
+                            - button "Read more of Jenifer's review" [ref=f42e2859] [cursor=pointer]: Read more
+                        - group [ref=f42e2860]:
+                          - generic [ref=f42e2862]:
+                            - generic [ref=f42e2864]:
+                              - generic [ref=f42e2865]: J
+                              - generic [ref=f42e2867]:
+                                - generic [ref=f42e2868]: Janie
+                                - generic [ref=f42e2869]:
+                                  - img "United Kingdom" [ref=f42e2870]
+                                  - generic [ref=f42e2871]: United Kingdom
+                            - generic [ref=f42e2872]: Everything was good and Ishmail and all staff were very helpful
+                            - button "Read more of Janie's review" [ref=f42e2881] [cursor=pointer]: Read more
+                        - group [ref=f42e2882]:
+                          - generic [ref=f42e2884]:
+                            - generic [ref=f42e2886]:
+                              - generic [ref=f42e2887]: P
+                              - generic [ref=f42e2889]:
+                                - generic [ref=f42e2890]: Paul
+                                - generic [ref=f42e2891]:
+                                  - img "New Zealand" [ref=f42e2892]
+                                  - generic [ref=f42e2893]: New Zealand
+                            - generic [ref=f42e2894]: We spent one night here, before catching a train the next morning. The room was as described. Clean &amp; tidy. The bed was comfortable. A breakfast was also included which was a bonus.
+                            - generic [ref=f42e2902]: The shower did run out of hot water. But nothing really of concern
+                            - button "Read more of Paul's review" [ref=f42e2911] [cursor=pointer]: Read more
+                        - group [ref=f42e2912]:
+                          - generic [ref=f42e2914]:
+                            - generic [ref=f42e2916]:
+                              - generic [ref=f42e2917]: E
+                              - generic [ref=f42e2919]:
+                                - generic [ref=f42e2920]: Elitsa
+                                - generic [ref=f42e2921]:
+                                  - img "Bulgaria" [ref=f42e2922]
+                                  - generic [ref=f42e2923]: Bulgaria
+                            - generic [ref=f42e2924]: Clean, nice Italian breakfast and kind and responsive hosts!
+                            - button "Read more of Elitsa's review" [ref=f42e2933] [cursor=pointer]: Read more
+                        - group [ref=f42e2934]:
+                          - generic [ref=f42e2936]:
+                            - generic [ref=f42e2938]:
+                              - generic [ref=f42e2939]: T
+                              - generic [ref=f42e2941]:
+                                - generic [ref=f42e2942]: Trefor
+                                - generic [ref=f42e2943]:
+                                  - img "United Kingdom" [ref=f42e2944]
+                                  - generic [ref=f42e2945]: United Kingdom
+                            - generic [ref=f42e2946]: The host was very attentive and kept in touch before and during the stay. No request was too much and he went out of his way to look after us.
+                            - generic [ref=f42e2954]: There was a kettle available but no cups.
+                            - button "Read more of Trefor's review" [ref=f42e2963] [cursor=pointer]: Read more
+                        - group [ref=f42e2964]:
+                          - generic [ref=f42e2966]:
+                            - generic [ref=f42e2968]:
+                              - generic [ref=f42e2969]: M
+                              - generic [ref=f42e2971]:
+                                - generic [ref=f42e2972]: Maya
+                                - generic [ref=f42e2973]:
+                                  - img "United Kingdom" [ref=f42e2974]
+                                  - generic [ref=f42e2975]: United Kingdom
+                            - generic [ref=f42e2976]: Very easy walk from train station &amp; ferries to the Amalfi coast. Nice room &amp; spacious bathroom, very clean, good hot shower. There&#39;s a balcony for a bit of fresh air. I like that there&#39;s a little breakfast included, and a fridge for guest use. The staff are really kind &amp; helpful. They got lactose-free milk for my breakfast &amp; lent me a kettle so I could make tea. I wholeheartedly recommend this place, but at present (summer 2025), if you like to sleep late, be aware that - beyond the control of the hotel - there&#39;s work being done on the facade, weekdays 7:30-16:00
+                            - button "Read more of Maya's review" [ref=f42e2985] [cursor=pointer]: Read more
+                        - group [ref=f42e2986]:
+                          - generic [ref=f42e2988]:
+                            - generic [ref=f42e2993]:
+                              - generic [ref=f42e2994]: Lisa
+                              - generic [ref=f42e2995]:
+                                - img "United Kingdom" [ref=f42e2996]
+                                - generic [ref=f42e2997]: United Kingdom
+                            - generic [ref=f42e2998]: I wanted somewhere for 1 night near the station as I had an early train booked and this was great for that reason. Room was clean and the owner&#47;manager on arrival was very pleasant. Early check in provided which I was grateful for. Didn’t have breakfast so can’t comment.
+                            - generic [ref=f42e3006]: Nothing really. If I had to be picky I would have liked a glass or a cup to have been provided for a drink.
+                            - button "Read more of Lisa's review" [ref=f42e3015] [cursor=pointer]: Read more
+                      - button "Next" [ref=f42e3016] [cursor=pointer]
+                  - button "Read all reviews" [ref=f42e3021] [cursor=pointer]
+              - generic [ref=f42e3031]:
+                - heading "Quality rating" [level=3] [ref=f42e3032]
+                - generic [ref=f42e3062]: Booking.com rated the quality of this property as 4 out of 5 based on factors such as facilities, size, location and services provided.
+              - generic [ref=f42e3070]:
+                - generic [ref=f42e3071]:
+                  - heading "Travellers are asking" [level=2] [ref=f42e3073]
+                  - button "See availability" [ref=f42e3076] [cursor=pointer]
+                - generic [ref=f42e3079]:
+                  - generic [ref=f42e3080]:
+                    - list [ref=f42e3082]:
+                      - listitem [ref=f42e3083]:
+                        - button "Can I park there?" [ref=f42e3084] [cursor=pointer]
+                      - listitem [ref=f42e3095]:
+                        - button "Do they serve breakfast?" [ref=f42e3096] [cursor=pointer]
+                      - listitem [ref=f42e3107]:
+                        - button "Is there a restaurant?" [ref=f42e3108] [cursor=pointer]
+                      - listitem [ref=f42e3119]:
+                        - button "Is there a spa?" [ref=f42e3120] [cursor=pointer]
+                      - listitem [ref=f42e3131]:
+                        - button "Is there a swimming pool?" [ref=f42e3132] [cursor=pointer]
+                      - listitem [ref=f42e3143]:
+                        - button "What are the check-in and check-out times?" [ref=f42e3144] [cursor=pointer]
+                      - listitem [ref=f42e3155]:
+                        - button "What restaurants, attractions, and public transport options are nearby?" [ref=f42e3156] [cursor=pointer]
+                      - listitem [ref=f42e3167]:
+                        - button "Is there an airport shuttle service?" [ref=f42e3168] [cursor=pointer]
+                      - listitem [ref=f42e3179]:
+                        - button "Are there rooms with a private bathroom?" [ref=f42e3180] [cursor=pointer]
+                      - listitem [ref=f42e3191]:
+                        - button "Can I bring my pet?" [ref=f42e3192] [cursor=pointer]
+                    - generic [ref=f42e3204]:
+                      - heading "Still looking?" [level=3] [ref=f42e3205]
+                      - button "Ask a question" [ref=f42e3206] [cursor=pointer]
+                      - paragraph [ref=f42e3208]: We have an instant answer to most questions
+                  - button "See other questions (2)" [ref=f42e3211] [cursor=pointer]
+              - generic [ref=f42e3214]:
+                - generic [ref=f42e3215]:
+                  - generic [ref=f42e3216]:
+                    - heading "Hosted by B&B Antichi Riverberi In Station" [level=2] [ref=f42e3217]
+                    - generic [ref=f42e3219]:
+                      - generic [ref=f42e3220]: "9.4"
+                      - generic [ref=f42e3221]: "9.4"
+                      - generic [ref=f42e3222]: Host review score
+                      - generic [ref=f42e3223]: Host review score
+                  - separator [ref=f42e3225]
+                - generic [ref=f42e3226]:
+                  - generic [ref=f42e3227]: B&B Antichi Riverberi In Station
+                  - generic [ref=f42e3233]:
+                    - generic [ref=f42e3234]: The accommodation is on the 1st floor with lift. The rooms are all en suite, flat screen TV, cold and hot air conditioning, 3 rooms have a shared terrace with chairs and a table. One room has a small balcony. The bathrooms have a shower, overhead shower and hand shower, hairdryer. The communal areas are covered by cameras. Small room where breakfast is served, The entire facility is covered by free high-speed WIFI.
+                    - generic [ref=f42e3235]: The B&B is 300 metres from the Central Railway Station. 400 metres from the tourist port for Positano, Amalfi, Capi and other resorts on the Amalfi coast. From Salerno Central Station in 30 minutes you can reach the excavations of Pestun, he excavations of Pompeii. At 2450 metres you can take the sita bus to all the resorts.
+                    - generic [ref=f42e3236]:
+                      - text: "Languages spoken:"
+                      - generic [ref=f42e3237]:
+                        - generic [ref=f42e3238]: English,
+                        - text: Italian
+              - generic [ref=f42e3243]:
+                - generic [ref=f42e3244]:
+                  - heading "Property surroundings" [level=2] [ref=f42e3246]
+                  - button "See availability" [ref=f42e3249] [cursor=pointer]
+                - generic [ref=f42e3251]:
+                  - generic [ref=f42e3252]:
+                    - button "Guests loved walking around the neighbourhood!" [ref=f42e3254] [cursor=pointer]
+                    - link "Excellent location - show map" [ref=f42e3258] [cursor=pointer]:
+                      - /url: "#map_opened-hotel_surroundings"
+                  - generic [ref=f42e3260]:
+                    - generic [ref=f42e3261]:
+                      - generic [ref=f42e3262]:
+                        - heading "What's nearby" [level=3] [ref=f42e3267]
+                        - list [ref=f42e3269]:
+                          - listitem [ref=f42e3270]:
+                            - listitem [ref=f42e3271]:
+                              - generic [ref=f42e3272]:
+                                - generic [ref=f42e3273]: Medieval Aqueduct of Salerno
+                                - generic [ref=f42e3274]: 500 m
+                          - listitem [ref=f42e3276]:
+                            - listitem [ref=f42e3277]:
+                              - generic [ref=f42e3278]:
+                                - generic [ref=f42e3279]: Archaeological Museum of Salerno
+                                - generic [ref=f42e3280]: 650 m
+                          - listitem [ref=f42e3282]:
+                            - listitem [ref=f42e3283]:
+                              - generic [ref=f42e3284]:
+                                - generic [ref=f42e3285]: Castel Terracena
+                                - generic [ref=f42e3286]: 750 m
+                          - listitem [ref=f42e3288]:
+                            - listitem [ref=f42e3289]:
+                              - generic [ref=f42e3290]:
+                                - generic [ref=f42e3291]: Provincial Pinacotheca of Salerno
+                                - generic [ref=f42e3292]: 900 m
+                          - listitem [ref=f42e3294]:
+                            - listitem [ref=f42e3295]:
+                              - generic [ref=f42e3296]:
+                                - generic [ref=f42e3297]: Palazzo Conforti
+                                - generic [ref=f42e3298]: 1.3 km
+                          - listitem [ref=f42e3300]:
+                            - listitem [ref=f42e3301]:
+                              - generic [ref=f42e3302]:
+                                - generic [ref=f42e3303]: Municipio di Salerno
+                                - generic [ref=f42e3304]: 1.3 km
+                          - listitem [ref=f42e3306]:
+                            - listitem [ref=f42e3307]:
+                              - generic [ref=f42e3308]:
+                                - generic [ref=f42e3309]: Parco del Seminario
+                                - generic [ref=f42e3310]: 1.3 km
+                          - listitem [ref=f42e3312]:
+                            - listitem [ref=f42e3313]:
+                              - generic [ref=f42e3314]:
+                                - generic [ref=f42e3315]: Palazzo Copeta
+                                - generic [ref=f42e3316]: 1.4 km
+                          - listitem [ref=f42e3318]:
+                            - listitem [ref=f42e3319]:
+                              - generic [ref=f42e3320]:
+                                - generic [ref=f42e3321]: Parco DellIrno
+                                - generic [ref=f42e3322]: 1.4 km
+                          - listitem [ref=f42e3324]:
+                            - listitem [ref=f42e3325]:
+                              - generic [ref=f42e3326]:
+                                - generic [ref=f42e3327]: Villa Comunale
+                                - generic [ref=f42e3328]: 1.5 km
+                      - generic [ref=f42e3330]:
+                        - heading "Restaurants & cafes" [level=3] [ref=f42e3335]
+                        - list [ref=f42e3337]:
+                          - listitem [ref=f42e3338]:
+                            - listitem [ref=f42e3339]:
+                              - generic [ref=f42e3340]:
+                                - generic [ref=f42e3341]: Restaurant Scusate il Ritardo
+                                - generic [ref=f42e3342]: 100 m
+                          - listitem [ref=f42e3344]:
+                            - listitem [ref=f42e3345]:
+                              - generic [ref=f42e3346]:
+                                - generic [ref=f42e3347]: Restaurant Pasticcia Cupcakeria
+                                - generic [ref=f42e3348]: 100 m
+                          - listitem [ref=f42e3350]:
+                            - listitem [ref=f42e3351]:
+                              - generic [ref=f42e3352]:
+                                - generic [ref=f42e3353]: Cafe/bar Michema Caffè
+                                - generic [ref=f42e3354]: 200 m
+                      - generic [ref=f42e3356]:
+                        - heading "Top attractions" [level=3] [ref=f42e3361]
+                        - list [ref=f42e3363]:
+                          - listitem [ref=f42e3364]:
+                            - listitem [ref=f42e3365]:
+                              - generic [ref=f42e3366]:
+                                - generic [ref=f42e3367]: Garden of Minerva
+                                - generic [ref=f42e3368]: 1.5 km
+                          - listitem [ref=f42e3370]:
+                            - listitem [ref=f42e3371]:
+                              - generic [ref=f42e3372]:
+                                - generic [ref=f42e3373]: Castello di Arechi
+                                - generic [ref=f42e3374]: 2.2 km
+                      - generic [ref=f42e3376]:
+                        - heading "Beaches in the neighbourhood" [level=3] [ref=f42e3381]
+                        - list [ref=f42e3383]:
+                          - listitem [ref=f42e3384]:
+                            - listitem [ref=f42e3385]:
+                              - generic [ref=f42e3386]:
+                                - generic [ref=f42e3387]: Lido La Conchiglia
+                                - generic [ref=f42e3388]: 950 m
+                          - listitem [ref=f42e3390]:
+                            - listitem [ref=f42e3391]:
+                              - generic [ref=f42e3392]:
+                                - generic [ref=f42e3393]: Santa Teresa Beach
+                                - generic [ref=f42e3394]: 1.4 km
+                          - listitem [ref=f42e3396]:
+                            - listitem [ref=f42e3397]:
+                              - generic [ref=f42e3398]:
+                                - generic [ref=f42e3399]: Lido Scaramella Beach
+                                - generic [ref=f42e3400]: 2.3 km
+                          - listitem [ref=f42e3402]:
+                            - listitem [ref=f42e3403]:
+                              - generic [ref=f42e3404]:
+                                - generic [ref=f42e3405]: Lido Colombo Beach
+                                - generic [ref=f42e3406]: 3.5 km
+                          - listitem [ref=f42e3408]:
+                            - listitem [ref=f42e3409]:
+                              - generic [ref=f42e3410]:
+                                - generic [ref=f42e3411]: La Baia Beach
+                                - generic [ref=f42e3412]: 3.6 km
+                      - generic [ref=f42e3414]:
+                        - heading "Public transport" [level=3] [ref=f42e3419]
+                        - list [ref=f42e3421]:
+                          - listitem [ref=f42e3422]:
+                            - listitem [ref=f42e3423]:
+                              - generic [ref=f42e3424]:
+                                - generic [ref=f42e3425]: Train Salerno Train Station
+                                - generic [ref=f42e3426]: 500 m
+                          - listitem [ref=f42e3428]:
+                            - listitem [ref=f42e3429]:
+                              - generic [ref=f42e3430]:
+                                - generic [ref=f42e3431]: Train Salerno Irno
+                                - generic [ref=f42e3432]: 1.1 km
+                      - generic [ref=f42e3434]:
+                        - heading "Closest airports" [level=3] [ref=f42e3439]
+                        - list [ref=f42e3441]:
+                          - listitem [ref=f42e3442]:
+                            - listitem [ref=f42e3443]:
+                              - generic [ref=f42e3444]:
+                                - generic [ref=f42e3445]: Salerno - Costa d'Amalfi Airport
+                                - generic [ref=f42e3446]: 17 km
+                          - listitem [ref=f42e3448]:
+                            - listitem [ref=f42e3449]:
+                              - generic [ref=f42e3450]:
+                                - generic [ref=f42e3451]: Naples International Airport
+                                - generic [ref=f42e3452]: 58 km
+                    - generic [ref=f42e3454]: Shortest estimated walking or driving distances displayed, actual distances may vary.
+                  - group [ref=f42e3457]:
+                    - generic [ref=f42e3458]: Missing some information?
+                    - generic [ref=f42e3461]:
+                      - button "Yes" [ref=f42e3463] [cursor=pointer]
+                      - generic [ref=f42e3464]:
+                        - text: /
+                        - button "No" [ref=f42e3465] [cursor=pointer]
+              - generic [ref=f42e3469]:
+                - generic [ref=f42e3470]:
+                  - generic [ref=f42e3471]:
+                    - heading "Facilities of B&B Antichi Riverberi in Station" [level=2] [ref=f42e3472]
+                    - generic [ref=f42e3474]: Great facilities! Review score, 8.8
+                  - button "See availability" [ref=f42e3476] [cursor=pointer]
+                - generic [ref=f42e3478]:
+                  - generic [ref=f42e3481]:
+                    - heading "Most popular facilities" [level=3] [ref=f42e3482]
+                    - list [ref=f42e3484]:
+                      - listitem [ref=f42e3485]:
+                        - generic [ref=f42e3486]: Non-smoking rooms
+                      - listitem [ref=f42e3494]:
+                        - generic [ref=f42e3495]: Parking
+                      - listitem [ref=f42e3503]:
+                        - generic [ref=f42e3504]: Free WiFi
+                      - listitem [ref=f42e3512]:
+                        - generic [ref=f42e3513]: Terrace
+                      - listitem [ref=f42e3521]:
+                        - generic [ref=f42e3522]: Lift
+                      - listitem [ref=f42e3530]:
+                        - button "Very good breakfast" [ref=f42e3538] [cursor=pointer]
+                  - group [ref=f42e3543]:
+                    - generic [ref=f42e3544]: Missing some information?
+                    - generic [ref=f42e3547]:
+                      - button "Yes" [ref=f42e3549] [cursor=pointer]
+                      - generic [ref=f42e3550]:
+                        - text: /
+                        - button "No" [ref=f42e3551] [cursor=pointer]
+              - region "Survey with 2 questions" [ref=f42e3553]:
+                - generic [ref=f42e3557]:
+                  - button "Close survey" [ref=f42e3559] [cursor=pointer]
+                  - heading "How are we doing?" [level=3] [ref=f42e3564]
+                  - generic [ref=f42e3568]:
+                    - generic [ref=f42e3569]:
+                      - generic "Question 1 of 2" [ref=f42e3570]: 1 of 2
+                      - generic [ref=f42e3571]: It is easy to compare accommodation options
+                    - radiogroup "It is easy to compare accommodation options" [ref=f42e3573]:
+                      - generic "5 Strongly agree" [ref=f42e3574]:
+                        - radio "Strongly agree" [ref=f42e3575]
+                        - generic [ref=f42e3576] [cursor=pointer]: Strongly agree
+                      - generic "4 Agree" [ref=f42e3580]:
+                        - radio "Agree" [ref=f42e3581]
+                        - generic [ref=f42e3582] [cursor=pointer]: Agree
+                      - generic "3 Neutral" [ref=f42e3586]:
+                        - radio "Neutral" [ref=f42e3587]
+                        - generic [ref=f42e3588] [cursor=pointer]: Neutral
+                      - generic "2 Disagree" [ref=f42e3592]:
+                        - radio "Disagree" [ref=f42e3593]
+                        - generic [ref=f42e3594] [cursor=pointer]: Disagree
+                      - generic "1 Strongly disagree" [ref=f42e3598]:
+                        - radio "Strongly disagree" [ref=f42e3599]
+                        - generic [ref=f42e3600] [cursor=pointer]: Strongly disagree
+              - generic [ref=f42e3607]:
+                - generic [ref=f42e3608]:
+                  - generic [ref=f42e3609]:
+                    - heading "House rules" [level=2] [ref=f42e3610]
+                    - generic [ref=f42e3612]: B&B Antichi Riverberi in Station takes special requests - add in the next step!
+                  - button "See availability" [ref=f42e3614] [cursor=pointer]
+                - generic [ref=f42e3617]:
+                  - generic [ref=f42e3618]:
+                    - generic [ref=f42e3619]: Check-in
+                    - generic [ref=f42e3625]: From 13:00 to 22:00
+                  - separator [ref=f42e3627]
+                  - generic [ref=f42e3628]:
+                    - generic [ref=f42e3629]: Check-out
+                    - generic [ref=f42e3635]: Until 10:00
+                  - separator [ref=f42e3637]
+                  - generic [ref=f42e3638]:
+                    - generic [ref=f42e3639]: Cancellation/ prepayment
+                    - generic [ref=f42e3646]:
+                      - text: Cancellation and prepayment policies vary according to accommodation type. Please check what
+                      - link "conditions" [ref=f42e3647] [cursor=pointer]:
+                        - /url: "#availability_target"
+                      - text: may apply to each option when making your selection.
+                  - separator [ref=f42e3648]
+                  - generic [ref=f42e3649]:
+                    - generic [ref=f42e3650]: Children and beds
+                    - generic [ref=f42e3657]:
+                      - generic [ref=f42e3658]:
+                        - heading "Child policies" [level=3] [ref=f42e3659]
+                        - paragraph [ref=f42e3660]: Children are not allowed.
+                      - heading "Cot and extra bed policies" [level=3] [ref=f42e3661]
+                      - paragraph [ref=f42e3662]: Cots and extra beds are not available at this property.
+                  - separator [ref=f42e3663]
+                  - generic [ref=f42e3664]:
+                    - generic [ref=f42e3665]: Age restriction
+                    - generic [ref=f42e3671]: The minimum age for check-in is 18
+                  - separator [ref=f42e3673]
+                  - generic [ref=f42e3674]:
+                    - generic [ref=f42e3675]: Pets
+                    - generic [ref=f42e3681]: Pets are not allowed.
+                  - separator [ref=f42e3683]
+                  - generic [ref=f42e3684]:
+                    - generic [ref=f42e3685]: Cash only
+                    - generic [ref=f42e3691]: This property only accepts cash payments.
+                  - separator [ref=f42e3693]
+                  - generic [ref=f42e3694]:
+                    - generic [ref=f42e3695]: Smoking
+                    - generic [ref=f42e3701]: Smoking is not allowed.
+                  - separator [ref=f42e3703]
+                  - generic [ref=f42e3704]:
+                    - generic [ref=f42e3705]: Parties
+                    - generic [ref=f42e3711]: Parties/events are not allowed
+              - generic [ref=f42e3716]:
+                - generic [ref=f42e3717]:
+                  - generic [ref=f42e3718]:
+                    - heading "The fine print" [level=2] [ref=f42e3719]
+                    - generic [ref=f42e3721]: Need-to-know information for guests at this property
+                  - button "See availability" [ref=f42e3723] [cursor=pointer]
+                - generic [ref=f42e3727]:
+                  - paragraph [ref=f42e3728]: This property will not accommodate hen, stag or similar parties.
+                  - paragraph [ref=f42e3729]: "License number: 15065116EXT0063, IT065116C1W7CWEOR2"
+            - generic [ref=f42e3732]:
+              - heading "FAQs about B&B Antichi Riverberi in Station" [level=2] [ref=f42e3734]
+              - generic [ref=f42e3735]:
+                - button [ref=f42e3738] [cursor=pointer]:
+                  - heading "What kind of breakfast is served at B&B Antichi Riverberi in Station?" [level=3] [ref=f42e3740]
+                - separator [ref=f42e3744]
+                - button [ref=f42e3747] [cursor=pointer]:
+                  - heading "What type of room can I book at B&B Antichi Riverberi in Station?" [level=3] [ref=f42e3749]
+                - separator [ref=f42e3753]
+                - button [ref=f42e3756] [cursor=pointer]:
+                  - heading "What are the check-in and check-out times at B&B Antichi Riverberi in Station?" [level=3] [ref=f42e3758]
+                - separator [ref=f42e3762]
+                - button [ref=f42e3765] [cursor=pointer]:
+                  - heading "How much does it cost to stay at B&B Antichi Riverberi in Station?" [level=3] [ref=f42e3767]
+                - separator [ref=f42e3771]
+                - button [ref=f42e3774] [cursor=pointer]:
+                  - heading "How far is B&B Antichi Riverberi in Station from the centre of Salerno?" [level=3] [ref=f42e3776]
+                - separator [ref=f42e3780]
+                - button [ref=f42e3783] [cursor=pointer]:
+                  - heading "How close to the beach is B&B Antichi Riverberi in Station?" [level=3] [ref=f42e3785]
+      - button "The best of Salerno Click here to see more hotels and accommodation near popular landmarks in Salerno" [ref=f42e3791] [cursor=pointer]:
+        - generic [ref=f42e3793]:
+          - generic [ref=f42e3794]: The best of Salerno
+          - generic [ref=f42e3796]: Click here to see more hotels and accommodation near popular landmarks in Salerno
+  - contentinfo [ref=f42e1726]:
+    - contentinfo [ref=f42e3802]:
+      - navigation "Quick links" [ref=f42e3805]:
+        - list [ref=f42e3806]:
+          - listitem [ref=f42e3807]:
+            - link "Countries" [ref=f42e3808] [cursor=pointer]:
+              - /url: https://www.booking.com/country.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3811]:
+            - link "Regions" [ref=f42e3812] [cursor=pointer]:
+              - /url: https://www.booking.com/region.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3815]:
+            - link "Cities" [ref=f42e3816] [cursor=pointer]:
+              - /url: https://www.booking.com/city.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3819]:
+            - link "Districts" [ref=f42e3820] [cursor=pointer]:
+              - /url: https://www.booking.com/district.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3823]:
+            - link "Airports" [ref=f42e3824] [cursor=pointer]:
+              - /url: https://www.booking.com/airport.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3827]:
+            - link "Hotels" [ref=f42e3828] [cursor=pointer]:
+              - /url: https://www.booking.com/hotel/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3831]:
+            - link "Places of interest" [ref=f42e3832] [cursor=pointer]:
+              - /url: https://www.booking.com/landmark.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3835]:
+            - link "Holiday Homes" [ref=f42e3836] [cursor=pointer]:
+              - /url: https://www.booking.com/booking-home/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3839]:
+            - link "Apartments" [ref=f42e3840] [cursor=pointer]:
+              - /url: https://www.booking.com/apartments/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3843]:
+            - link "Resorts" [ref=f42e3844] [cursor=pointer]:
+              - /url: https://www.booking.com/resorts/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3847]:
+            - link "Villas" [ref=f42e3848] [cursor=pointer]:
+              - /url: https://www.booking.com/villas/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3851]:
+            - link "Hostels" [ref=f42e3852] [cursor=pointer]:
+              - /url: https://www.booking.com/hostels/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3855]:
+            - link "B&Bs" [ref=f42e3856] [cursor=pointer]:
+              - /url: https://www.booking.com/bed-and-breakfast/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3859]:
+            - link "Guest Houses" [ref=f42e3860] [cursor=pointer]:
+              - /url: https://www.booking.com/guest-house/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3863]:
+            - link "Unique places to stay" [ref=f42e3864] [cursor=pointer]:
+              - /url: https://www.booking.com/accommodations.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f42e3867]:
+            - link "Discover monthly stays" [ref=f42e3868] [cursor=pointer]:
+              - /url: https://www.booking.com/extended-stays/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+      - generic [ref=f42e3872]:
+        - generic [ref=f42e3873]:
+          - heading "Support" [level=3] [ref=f42e3875]
+          - list [ref=f42e3876]:
+            - listitem [ref=f42e3877]:
+              - link "Manage your trips" [ref=f42e3878] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/cs.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3880]:
+              - link "Contact Customer Service" [ref=f42e3881] [cursor=pointer]:
+                - /url: https://secure.booking.com/help.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3883]:
+              - link "Safety resource centre" [ref=f42e3884] [cursor=pointer]:
+                - /url: https://www.booking.com/trust_and_safety.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+        - generic [ref=f42e3886]:
+          - heading "Discover" [level=3] [ref=f42e3888]
+          - list [ref=f42e3889]:
+            - listitem [ref=f42e3890]:
+              - link "Genius loyalty programme" [ref=f42e3891] [cursor=pointer]:
+                - /url: https://www.booking.com/genius.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3893]:
+              - link "Seasonal and holiday deals" [ref=f42e3894] [cursor=pointer]:
+                - /url: https://www.booking.com/deals/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3896]:
+              - link "Travel articles" [ref=f42e3897] [cursor=pointer]:
+                - /url: https://www.booking.com/articles.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3899]:
+              - link "Booking.com for Business" [ref=f42e3900] [cursor=pointer]:
+                - /url: https://business.booking.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3902]:
+              - link "Traveller Review Awards" [ref=f42e3903] [cursor=pointer]:
+                - /url: https://www.booking.com/traveller-awards/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3905]:
+              - link "Car hire" [ref=f42e3906] [cursor=pointer]:
+                - /url: https://www.booking.com/cars/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3908]:
+              - link "Flight finder" [ref=f42e3909] [cursor=pointer]:
+                - /url: https://booking.com/pxgo?aid=304142&url=https%3A%2F%2Fbooking.kayak.com%2Fin%3Fsid%3D17e75eeba6a5bd656f4306d890e6e49b%26mc%3DEUR%26bdclc%3Den-gb%26p%3Dfooter_link%26a%3Dbdc%252Ffooter_link&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&lang=en-gb&token=UmFuZG9tSVYkc2RlIyh9YWktmrwAPG7d0xk8r8arn9t0Ap8kM8stMzZxgxRv84oaRuIN-swQ2-OnRnhVmX_y-7aUxnwAL0Cx1zvhJUAQgKl_mm-_e3_OrCiIoeAOQNVKu8ENJ-b8RS6r2lKhPj105CtzxxZtBx_0E9vR84obVpPoNpmrLY_sd6RDmb_UqRkTxl67RrTKST37F-ZJiRRy8SAZAOQSErO8SMsNQofz6HR_t-fyVIZna9HU0oJeucARautXHgoQtF-EbpLs-hDN208m4KJcpULDCb5R5_fcm05g_DQAbFFTjUb7K8K2mbcXMbLRJXYKvxO7HQRT4e9bF1fOWwY--L_wcxJpGVrx2Aw2RQTrCQjeudhuF1dJREG5nxQhhhTxwhFDN5Pesgau2AmqxgAp5Mi8HNnM2Htnpzx4unLnWSCxYN6O_IqJVDCerk65A6msRhc6GD3swZib9ihbD1oLrrQnq0qoemQVyuxUIPQaOzOrlV6NKYLvCqd6kl07wNZqorM9YPZWCnIIy0qiSuepYACbCD8lqjrXNyuKyKF-RA-PSWDaV9D7EDhOcWuuH4w4Jzk
+            - listitem [ref=f42e3911]:
+              - link "Restaurant reservations" [ref=f42e3912] [cursor=pointer]:
+                - /url: https://www.opentable.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&ref=16087
+            - listitem [ref=f42e3914]:
+              - link "Booking.com for Travel Agents" [ref=f42e3915] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=booking-footer&utm_content=travel-agents-link&utm_medium=referral&utm_source=booking.com
+        - generic [ref=f42e3917]:
+          - heading "Terms and settings" [level=3] [ref=f42e3919]
+          - list [ref=f42e3920]:
+            - listitem [ref=f42e3921]:
+              - link "Privacy Notice" [ref=f42e3922] [cursor=pointer]:
+                - /url: https://www.booking.com/content/privacy.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3924]:
+              - link "Terms of Service" [ref=f42e3925] [cursor=pointer]:
+                - /url: https://www.booking.com/content/terms.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3927]:
+              - link "Accessibility Statement" [ref=f42e3928] [cursor=pointer]:
+                - /url: https://www.booking.com/content/accessibility_statement.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3930]:
+              - link "Partner dispute" [ref=f42e3931] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/complaints.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3933]:
+              - link "Modern Slavery Statement" [ref=f42e3934] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/modern-slavery-statement/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+            - listitem [ref=f42e3936]:
+              - link "Human Rights Statement" [ref=f42e3937] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/about/compliance-and-ethics/human-rights/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+        - generic [ref=f42e3939]:
+          - heading "Partners" [level=3] [ref=f42e3941]
+          - list [ref=f42e3942]:
+            - listitem [ref=f42e3943]:
+              - link "Extranet login" [ref=f42e3944] [cursor=pointer]:
+                - /url: https://admin.booking.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=login_footer_v0&utm_medium=frontend&utm_source=extranet_login_footer
+            - listitem [ref=f42e3946]:
+              - link "Partner help" [ref=f42e3947] [cursor=pointer]:
+                - /url: https://partner.booking.com/en-gb?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=footer_list&utm_medium=frontend_footer&utm_source=booking.com
+            - listitem [ref=f42e3949]:
+              - link "List your property" [ref=f42e3950] [cursor=pointer]:
+                - /url: https://join.booking.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&lang=en-gb&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_medium=frontend&utm_source=footer_menu
+            - listitem [ref=f42e3952]:
+              - link "Become an affiliate" [ref=f42e3953] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=booking-footer&utm_content=become-an-affiliate-link&utm_medium=referral&utm_source=booking.com
+        - generic [ref=f42e3955]:
+          - heading "About" [level=3] [ref=f42e3957]
+          - list [ref=f42e3958]:
+            - listitem [ref=f42e3959]:
+              - link "About Booking.com" [ref=f42e3960] [cursor=pointer]:
+                - /url: https://www.booking.com/content/about.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3962]:
+              - link "How we work" [ref=f42e3963] [cursor=pointer]:
+                - /url: https://www.booking.com/content/how_we_work.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3965]:
+              - link "Sustainability" [ref=f42e3966] [cursor=pointer]:
+                - /url: https://sustainability.booking.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+            - listitem [ref=f42e3968]:
+              - link "Press centre" [ref=f42e3969] [cursor=pointer]:
+                - /url: https://news.booking.com/he-il
+            - listitem [ref=f42e3971]:
+              - link "Careers" [ref=f42e3972] [cursor=pointer]:
+                - /url: https://careers.booking.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+            - listitem [ref=f42e3974]:
+              - link "Investor relations" [ref=f42e3975] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE
+            - listitem [ref=f42e3977]:
+              - link "Corporate contact" [ref=f42e3978] [cursor=pointer]:
+                - /url: https://www.booking.com/content/contact-us.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f42e3980]:
+              - link "Content guidelines and reporting" [ref=f42e3981] [cursor=pointer]:
+                - /url: https://www.booking.com/content-moderation-policy/overview-page.en-gb.html?aid=304142&label=gen173nr-10CAsocUIcYW50aWNoaS1yaXZlcmJlcmktaW4tc3RhdGlvbkgJWARoaogBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAagCAbgC2v3n0gbAAgHSAiRhZDU0NjI0YS1jZDYxLTQxN2ItYTZiYy0zMTBlZjIxNjFmNWPYAgHgAgE&sid=17e75eeba6a5bd656f4306d890e6e49b
+      - generic [ref=f42e3984]:
+        - generic [ref=f42e3985]:
+          - 'button "Language: English (UK)" [ref=f42e3987] [cursor=pointer]'
+          - button "Prices in Euro" [ref=f42e3992] [cursor=pointer]:
+            - generic [ref=f42e3993]: EUR
+        - separator [ref=f42e3994]
+        - generic [ref=f42e3995]:
+          - generic [ref=f42e3996]: Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.
+          - generic [ref=f42e3998]: Copyright © 1996–2026 Booking.com™. All rights reserved.
+        - generic [ref=f42e3999]:
+          - img "Booking.com" [ref=f42e4000]
+          - img "Priceline.com" [ref=f42e4003]
+          - img "Kayak" [ref=f42e4007]
+          - img "Agoda" [ref=f42e4022]
+          - img "OpenTable" [ref=f42e4031]
+  - text: 끖 낝 끲 낝 넌

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>בוחר מלונות — נאפולי 17–24.10</title>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Frank+Ruhl+Libre:wght@400;500;700&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#faf5ea;--ink:#20242c;--lemon:#e9b62c;--lemon-deep:#c99416;--sea:#20707e;--sea-deep:#154c56;--coral:#c2503c;--line:#d9cfba;--card:#fffdf7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Frank Ruhl Libre',serif;background:var(--paper);color:var(--ink);line-height:1.55;font-size:16px;padding-bottom:90px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding:28px 0 14px;border-bottom:3px solid var(--ink);margin-bottom:18px}
+h1{font-family:'Suez One',serif;font-size:1.9rem}
+header p{color:#4d5361;font-size:.95rem}
+.tabs{display:flex;gap:6px;margin:16px 0;flex-wrap:wrap}
+.tab{font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:.85rem;padding:8px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--card);cursor:pointer}
+.tab.on{background:var(--lemon);box-shadow:3px 3px 0 rgba(32,36,44,.8)}
+.town-note{font-size:.85rem;color:#4d5361;margin-bottom:12px;font-family:'Miriam Libre',sans-serif}
+form{background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:16px;box-shadow:5px 5px 0 rgba(32,36,44,.12);margin-bottom:20px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.row.single{grid-template-columns:1fr}
+label{font-family:'Miriam Libre',sans-serif;font-size:.78rem;font-weight:700;display:block;margin-bottom:3px;color:var(--sea-deep)}
+input[type=text],input[type=number],input[type=url],textarea{width:100%;padding:8px 10px;border:2px solid var(--ink);border-radius:4px;font-family:'Miriam Libre',sans-serif;font-size:.9rem;background:#fff}
+textarea{resize:vertical;min-height:44px}
+.feats{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.feat{font-family:'Miriam Libre',sans-serif;font-size:.78rem;border:1.5px solid var(--ink);border-radius:999px;padding:4px 10px;cursor:pointer;background:#fff;user-select:none}
+.feat.on{background:var(--sea);color:#fff}
+button.add{font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:1rem;background:var(--ink);color:var(--paper);border:none;border-radius:6px;padding:11px 22px;cursor:pointer;width:100%}
+button.add:hover{background:var(--sea-deep)}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:12px 14px;margin-bottom:10px;position:relative}
+.card h3{font-family:'Suez One',serif;font-size:1.05rem}
+.card .meta{font-family:'Miriam Libre',sans-serif;font-size:.82rem;color:#4d5361;margin:2px 0}
+.card .pn{font-family:'Suez One',serif;color:var(--sea-deep)}
+.card .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.card .tags span{font-family:'Miriam Libre',sans-serif;font-size:.72rem;background:rgba(32,112,126,.12);border-radius:999px;padding:2px 8px}
+.card .del{position:absolute;top:8px;left:10px;background:none;border:none;color:var(--coral);font-size:1.1rem;cursor:pointer;font-weight:700}
+.card a{color:var(--sea-deep)}
+.empty{text-align:center;color:#8a8371;padding:18px;font-family:'Miriam Libre',sans-serif;font-size:.9rem}
+.export{position:fixed;bottom:0;right:0;left:0;background:rgba(250,245,234,.95);backdrop-filter:blur(6px);border-top:3px solid var(--ink);padding:12px;z-index:10}
+.export .wrap{display:flex;gap:10px;align-items:center}
+.export button{flex:1;font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:1rem;background:var(--lemon);border:2px solid var(--ink);border-radius:999px;padding:12px;cursor:pointer;box-shadow:3px 3px 0 rgba(32,36,44,.5)}
+.export button:hover{background:var(--lemon-deep)}
+.export .cnt{font-family:'Miriam Libre',sans-serif;font-size:.85rem;white-space:nowrap}
+#toast{position:fixed;bottom:80px;right:50%;transform:translateX(50%);background:var(--ink);color:var(--paper);font-family:'Miriam Libre',sans-serif;padding:10px 20px;border-radius:999px;opacity:0;transition:opacity .3s;pointer-events:none;font-size:.9rem}
+#out{display:none;white-space:pre-wrap;direction:ltr;text-align:left;background:#fff;border:2px dashed var(--ink);border-radius:6px;padding:12px;font-family:monospace;font-size:.75rem;margin:14px 0}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>🏨 בוחר המלונות</h1>
+  <p>מזינים מועמדים לכל עיר ← "העתק סיכום" ← מדביקים לקלוד ← מקבלים פסק דין. הכול נשמר בדפדפן.</p>
+</div></header>
+
+<div class="wrap">
+  <div class="tabs" id="tabs"></div>
+  <div class="town-note" id="townNote"></div>
+
+  <form onsubmit="return addItem(event)">
+    <div class="row">
+      <div><label>שם המקום *</label><input type="text" id="f_name" required placeholder="YourHome - Villa Sorrento"></div>
+      <div><label>מחיר סה"כ לשהות (₪) *</label><input type="number" id="f_price" required placeholder="530"></div>
+    </div>
+    <div class="row">
+      <div><label>ציון (Booking/Airbnb)</label><input type="number" step="0.1" id="f_rating" placeholder="8.9"></div>
+      <div><label>מס' ביקורות</label><input type="number" id="f_reviews" placeholder="562"></div>
+    </div>
+    <div class="row single"><div><label>לינק (לא חובה)</label><input type="url" id="f_link" placeholder="https://booking.com/..."></div></div>
+    <label>מאפיינים (לחיצה מדליקה)</label>
+    <div class="feats" id="feats"></div>
+    <div class="row single"><div><label>הערות (מרחק מתחנה, קומה, דברים שראית בביקורות...)</label><textarea id="f_notes" placeholder="5 דק' מתחנת Meta, בריכה סגורה באוקטובר"></textarea></div></div>
+    <button class="add" type="submit">➕ הוסף מועמד</button>
+  </form>
+
+  <div id="list"></div>
+  <div id="out"></div>
+</div>
+
+<div class="export"><div class="wrap">
+  <button onclick="exportAll()">📋 העתק סיכום לקלוד</button>
+  <span class="cnt" id="cnt"></span>
+</div></div>
+<div id="toast"></div>
+
+<script>
+const TOWNS=[
+ {id:'na1',name:'🏙️ נאפולי · 3 לילות',note:'17–20.10 · יעד: עד ~780₪ סה"כ · אזור נכון: צ\'נטרו סטוריקו/טולדו · לא ליד גריבלדי'},
+ {id:'sor',name:'🍋 סורנטו · 2 לילות',note:'20–22.10 · יעד: עד ~600₪ סה"כ · קרוב לתחנת רכבת (סורנטו/סנט\'אניילו/מטה)'},
+ {id:'sal',name:'🌊 סלרנו · לילה',note:'22–23.10 · יעד: עד ~240₪ · עיר עתיקה או ליד התחנה · בונוס: שמירת מזוודות'},
+ {id:'na2',name:'✈️ נאפולי · לילה אחרון',note:'23–24.10 · יעד: עד ~230₪ · חובה: צמוד לגריבלדי + קבלה 24ש\' (מונית 03:30)'}
+];
+const FEATS=['ביטול חינם','ארוחת בוקר','ליד תחנה','מרפסת/נוף','מטבחון','מזגן','קבלה 24ש\'','שמירת מזוודות','Superhost/Genius'];
+let town=localStorage.getItem('hp_town')||'na1';
+let data=JSON.parse(localStorage.getItem('hp_data')||'{}');
+TOWNS.forEach(t=>{if(!data[t.id])data[t.id]=[]});
+
+const tabsEl=document.getElementById('tabs');
+TOWNS.forEach(t=>{
+  const b=document.createElement('button');b.className='tab';b.textContent=t.name;b.dataset.id=t.id;
+  b.onclick=()=>{town=t.id;localStorage.setItem('hp_town',town);render()};
+  tabsEl.appendChild(b);
+});
+const featsEl=document.getElementById('feats');
+FEATS.forEach(f=>{
+  const s=document.createElement('span');s.className='feat';s.textContent=f;
+  s.onclick=()=>s.classList.toggle('on');
+  featsEl.appendChild(s);
+});
+
+function addItem(e){
+  e.preventDefault();
+  const nights={na1:3,sor:2,sal:1,na2:1}[town];
+  const item={
+    name:document.getElementById('f_name').value.trim(),
+    price:+document.getElementById('f_price').value,
+    rating:document.getElementById('f_rating').value||'',
+    reviews:document.getElementById('f_reviews').value||'',
+    link:document.getElementById('f_link').value.trim(),
+    feats:[...featsEl.querySelectorAll('.on')].map(x=>x.textContent),
+    notes:document.getElementById('f_notes').value.trim(),
+    nights
+  };
+  data[town].push(item);
+  localStorage.setItem('hp_data',JSON.stringify(data));
+  e.target.reset();featsEl.querySelectorAll('.on').forEach(x=>x.classList.remove('on'));
+  render();toast('נוסף ✓');
+  return false;
+}
+function del(i){
+  data[town].splice(i,1);
+  localStorage.setItem('hp_data',JSON.stringify(data));
+  render();
+}
+function render(){
+  tabsEl.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.id===town));
+  const t=TOWNS.find(x=>x.id===town);
+  document.getElementById('townNote').textContent=t.note;
+  const list=document.getElementById('list');list.innerHTML='';
+  if(!data[town].length){list.innerHTML='<div class="empty">אין מועמדים עדיין — מלאו את הטופס למעלה</div>';}
+  data[town].forEach((it,i)=>{
+    const per=Math.round(it.price/it.nights);
+    const c=document.createElement('div');c.className='card';
+    c.innerHTML=`<button class="del" onclick="del(${i})">✕</button>
+      <h3>${esc(it.name)}</h3>
+      <div class="meta"><span class="pn">${it.price}₪ סה"כ · ${per}₪/לילה</span>${it.rating?` · ⭐ ${it.rating}${it.reviews?` (${it.reviews})`:''}`:''}</div>
+      ${it.notes?`<div class="meta">📝 ${esc(it.notes)}</div>`:''}
+      ${it.link?`<div class="meta"><a href="${esc(it.link)}" target="_blank">🔗 לינק</a></div>`:''}
+      <div class="tags">${it.feats.map(f=>`<span>${esc(f)}</span>`).join('')}</div>`;
+    list.appendChild(c);
+  });
+  const total=TOWNS.reduce((s,t)=>s+data[t.id].length,0);
+  document.getElementById('cnt').textContent=`${total} מועמדים`;
+}
+function esc(s){return (s+'').replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]))}
+function exportAll(){
+  let out='=== מועמדי לינה — נאפולי 17-24.10.2026 ===\n';
+  TOWNS.forEach(t=>{
+    out+=`\n## ${t.name}\n`;
+    if(!data[t.id].length){out+='(אין מועמדים)\n';return}
+    data[t.id].forEach((it,i)=>{
+      out+=`${i+1}. ${it.name} | ${it.price}₪ סה"כ (${Math.round(it.price/it.nights)}₪/לילה)`;
+      if(it.rating)out+=` | ⭐${it.rating}${it.reviews?` (${it.reviews} ביקורות)`:''}`;
+      if(it.feats.length)out+=` | ${it.feats.join(', ')}`;
+      if(it.notes)out+=` | הערות: ${it.notes}`;
+      if(it.link)out+=` | ${it.link}`;
+      out+='\n';
+    });
+  });
+  out+='\nבחר לי את הטוב ביותר לכל עיר והסבר למה.';
+  navigator.clipboard.writeText(out).then(()=>{
+    toast('הועתק! עכשיו הדבק בצ\'אט של קלוד 📋');
+    const o=document.getElementById('out');o.textContent=out;o.style.display='block';
+  }).catch(()=>{
+    const o=document.getElementById('out');o.textContent=out;o.style.display='block';
+    toast('העתקה ידנית מהקופסה למטה');
+  });
+}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.opacity=1;setTimeout(()=>t.style.opacity=0,2500)}
+render();
+</script>
+</body>
+</html>

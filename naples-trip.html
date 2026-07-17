@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>נאפולי · סורנטו · סלרנו — 17–24.10.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+  --paper:#faf5ea;
+  --ink:#20242c;
+  --ink-soft:#4d5361;
+  --lemon:#e9b62c;
+  --lemon-deep:#c99416;
+  --sea:#20707e;
+  --sea-deep:#154c56;
+  --coral:#c2503c;
+  --line:#d9cfba;
+  --card:#fffdf7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Frank Ruhl Libre',serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+  background-image:radial-gradient(circle at 15% 20%, rgba(233,182,44,.06), transparent 40%),
+                   radial-gradient(circle at 85% 80%, rgba(32,112,126,.05), transparent 45%);
+}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+
+/* ---------- HERO ---------- */
+header.hero{
+  position:relative;
+  padding:70px 0 46px;
+  overflow:hidden;
+  border-bottom:3px solid var(--ink);
+}
+.hero .kicker{
+  font-family:'Miriam Libre',sans-serif;
+  letter-spacing:.35em;
+  font-size:.75rem;
+  color:var(--sea);
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Suez One',serif;
+  font-size:clamp(2.6rem,7vw,4.6rem);
+  line-height:1.08;
+  letter-spacing:-.01em;
+}
+.hero h1 .lemon{color:var(--lemon-deep)}
+.hero h1 .sea{color:var(--sea)}
+.hero .sub{
+  margin-top:18px;
+  font-size:1.15rem;
+  color:var(--ink-soft);
+  max-width:560px;
+}
+.hero .meta{
+  margin-top:26px;
+  display:flex;gap:12px;flex-wrap:wrap;
+  font-family:'Miriam Libre',sans-serif;font-size:.85rem;
+}
+.hero .meta span{
+  border:1.5px solid var(--ink);
+  padding:5px 14px;border-radius:999px;background:var(--card);
+}
+.hero .sun{
+  position:absolute;top:-90px;left:-90px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle, rgba(233,182,44,.35), rgba(233,182,44,0) 70%);
+  pointer-events:none;
+}
+.hero .vesuvio{
+  position:absolute;bottom:-6px;left:0;width:340px;max-width:45%;opacity:.14;pointer-events:none;
+}
+
+/* ---------- ROUTE ---------- */
+.route{padding:34px 0 8px}
+.route-line{
+  display:flex;align-items:stretch;gap:0;flex-wrap:wrap;
+}
+.stop{
+  flex:1;min-width:150px;position:relative;
+  background:var(--card);
+  border:2px solid var(--ink);
+  padding:16px 16px 13px;
+  margin:8px;
+  border-radius:4px;
+  box-shadow:5px 5px 0 rgba(32,36,44,.9);
+}
+.stop b{font-family:'Suez One',serif;font-size:1.2rem;display:block}
+.stop small{color:var(--ink-soft);font-family:'Miriam Libre',sans-serif;font-size:.78rem}
+.stop .nights{
+  position:absolute;top:-13px;left:12px;
+  background:var(--lemon);color:var(--ink);
+  font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:.72rem;
+  padding:2px 10px;border-radius:999px;border:2px solid var(--ink);
+}
+.route .legend{
+  text-align:center;color:var(--ink-soft);font-size:.9rem;margin-top:10px;
+  font-family:'Miriam Libre',sans-serif;
+}
+
+/* ---------- SECTIONS ---------- */
+section{padding:42px 0 10px}
+h2.sec{
+  font-family:'Suez One',serif;
+  font-size:2rem;
+  margin-bottom:8px;
+  display:flex;align-items:center;gap:14px;
+}
+h2.sec::after{content:"";flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--ink) 0 10px,transparent 10px 18px)}
+.sec-note{color:var(--ink-soft);margin-bottom:22px;font-size:.98rem}
+
+/* ---------- BUDGET ---------- */
+.budget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:18px}
+.b-card{
+  background:var(--card);border:2px solid var(--ink);border-radius:4px;
+  padding:14px 14px 11px;box-shadow:4px 4px 0 rgba(32,36,44,.15);
+}
+.b-card .cat{font-family:'Miriam Libre',sans-serif;font-size:.78rem;color:var(--ink-soft)}
+.b-card .amt{font-family:'Suez One',serif;font-size:1.5rem;color:var(--sea-deep)}
+.b-card .eur{font-size:.8rem;color:var(--ink-soft)}
+.b-total{
+  background:var(--ink);color:var(--paper);
+  border-radius:4px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;
+}
+.b-total .t{font-family:'Suez One',serif;font-size:1.6rem}
+.b-total .n{font-family:'Miriam Libre',sans-serif;font-size:.85rem;color:#cfc8b6;max-width:520px}
+.b-total .t em{color:var(--lemon);font-style:normal}
+
+/* ---------- DAYS ---------- */
+.day{
+  background:var(--card);
+  border:2px solid var(--ink);
+  border-radius:6px;
+  margin:26px 0;
+  box-shadow:7px 7px 0 rgba(32,36,44,.12);
+  overflow:hidden;
+}
+.day-head{
+  display:flex;align-items:center;gap:16px;
+  padding:16px 20px;
+  border-bottom:2px solid var(--ink);
+  background:linear-gradient(90deg, rgba(233,182,44,.16), transparent 60%);
+}
+.day:nth-child(even) .day-head{background:linear-gradient(90deg, rgba(32,112,126,.13), transparent 60%)}
+.day-num{
+  font-family:'Suez One',serif;font-size:2.2rem;line-height:1;
+  color:var(--paper);background:var(--ink);
+  min-width:58px;height:58px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.day-head h3{font-family:'Suez One',serif;font-size:1.35rem;line-height:1.25}
+.day-head .date{font-family:'Miriam Libre',sans-serif;font-size:.8rem;color:var(--ink-soft)}
+.day-body{padding:8px 20px 16px}
+.slot{
+  display:flex;gap:14px;padding:9px 0;
+  border-bottom:1px dashed var(--line);
+}
+.slot:last-of-type{border-bottom:none}
+.slot .t{
+  font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:.82rem;
+  color:var(--sea-deep);background:rgba(32,112,126,.1);
+  border-radius:4px;padding:2px 8px;height:fit-content;white-space:nowrap;margin-top:3px;min-width:66px;text-align:center;
+}
+.slot p{flex:1;font-size:.98rem}
+.slot p b{font-weight:700}
+.price{
+  font-family:'Miriam Libre',sans-serif;font-size:.8rem;font-weight:700;
+  color:var(--lemon-deep);white-space:nowrap;
+}
+.day-body a.pl, .pocket a.pl{color:var(--sea-deep);text-decoration:none;border-bottom:2px dotted var(--lemon-deep);font-weight:700}
+.day-body a.pl:hover, .pocket a.pl:hover{background:rgba(233,182,44,.25)}
+.day-body a.pl::after, .pocket a.pl::after{content:"📍";font-size:.65em;vertical-align:super;margin-right:1px}
+.rain{
+  margin:12px 0 2px;padding:10px 14px;font-size:.9rem;
+  background:rgba(32,112,126,.08);border-right:4px solid var(--sea);border-radius:4px;
+}
+.love{
+  margin:12px 0 2px;padding:10px 14px;font-size:.9rem;
+  background:rgba(194,80,60,.08);border-right:4px solid var(--coral);border-radius:4px;
+}
+.warn{
+  margin:12px 0 2px;padding:10px 14px;font-size:.9rem;
+  background:rgba(233,182,44,.15);border-right:4px solid var(--lemon-deep);border-radius:4px;
+}
+
+/* ---------- TABLES ---------- */
+table{width:100%;border-collapse:collapse;background:var(--card);border:2px solid var(--ink);font-size:.92rem;margin:14px 0}
+th{background:var(--ink);color:var(--paper);font-family:'Miriam Libre',sans-serif;font-size:.8rem;padding:9px 12px;text-align:right}
+td{padding:8px 12px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:rgba(233,182,44,.05)}
+
+/* ---------- TOP10 ---------- */
+.top10{list-style:none;counter-reset:top;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:10px}
+.top10 li{
+  counter-increment:top;
+  background:var(--card);border:2px solid var(--ink);border-radius:4px;
+  padding:12px 14px 12px 12px;display:flex;gap:12px;align-items:flex-start;font-size:.95rem;
+}
+.top10 li::before{
+  content:counter(top);
+  font-family:'Suez One',serif;font-size:1.3rem;color:var(--lemon-deep);
+  min-width:30px;text-align:center;line-height:1.2;
+}
+
+/* ---------- CHECKLIST / POCKET ---------- */
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.pocket{
+  background:var(--card);border:2px solid var(--ink);border-radius:6px;padding:18px 20px;
+  box-shadow:5px 5px 0 rgba(32,36,44,.12);
+}
+.pocket h4{font-family:'Suez One',serif;font-size:1.15rem;margin-bottom:10px;color:var(--sea-deep)}
+.pocket ul{list-style:none}
+.pocket li{padding:5px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.pocket li:last-child{border-bottom:none}
+.pocket li b{color:var(--ink)}
+.check li::before{content:"☐ ";color:var(--sea)}
+
+/* ---------- FOOTER ---------- */
+footer{
+  margin-top:56px;padding:30px 0 44px;border-top:3px solid var(--ink);
+  text-align:center;font-family:'Miriam Libre',sans-serif;font-size:.85rem;color:var(--ink-soft);
+}
+footer .buon{font-family:'Suez One',serif;font-size:1.5rem;color:var(--ink);margin-bottom:6px}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,245,234,.92);backdrop-filter:blur(6px);
+  border-bottom:2px solid var(--ink);
+  font-family:'Miriam Libre',sans-serif;font-size:.82rem;
+}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:0 22px}
+nav a{
+  color:var(--ink);text-decoration:none;padding:10px 12px;white-space:nowrap;font-weight:700;
+}
+nav a:hover{color:var(--sea);background:rgba(32,112,126,.07)}
+
+/* ---------- PRINT ---------- */
+.print-btn{
+  position:fixed;bottom:22px;left:22px;z-index:60;
+  background:var(--ink);color:var(--paper);border:2px solid var(--ink);
+  font-family:'Miriam Libre',sans-serif;font-weight:700;font-size:.9rem;
+  padding:11px 18px;border-radius:999px;cursor:pointer;
+  box-shadow:4px 4px 0 rgba(32,36,44,.3);
+}
+.print-btn:hover{background:var(--sea-deep)}
+@media print{
+  nav,.print-btn{display:none}
+  #tripmap{height:360px}
+  #map{break-inside:avoid}
+  body{font-size:11.5pt;background:none}
+  .day{break-inside:avoid;box-shadow:none;margin:14px 0}
+  .stop{box-shadow:none}
+  section{padding:16px 0 4px}
+  header.hero{padding:20px 0}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .b-total{border:2px solid #000}
+  @page{margin:14mm}
+}
+@media (max-width:560px){
+  .slot{flex-direction:column;gap:4px}
+  .slot .t{min-width:auto;width:fit-content}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#route">🧭 מסלול</a>
+  <a href="#map">🗺️ מפה</a>
+  <a href="#budget">💰 תקציב</a>
+  <a href="#days">📅 יום־יום</a>
+  <a href="#sleep">🛏️ לינה</a>
+  <a href="#transport">🚌 תחבורה</a>
+  <a href="#top10">⭐ טופ 10</a>
+  <a href="#secrets">🤫 סודות</a>
+  <a href="#book">📲 להזמין</a>
+  <a href="#pocket">📇 דף כיס</a>
+</div></nav>
+
+<header class="hero">
+  <div class="sun"></div>
+  <svg class="vesuvio" viewBox="0 0 340 160" fill="none"><path d="M0 160 L110 40 L150 70 L185 30 L230 75 L340 160 Z" fill="#20242c"/></svg>
+  <div class="wrap">
+    <div class="kicker">Golfo di Napoli · Italia</div>
+    <h1>נאפולי <span class="lemon">·</span> סורנטו <span class="lemon">·</span> <span class="sea">סלרנו</span></h1>
+    <p class="sub">שבוע דחוס בסגנון הונגריה — עיר געש, עיר קבורה, אי פסטלי ושביל צוקים מעל הים. הכול בתחבורה ציבורית, בלי חזרה אחת אחורה.</p>
+    <div class="meta">
+      <span>📅 17–24 באוקטובר 2026</span>
+      <span>✈️ הלוך W46924 · 11:00→13:35</span>
+      <span>✈️ חזור W46923 · 06:05→10:05</span>
+      <span>💑 זוג · 7 לילות</span>
+      <span>💰 ~4,400₪ לזוג (בלי טיסות)</span>
+      <span>🌅 שקיעה ~18:15</span>
+      <span>🌡️ 21–24° · ים 21°</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ROUTE -->
+<section id="route" class="route">
+  <h2 class="sec">🗺️ המסלול</h2>
+  <div class="route-line">
+    <div class="stop"><span class="nights">3 לילות</span><b>🏙️ נאפולי</b><small>17–20.10 · פיצה, פרוצ'ידה, מחילות, שוק, קיאק</small></div>
+    <div class="stop"><span class="nights">בדרך</span><b>🏛️ פומפיי</b><small>20.10 · עוצרים עם המזוודות בפיקדון</small></div>
+    <div class="stop"><span class="nights">2 לילות</span><b>🍋 סורנטו</b><small>20–22.10 · וזוב, מרינה גרנדה, שקיעות צוק</small></div>
+    <div class="stop"><span class="nights">1 לילה</span><b>🌊 סלרנו</b><small>22–23.10 · אמלפי, מעבורת שקיעה, מובידה</small></div>
+    <div class="stop"><span class="nights">לילה אחרון</span><b>🏙️ נאפולי</b><small>23–24.10 · ליד גריבלדי — הטיסה ב־06:05!</small></div>
+  </div>
+  <p class="legend">✈️ NAP ← Alibus 20 דק' ← נאפולי ← רכבת ← פומפיי ← רכבת ← סורנטו ← אוטובוס צוקים ← אמלפי ← מעבורת שקיעה ← סלרנו ← שביל האלים ← רכבת ערב לנאפולי ← מונית 03:30 ← ✈️ NAP 06:05</p>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <h2 class="sec">🗺️ המפה</h2>
+  <p class="sec-note">🟡 עיגולים ממוספרים = בסיסי לינה · 🔵 נקודות = אטרקציות וימי טיול · קו מלא = מסלול הבסיסים · קו מקווקו = שלוחות יום. לוחצים על כל נקודה לפרטים.</p>
+  <div id="tripmap" style="height:520px;border:2px solid var(--ink);border-radius:6px;box-shadow:7px 7px 0 rgba(32,36,44,.12);z-index:1"></div>
+</section>
+
+<!-- BUDGET -->
+<section id="budget">
+  <h2 class="sec">💰 תקציב לזוג</h2>
+  <div class="budget-grid">
+    <div class="b-card"><div class="cat">🛏️ לינה · 7 לילות</div><div class="amt">1,535₪</div><div class="eur">€445 · B&B ~€55–70/לילה</div></div>
+    <div class="b-card"><div class="cat">🍕 אוכל</div><div class="amt">1,275₪</div><div class="eur">€370 · סטריט־פוד + ערב פינוק אחד</div></div>
+    <div class="b-card"><div class="cat">🚌 תחבורה</div><div class="amt">690₪</div><div class="eur">€200 · כולל 4 מעבורות (מחירי פרוצ'ידה אומתו)</div></div>
+    <div class="b-card"><div class="cat">🎟️ אטרקציות</div><div class="amt">485₪</div><div class="eur">€140 · פומפיי, וזוב, קיאק</div></div>
+    <div class="b-card"><div class="cat">🧴 שונות</div><div class="amt">225₪</div><div class="eur">€65 · eSIM, פיקדונים</div></div>
+    <div class="b-card"><div class="cat">🎁 קניות הביתה</div><div class="amt">120₪</div><div class="eur">€35 · לימונצ'לו, קפה, פסטה</div></div>
+  </div>
+  <div class="b-total">
+    <div class="t">סה"כ: <em>~4,400₪</em> · גרסת חיסכון: <em>~3,700₪</em></div>
+    <div class="n">שער אמיתי €1 ≈ 3.45₪ (יולי 2026). הסוד: פרוצ'ידה במקום קאפרי (~350₪), לינה בסלרנו במקום אמלפי (~430₪), הכול self-guided.</div>
+  </div>
+  <div class="warn" style="margin-top:16px">
+    <b>💬 "בהונגריה הוצאנו 3,500₪ — פה זה יקר?"</b> בשער האמיתי (€1≈3.45₪) התוכנית המלאה = <b>~4,400₪</b> — רק ~900₪ מעל הונגריה, בשביל אזור יקר פי 1.5 עם פומפיי+וזוב+4 מעבורות. <b>גרסת החיסכון ~3,700₪ = כמעט הונגריה:</b> בלי קיאק (−195₪) · חדרים €45 Airbnb/גסטהאוס (−260₪) · אוטובוסים במקום 2 מעבורות (−105₪) · בלי כניסות אופציונליות (−60₪) · 2 ערבי פיקניק מסלומריה (−120₪). מתחת לזה = דורמים ולוותר על פרוצ'ידה — לא שווה.
+  </div>
+</section>
+
+<!-- DAYS -->
+<section id="days">
+  <h2 class="sec">📅 יום־יום</h2>
+  <p class="sec-note">קצב הונגריה: 8:00–23:00. <b>כל שם עם 📍 = לחיצה פותחת את המקום בגוגל מפס</b> — תמונות, ביקורות, ניווט. כלל ברזל: כרטיסי SITA קונים בטבקריה/אפליקציה <b>לפני</b> העלייה לאוטובוס.</p>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">1</div><div><h3>נחיתה בנאפולי ✈️🍕</h3><div class="date">שבת 17.10</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">13:35</span><p>נחיתה (W46924) ← ביקורת דרכונים (EES ביומטרי — לפעמים איטי, סבלנות) ← <b>Alibus</b>: אוטובוס ישיר משדה התעופה לתחנת גריבלדי, יוצא כל 15–20 דקות, נסיעה ~20 דקות. קונים כרטיס במכונה באולם הנחיתות. <span class="price">€5 / 17₪ לאדם</span></p></div>
+      <div class="slot"><span class="t">15:30</span><p>צ'ק־אין בצ'נטרו סטוריקו ← מקלחת זריזה ויוצאים.</p></div>
+      <div class="slot"><span class="t">16:30</span><p>סיבוב היכרות ראשון: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Spaccanapoli+Naples">ספאקאנאפולי</a> — הרחוב הצר והישר שחוצה את כל העיר העתיקה (מהתקופה היוונית!), כביסה בין המרפסות, וספות של סקוטרים בין הרגליים. ממשיכים ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Via+dei+Tribunali+Naples">Via dei Tribunali</a>, רחוב הפיצריות. בדרך: <b>pizza a portafoglio</b> — מרגריטה שלמה מקופלת לרבעים כמו ארנק, אוכלים בהליכה. <span class="price">€2–3</span></p></div>
+      <div class="slot"><span class="t">17:45</span><p>הליכה דרומה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+del+Plebiscito+Naples">פיאצה דל פלביסיטו</a> (הכיכר הענקית עם הקולונדה) ← הצצה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Galleria+Umberto+I+Naples">גלריה אומברטו הראשון</a> — קניון זכוכית מהמאה ה־19, מרשים גם בלי לקנות ← שקיעה ראשונה על הטיילת ליד <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Castel+dell'Ovo+Naples">קסטל דל'אובו</a>, "מצודת הביצה" שיושבת על אי קטן בים. חינם 🌅</p></div>
+      <div class="slot"><span class="t">18:15</span><p>ערב: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Trattoria+da+Nennella+Naples">טרטוריה דה ננלה</a> ברובע הספניולי — המוסד הכי מטורף בנאפולי: מלצרים רוקדים על השולחנות, זורקים מפיות, צועקים. תפריט קבוע: פרימו (פסטה) + סקונדו (בשר/דג) + תוספת + פרי. ⚠️ שבת = הערב העמוס ביותר — מנסים להזמין מראש, או עומדים בתור 30–45 דקות לפני הפתיחה. התור הוא חלק מההצגה. <span class="price">€13–17 לאדם</span></p></div>
+      <div class="slot"><span class="t">גיבוי</span><p>אם התור בלתי אפשרי: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Da+Attilio+Naples">פיצריה דה אטיליו</a> ליד שוק פיניאסקה — מ־1938, טופ־3 של הנאפוליטנים עצמם, ~30 דקות המתנה במקום שעות. או כל טרטוריה ברובע — אותו אוכל, בלי הקרקס.</p></div>
+      <div class="slot"><span class="t">20:30</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Cammarota+Spritz+Naples">קמרוטה ספריץ</a> — חור בקיר ברובע הספניולי שמוכר ספריץ ב־<b>€1</b>. עומדים בסמטה עם כל הצעירים של נאפולי. ערב שלם לזוג בפחות מ־35₪.</p></div>
+      <div class="slot"><span class="t">22:00</span><p>פסג'טה (טיול ערב איטלקי) חזרה דרך <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+Bellini+Naples">פיאצה בליני</a> — כיכר הסטודנטים עם שרידי החומה היוונית באמצע וברים בוהמיינים מסביב (ספריץ €3–5).</p></div>
+      <div class="warn">⚠️ גריבלדי = אזור הכייסים המרכזי. תיק צד קדמי סגור מהרגע הראשון, טלפון לא ביד כשהולכים.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">2</div><div><h3>פרוצ'ידה — האי של המקומיים 🏝️</h3><div class="date">ראשון 18.10 · פרוצ'ידה ולא קאפרי: חוסך ~350₪, רומנטית יותר, בלי המוני תיירים, מעבורות כל השנה</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">7:15</span><p>מאפה + אספרסו בבר ליד הנמל. <span class="price">€3–4 לאדם</span></p></div>
+      <div class="slot"><span class="t">7:30</span><p>הידרופויל (מעבורת מהירה) של <b>Caremar</b> מרציף <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Molo+Beverello+Naples">מולו בוורלו</a>. ⚠️ אין הפלגה ב־8:00 — אם מפספסים, הבאה רק 8:55. נסיעה 35–40 דקות. כרטיסים בקופה בנמל או מראש ב־<a class="pl" target="_blank" href="https://www.ferryhopper.com">Ferryhopper</a>. <span class="price">€17–22 לכיוון לאדם</span></p></div>
+      <div class="slot"><span class="t">9:00</span><p>🤫 <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Bar+Dal+Cavaliere+Procida">בר דל קבליירה</a> במרינה גרנדה (נמל ההגעה) — הבר של תושבי האי. מזמינים <b>lingue di Procida</b>: "לשונות" בצק עלים במילוי קרם לימון, ההמצאה של האי. יושבים בחוץ עם הדייגים. <span class="price">€2 למאפה</span></p></div>
+      <div class="slot"><span class="t">9:30</span><p>טיפוס רגלי (15 דק' עלייה) ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Terra+Murata+Procida">טרה מוראטה</a> 🏰 — הכפר המבוצר העתיק בפסגת האי (91 מ'). בפנים: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Abbazia+San+Michele+Arcangelo+Procida">מנזר סן מיכלה</a> (כנסייה מוזהבת מהמאה ה־11 תלויה על הצוק, כניסה ~€3) וארמון ד'אבאלוס הנטוש ששימש ככלא עד 1988. תצפית חינם על כל מפרץ נאפולי.</p></div>
+      <div class="slot"><span class="t">11:30</span><p>ירידה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Marina+Corricella+Procida">מרינה קוריצ'לה</a> — כפר הדייגים הכי מצולם באיטליה: בתים בוורוד־צהוב־תכלת שנשפכים אל המים, סירות דיג, אפס מכוניות (מגיעים רק במדרגות). פה צולם "אל פוסטינו". קפה על המזח, צילומים, שקט.</p></div>
+      <div class="slot"><span class="t">13:00</span><p>צהריים בטרטוריה על המזח בקוריצ'לה: <b>spaghetti al limone</b> — הפסטה של האי, לימונים מקומיים. <span class="price">€10–14 למנה</span></p></div>
+      <div class="slot"><span class="t">14:30</span><p>אחר צהריים של סמטאות (בלי ים 🚫🏊): הליכה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Casale+Vascello+Procida">קזאלה ואשלו</a> — חצר מבוצרת מהמאה ה־16 שבה התושבים הסתתרו מפיראטים, צבעונית ושקטה ← המשך דרומה לשביל התצפית של <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Punta+Pizzaco+Procida">פונטה פיצאקו</a> (~20 דק' הליכה) — הפנורמה הכי יפה באי: צוקים, קוריצ'לה מלמעלה והים עד קאפרי.</p></div>
+      <div class="slot"><span class="t">16:00</span><p>אוטובוס האי (€1.30, קווים L1/L2) או הליכה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Marina+di+Chiaiolella+Procida">מרינת קיאיולה</a> בקצה הדרומי — אפרטיבו מול אי הטבע <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Isola+di+Vivara">ויוארה</a> (שמורה מחוברת בגשר). ספריץ במחירי אי של מקומיים.</p></div>
+      <div class="slot"><span class="t">18:05</span><p>חזרה בהפלגת <b>SNAV 18:05</b> — השקיעה (18:15) מהסיפון באמצע המפרץ 🌅 (אופציה מוקדמת: Caremar 16:50. אף פעם לא סומכים על ההפלגה האחרונה של היום).</p></div>
+      <div class="slot"><span class="t">19:45</span><p>פיצה בערב — במקום התור של Sorbillo/Da Michele (40+ איש על תפריט של 2 פיצות): 🤫 <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Starita+a+Materdei+Naples">פיצריה סטריטה</a> במטרדיי (מ־1901, מטרו קו 1 תחנת Materdei) — פה רוב הסועדים איטלקים; מזמינים <b>montanara</b>: בצק שמטוגן קלות ואז נאפה בתנור. או <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Concettina+ai+Tre+Santi+Naples">קונצ'טינה איי טרה סנטי</a> בסניטה — פיצה ברמה הכי גבוהה בעיר ו<b>מקבלת הזמנות</b> = אפס תור ← ג'לטו ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Infante+Naples">קאזה אינפנטה</a> + פיאצה בליני.</p></div>
+      <div class="rain">🌧️ גיבוי גשם: מחליפים עם יום 3 (מחילות/מוזיאונים — חסין גשם). האי בגשם = חבל.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">3</div><div><h3>שוק פשפשים, נאפולי התת־קרקעית, קיאק שקיעה 🛶</h3><div class="date">שני 19.10</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">7:30</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Sfogliatella+Attanasio+Naples">ספוליאטלה אטנאזיו</a> — מאפייה אגדית בסמטה ליד תחנת צ'נטרלה, מ־1930. <b>sfogliatella riccia</b> חמה מהתנור: שכבות בצק פריכות במילוי ריקוטה, סולת וקינמון — המאפה שנאפולי הכי גאה בו. אוכלים בעמידה עם אספרסו כמו כולם. <span class="price">€3–4 לזוג</span></p></div>
+      <div class="slot"><span class="t">8:00</span><p>🛍️ <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Mercato+di+Poggioreale+Via+Marino+di+Caramanico+Naples">שוק פוגיוריאלה</a> — שוק הפשפשים הענק של נאפולי (פתוח רק שישי/ראשון/<b>שני</b> 7:00–14:00): 200+ דוכנים, מפורסם בעיקר ב"סמטת הנעליים" — נעליים איטלקיות בשליש מחיר, בגדים, וינטג'. פה מתמקחים באמת — מתחילים מחצי מהמחיר שנאמר. מגיעים בטראם/אוטובוס קצר מגריבלדי. <span class="price">נסיעה €1.30</span></p></div>
+      <div class="slot"><span class="t">12:00</span><p>🕳️ <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Napoli+Sotterranea+Piazza+San+Gaetano+Naples">נאפולי סוטרנאה</a> — סיור מודרך 90 דקות בעולם שמתחת לעיר: בורות מים יווניים בעומק 40 מטר, אמת מים רומית, ומקלטי הפצצות ממלחמת העולם השנייה. יש קטע צר שעוברים עם נרות (מי שקלאוסטרופובי — אפשר לדלג עליו). סיורים באנגלית בשעות זוגיות — מזמינים מראש ב־<a class="pl" target="_blank" href="https://www.napolisotterranea.org/en/">napolisotterranea.org</a>. קריר למטה (16°) — קחו שכבה. <span class="price">€10 לאדם</span></p></div>
+      <div class="slot"><span class="t">13:30</span><p>צהריים סטריט־פוד ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Di+Matteo+Via+dei+Tribunali+Naples">די מתאו</a> (חלון הרחוב, לא לשבת): <b>frittatina</b> — קוביית פסטה עם בשמל ואפונה מטוגנת בציפוי פריך (€2), ו<b>pizza fritta</b> — פיצה שמטוגנת במקום להיאפות, ההמצאה של נאפולי אחרי המלחמה. צהריים שלם לזוג ב־25₪.</p></div>
+      <div class="slot"><span class="t">14:15</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Via+San+Gregorio+Armeno+Naples">סן גרגוריו ארמנו</a> — "סמטת חג המולד": בתי מלאכה שמייצרים כל השנה דמויות פרספה (מריה, יוסף... וגם מראדונה ופוליטיקאים) ← חנויות וינטג' זולות סביב <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Mezzocannone+Naples">ויה מצוקנונה</a> (רחוב הסטודנטים). אופציה למי שרוצה: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Cappella+Sansevero+Naples">קפלת סנסוורו</a> — פסל "המשיח המצועף" שנראה כאילו השיש שקוף. €10, להזמין אונליין, נסגר מוקדם.</p></div>
+      <div class="slot"><span class="t">15:30</span><p>נסיעה לפוזיליפו: מטרו קו 2 ל־Mergellina ומשם אוטובוס 140, או מונית ~€10. <span class="price">€1.30 לאדם</span></p></div>
+      <div class="slot"><span class="t">16:15</span><p>🛶❤️ <b>קיאק בפוזיליפו — עדכון זמינות:</b> סיור השקיעה של <a class="pl" target="_blank" href="https://www.kayaknapoli.com/en/tour-en/">Kayak Napoli</a> רץ באוקטובר <b>רק חמישי–שבת</b> (€30 לאדם, מקדמה €10) — שני 19.10 לא בלוח. שלוש דרכים, לפי הסדר:<br>
+      <b>א.</b> האתר עצמו אומר: תאריך שלא ניתן להזמנה ← <b>וואטסאפ</b> (כפתור באתר) — מבקשים סיור פרטי/מיוחד לשני 19.10. לזוג זה לפעמים אפשרי.<br>
+      <b>ב.</b> מזמינים במקום את <a class="pl" target="_blank" href="https://www.tripadvisor.com/AttractionProductReview-g187785-d17587505-Kayak_Tour_Wild_Posillipo-Naples_Province_of_Naples_Campania.html">Kayak Tour Wild Posillipo</a> (Tripadvisor) — סיור 3 שעות למפרץ טרנטרמי, אותו אזור בדיוק, יוצא גם בימי חול; בודקים זמינות ל־19.10 אחה"צ.<br>
+      <b>ג.</b> אין קיאק? חלופה חינמית באותו חוף: תצפית <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Parco+Virgiliano+Naples">פארקו וירג'יליאנו</a> + ירידה לכפר הדייגים <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Marechiaro+Naples">מארקיארו</a> לשקיעה + ספגטי — הרומנטיקה נשארת, ₪0.<br>
+      <b>נקודת מפגש (א/ב):</b> <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Bagno+Rocce+Verdi+Via+Posillipo+68+Naples">חוף Rocce Verdi, Via Posillipo 68</a>. הסיור: ~2–3 שעות בקיאק זוגי עם מדריך — ארמון <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Palazzo+Donn'Anna+Naples">דון אנה</a>, מערות ים, וילות רומאיות שקועות של גאיולה. בלי ניסיון, מים רגועים. להביא: בגדים שיירטבו, כיסוי אטום לטלפון, כפכפים. <span class="price">€30 לאדם / חלופה ג' חינם</span></p></div>
+      <div class="slot"><span class="t">20:30</span><p>חזרה לערב ברובע הספניולי: טרטוריה זולה + ספריץ ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Cammarota+Spritz+Naples">קמרוטה</a> סיבוב שני.</p></div>
+      <div class="rain">🌧️ גיבוי: במקום קיאק — <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Museo+Archeologico+Nazionale+Napoli">מוזיאון MANN</a> (כל הפסיפסים והאוצרות שנחפרו בפומפיי נמצאים פה, €22) או <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Galleria+Borbonica+Naples">גלריה בורבוניקה</a> — מנהרת בריחה מלכותית מתחת לעיר, קבוצות קטנות יותר.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">4</div><div><h3>פומפיי בדרך ← סורנטו 🏛️</h3><div class="date">שלישי 20.10 · יום מעבר חכם — המזוודות בפיקדון, האתר בדרך</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">7:40</span><p>רכבת <b>Circumvesuviana</b> מתחנת <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Porta+Nolana+station+Naples">פורטה נולאנה</a> (תחנת המוצא של הקו — עולים ראשונים ותופסים ישיבה) ← תחנת Pompei Scavi, ~35 דקות. <span class="price">€2.80 לאדם</span></p></div>
+      <div class="slot"><span class="t">8:20</span><p>מזוודות לפיקדון במפלס התחתון של תחנת Pompei Scavi. חשוב: בתוך האתר מותר רק תיק עד <b>30×30×15 ס"מ</b> — נאכף בקפדנות. <span class="price">€8 למזוודה</span></p></div>
+      <div class="slot"><span class="t">⚠️</span><p><b>עוקץ הכרטיסים של פומפיי:</b> ליד התחנה יש משרדים שנראים רשמיים ("Pompei Service", "Tempio Travel") ואפילו קודי QR מודבקים בתחנה — כולם מתחזים שגובים עמלת 50%+. הכרטיס האמיתי נקנה רק ב־<a class="pl" target="_blank" href="https://pompeiisites.org">pompeiisites.org</a> (מפנה ל־Vivaticket). הכרטיס שמי — חייב להתאים לדרכון בשער. הכניסה האמיתית = 200 מ' מהתחנה, אחרי שער ביטחון.</p></div>
+      <div class="slot"><span class="t">9:00</span><p>🏛️ <b>פומפיי</b> — העיר שקפאה בזמן בהתפרצות של שנת 79. נכנסים בכניסת <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Piazza+Esedra+entrance+Pompeii">פיאצה אסדרה</a> (200 מ' משמאל לכניסה הראשית — הכי ריקה) והולכים נגד כיוון הקבוצות: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Forum+Pompeii">הפורום</a> (הכיכר המרכזית עם הווזוב ברקע) ← המרחצאות ← <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Lupanare+Pompeii">הלופנארה</a> (בית הבושת העתיק עם ציורי הקיר) ← בית הוטיים ← <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Villa+dei+Misteri+Pompeii">וילה דיי מיסטרי</a> (הפרסקאות האדומות המפורסמות) ← <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Garden+of+the+Fugitives+Pompeii">גן הנמלטים</a> — יציקות הגבס של התושבים שלא הספיקו לברוח. מביאים אוכל ומים מנאפולי (מותר להיכנס עם אוכל) — המסעדות מול הכניסה יקרות וגרועות. <span class="price">€18 לאדם</span></p></div>
+      <div class="slot"><span class="t">14:00</span><p>רכבת המשך לסורנטו (~30 דק') ← צ'ק־אין ב<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Sant'Agnello+station">סנט'אניילו</a> — תחנה אחת לפני סורנטו, אותו חוף, חוסך 70–85₪ ללילה. <span class="price">€2.60 לאדם</span></p></div>
+      <div class="slot"><span class="t">17:45</span><p>🌅 <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Comunale+Sorrento">וילה קומונאלה</a> — הגן הציבורי על קצה הצוק של סורנטו: מרפסת חינמית עם שקיעה ישר לתוך מפרץ נאפולי והווזוב ברקע. הספוט הרומנטי של העיר.</p></div>
+      <div class="slot"><span class="t">19:45</span><p>ערב זול וטעים: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+da+Franco+Sorrento">פיצריה דה פרנקו</a> בקורסו איטליה — פיצה מוגשת בתבנית פח על שולחנות עץ, מוסד מקומי בלי פוזה. <span class="price">פיצה €6–9 + בירה €3 · ארוחה לזוג ~60₪</span></p></div>
+      <div class="slot"><span class="t">21:30</span><p>טעימות לימונצ'לו חינם ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=I+Giardini+di+Cataldo+Sorrento">ג'ארדיני די קטלדו</a> — מפעל משפחתי בתוך חורשת לימונים באמצע העיר ← פסג'טה בסמטאות.</p></div>
+      <div class="warn">⚠️ הצ'ירקומווזוביאנה = קו הכייסים המפורסם באיטליה, במיוחד עם מזוודות. קרון ראשון (ליד הנהג), תיקים מקדימה, טלפון בכיס קדמי.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">5</div><div><h3>לוע הווזוב 🌋 + מרינה גרנדה</h3><div class="date">רביעי 21.10 · הפנורמה של הטיול</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">7:40</span><p>רכבת סורנטו ← Pompei Scavi (מגיעה 8:15) ← אוטובוס <b>EAV קו Pompei–Vesuvio</b> שיוצא מחוץ לתחנה במעלה ההר (~50 דקות נסיעה מתפתלת): יוצא כל ~50 דקות, <b>לוקחים את של 8:50</b> — פספוס אוטובוס אחד = פספוס הסלוט! כרטיס מראש באפליקציית GoEAV. ⚠️ לא להתבלבל עם "Busvia del Vesuvio" הפרטי ב־€22 — מפעיל אחר, יקר. <span class="price">€2.60 + €2.70 לכיוון</span></p></div>
+      <div class="slot"><span class="t">10:30</span><p>🌋 <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Vesuvius+crater+Gran+Cono">כניסה ללוע — הסלוט שהוזמן מראש!</a> מהחניון: 30–40 דקות עלייה ברגל על שביל חצץ געשי (860 מ' גובה). למעלה: הולכים על שפת הלוע הפעיל — רואים אדים עולים מהמכתש, וכל מפרץ נאפולי, קאפרי ואיסקיה פרושים מתחת. קר שם ב־10° מלמטה + רוח — פליז חובה, מים, נעליים סגורות. כרטיסים רק ב־<a class="pl" target="_blank" href="https://vesuviopark.vivaticket.it/en">vesuviopark.vivaticket.it</a> — אין קופה בשער בכלל! <span class="price">€12 לאדם</span></p></div>
+      <div class="slot"><span class="t">14:30</span><p>ירידה ← צהריים בעיר פומפיי המודרנית (הרחובות סביב <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Santuario+di+Pompei">הסנטואריו</a>) — טרטוריות אמיתיות במחירי מקומיים, לא המלכודות שליד החפירות. <span class="price">€10–15 לאדם</span></p></div>
+      <div class="slot"><span class="t">17:00</span><p>חזרה לסורנטו ← ירידה ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Marina+Grande+Sorrento">מרינה גרנדה</a> — לא הנמל הראשי! זה כפר הדייגים הישן והשקט של סורנטו, שנשאר כמו לפני 70 שנה: סירות צבעוניות, רשתות, בתים על המים. רגליים במים, אפרטיבו על החוף הקטן.</p></div>
+      <div class="slot"><span class="t">19:30</span><p>💍 <b>ערב הפינוק של הטיול:</b> <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Trattoria+Da+Emilia+Marina+Grande+Sorrento">טרטוריה דה אמיליה</a> — מ־1947, אותה משפחה, שולחנות עץ על מזח מעל המים. מזמינים <b>gnocchi alla sorrentina</b> (ניוקי ברוטב עגבניות ומוצרלה בתנור — המנה של סורנטו) ומולים. אין הזמנות — מגיעים בפתיחה 19:00. <span class="price">€20–27 לאדם</span></p></div>
+      <div class="warn">⚠️ באוקטובר שערי הווזוב נסגרים ב־16:00 (עלייה אחרונה ~15:00) — לכן עושים אותו בבוקר.</div>
+      <div class="rain">🌧️ וזוב עטוף בענן = אין נוף, חבל על הכסף. מחליפים ליום סורנטו רגוע (מוזיאון קוראלה, חוות לימונים) והלוע נדחס לכל בוקר בהיר שנשאר.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">6</div><div><h3>אמלפי + ראבלו + אטרני ← סלרנו 🍋⛴️</h3><div class="date">חמישי 22.10 · כרטיסי SITA נקנו אתמול בטבקריה: 2 נוסע + 2 מזוודה (מ־2024 מזוודה גדולה = כרטיס נוסף!) · מגיעים לתחנה 20 דק' לפני</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">8:30</span><p>🚌 אוטובוס <b>SITA סורנטו ← אמלפי</b> (~100 דקות) — נסיעת החוף המפורסמת בעולם: הכביש מתפתל על צוקים 300 מטר מעל הים. <b>לשבת בצד ימין</b> — כל הנוף שם. עולים בתחנת המוצא מול תחנת הרכבת של סורנטו. <span class="price">€3.40 לאדם</span></p></div>
+      <div class="slot"><span class="t">10:15</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Amalfi+Italy">אמלפי</a> — פעם אימפריה ימית ששלטה בים התיכון, היום עיירת החוף הכי מפורסמת. מזוודות לפיקדון ליד הנמל (<span class="price">€5–8 למזוודה</span>) ← <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Duomo+di+Amalfi">הדואומו של אמלפי</a> — הקתדרלה עם גרם המדרגות הענק והחזית המוזהבת. לראות מהכיכר חינם; הקלויסטר €4 למי שרוצה.</p></div>
+      <div class="slot"><span class="t">11:15</span><p>אוטובוס SITA 5110 במעלה ההר ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Ravello+Italy">ראבלו</a> (~25 דק', €1.80) — עיירת המוזיקה והגנים ב־350 מ' גובה, פה וגנר כתב את פרסיפל. אוטובוסי התיירים מגיעים 10:30+ אז הפיאצה תהיה עמוסה — הסוד: הסמטאות מאחורי הכנסייה, שם ריק ויש תצפיות חינם. שדרוג ששווה אם התקציב נושם: גני <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Villa+Rufolo+Ravello">וילה רופולו</a> — הגן עם התצפית שמופיעה בכל גלויה. <span class="price">€8</span></p></div>
+      <div class="slot"><span class="t">13:30</span><p>ירידה חזרה לאמלפי ← במקום ארוחה יקרה: <b>delizia al limone</b> (עוגת הקרם־לימון של החוף) + גרניטת לימון קפואה מדוכן. <span class="price">€3–4</span></p></div>
+      <div class="slot"><span class="t">14:30</span><p>📸 הליכה 10 דקות דרך מנהרה להולכי רגל ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Atrani+Italy">אטרני</a> — הקומונה הקטנה ביותר באיטליה: אותם בתים צבעוניים על הים כמו אמלפי, אבל בלי אף חנות מזכרות. קפה בפיאצטה עם הסבים המקומיים במחיר רגיל. הסוד הכי טוב של החוף.</p></div>
+      <div class="slot"><span class="t">17:45</span><p>⛴️❤️ <b>מעבורת השקיעה אמלפי ← סלרנו</b> של <a class="pl" target="_blank" href="https://www.travelmar.it/en/timetable">Travelmar</a> (ההפלגות: 16:15 / 17:45 / 18:30) — מגיעה 18:10, בדיוק בשקיעה: כל צוקי החוף נצבעים זהב מהסיפון. 35 הדקות הרומנטיות של הטיול. ⚠️ באוקטובר מבטלים הפלגות בגלל ים גם ביום שמש — מאשרים בבוקר באפליקציה; גיבוי: אוטובוס SITA 5120. <span class="price">€10–12 לאדם</span></p></div>
+      <div class="slot"><span class="t">20:00</span><p>ערב סלרנו: פיצה ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Resilienza+Salerno">רזיליינצה</a> (€6–9) ← פסג'טה ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Lungomare+Trieste+Salerno">טיילת לונגומארה</a> — ב־18:30 כל העיר בחוץ ← 🤫 קינוח ב־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Antica+Dolceria+Pantaleone+Salerno">פסטיצריה פנטליאונה</a> (מ־1868, בתוך קפלה לשעבר): מזמינים <b>scazzetta del cardinale</b> — עוגת התות המצופה של העיר ← ברים בסמטאות <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Botteghelle+Salerno">בוטגלה</a>, ספריץ €3–4. עיר סטודנטים אמיתית 🍸</p></div>
+      <div class="rain">🌧️ ים סוער → המעבורת מוחלפת ב־SITA 5120 (~75 דק'). מאשרים לוח מעבורות בבוקר ב־travelmar.it.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">7</div><div><h3>שביל האלים 🥾 + פוזיטאנו ← לילה בנאפולי</h3><div class="date">שישי 23.10 · ההליכה הכי יפה באיטליה — חינם · בערב חוזרים לנאפולי בגלל טיסת ה־06:05</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">7:20</span><p>צ'ק־אאוט. ⚠️ אין פיקדון רשמי בתחנת סלרנו — מזמינים מראש נקודת <a class="pl" target="_blank" href="https://radicalstorage.com/luggage-storage/salerno">Radical Storage</a> ליד התחנה (€2.50–5/יום, לוודא שפתוחה ב־7:30) או משאירים אצל המארח.</p></div>
+      <div class="slot"><span class="t">7:50</span><p>מעבורת Travelmar סלרנו ← אמלפי מרציף <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Molo+Manfredi+Salerno">מולו מנפרדי</a> (זו ההפלגה — אין 8:00), הגעה 8:25 ← אוטובוס <b>SITA 5080 לבומראנו ב־8:45</b> — 40 דקות טיפוס להרי לטארי (€2.60; פספסתם? הבא 9:55 — עדיין בסדר).</p></div>
+      <div class="slot"><span class="t">10:15</span><p>🥾 <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Sentiero+degli+Dei+Bomerano+trailhead">שביל האלים (Sentiero degli Dei)</a>: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Bomerano+Agerola">בומראנו</a> ← <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Nocelle+Positano">נוצ'לה</a> — ~7 ק"מ, ~3 שעות, על מדף צוק 500 מטר מעל הים. <b>הולכים מערבה (מבומראנו)!</b> ככה הים, פוזיטאנו וקאפרי כל הזמן מולכם והמסלול בעיקרו יורד. שילוט אדום־לבן לכל האורך — אי אפשר ללכת לאיבוד. לפני היציאה: פוקצ'ה מהמאפייה בכיכר בומראנו — אין כלום על השביל. ציוד: נעליים עם סוליה אוחזת (חובה!), 1.5 ליטר מים לאדם, כובע.</p></div>
+      <div class="slot"><span class="t">13:15</span><p>נוצ'לה — כפר של 100 תושבים תלוי על הצוק: גרניטת לימון מהקיוסק בקצה הכפר (€2.5) — הכי טעימה בחיים אחרי 3 שעות הליכה.</p></div>
+      <div class="slot"><span class="t">13:45</span><p>ירידת <b>1,700 המדרגות</b> לפוזיטאנו (~45 דקות, רצח לברכיים אבל הנוף שווה) — או האוטובוס המקומי הקטן נוצ'לה←פוזיטאנו (€1.30) למי שהברכיים אמרו די.</p></div>
+      <div class="slot"><span class="t">15:00</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Positano+Italy">פוזיטאנו</a> — העיירה האנכית מהאינסטגרם. ירידה בסמטאות הבוטיקים ל־<a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Spiaggia+Grande+Positano">ספיאג'ה גרנדה</a> לצילום החובה. צהריים מאוחרים: <b>cuoppo di mare</b> — קונוס נייר של פירות ים מטוגנים, אוכלים על החוף (€7–10). ⚠️ לא מתיישבים במסעדות הנוף — ספריץ בפיאצה שם עולה €15; שני רחובות פנימה הכול חוזר לשפוי.</p></div>
+      <div class="slot"><span class="t">17:00</span><p>⛴️ מעבורת Travelmar פוזיטאנו ← סלרנו (~70 דקות) — שקיעה מהסיפון לאורך כל החוף: פוזיטאנו, פראיאנו, אמלפי נצבעות זהב. שבוע לפני סוף העונה — מאשרים בבוקר. <span class="price">€17 לאדם</span></p></div>
+      <div class="slot"><span class="t">גיבוי</span><p>מעבורת בוטלה? SITA מפוזיטאנו (עולים בתחנת <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Sponda+bus+stop+Positano">ספונדה</a> — המזרחית, שם האוטובוס עוד ריק!) ← אמלפי ← 5120 לסלרנו, ~2.5 שעות. יש רכבות לנאפולי גם ב־20:xx ו־21:xx — לא נתקעים.</p></div>
+      <div class="slot"><span class="t">18:30</span><p>איסוף מזוודות ← <b>19:10 רכבת Trenitalia סלרנו ← נאפולי צ'נטרלה</b> (35–45 דקות, ~50 רכבות ביום). בדרך מהרכבת: סופרמרקט לקניות הביתה — לימונצ'לו, קפה, פסטה! <span class="price">€5.60–6.60 לאדם</span></p></div>
+      <div class="slot"><span class="t">20:15</span><p>צ'ק־אין לילה אחרון ליד גריבלדי ← ארוחת פרידה: פיצה אחרונה + ג'לטו. הכול ארוז, לישון מוקדם — קימה 03:00!</p></div>
+      <div class="rain">🌧️ השביל מסוכן ברטוב — לא הולכים! גיבוי: <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Duomo+di+Salerno">קתדרלת סלרנו</a> + <a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Giardino+della+Minerva+Salerno">ג'רדינו דלה מינרווה</a> (הגן הבוטני־רפואי העתיק באירופה, €3) + קניות — ובערב אותה רכבת לנאפולי. אם התחזית ליום 7 גרועה וליום 6 מצוינת — מחליפים בין הימים.</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><div class="day-num">8</div><div><h3>הביתה ✈️ — טיסה 06:05!</h3><div class="date">שבת 24.10 · W46923 · נחיתה בת"א 10:05</div></div></div>
+    <div class="day-body">
+      <div class="slot"><span class="t">03:00</span><p>קימה. הכול ארוז מאתמול בערב.</p></div>
+      <div class="slot"><span class="t">03:30</span><p>🚕 <b>מונית לשדה"ת</b> — מזמינים ערב קודם באפליקציית <b>FREE NOW</b> או <b>appTaxi</b> (מחיר סגור + תשלום באפליקציה = אפס ויכוחים) או טלפונית Radiotaxi ‎081-8888. אם עולים על מונית ברחוב: אומרים "Tariffa predeterminata" לפני הנסיעה; מ־2025 יש QR על הדלת האחורית של כל מונית שמציג את מחירון התעריפים הקבועים. לא סוגרים דלת עד שהנהג מאשר מחיר קבוע. Alibus מתחיל רק ~05:00 — לא רלוונטי לטיסה הזו. <span class="price">~€23–28 למונית (לא לאדם)</span></p></div>
+      <div class="slot"><span class="t">04:00</span><p><a class="pl" target="_blank" href="https://www.google.com/maps/search/?api=1&amp;query=Naples+International+Airport">שדה"ת נאפולי (NAP)</a>: צ'ק־אין/הפקדת תיקים ← ביטחון. שדה קטן — שעתיים מרווח מספיקות בשפע.</p></div>
+      <div class="slot"><span class="t">06:05</span><p>✈️ המראה W46923 ← נחיתה בת"א <b>10:05</b> — נשאר לכם יום שלם בבית להתאושש.</p></div>
+      <div class="warn">⚠️ בגלל הטיסה המוקדמת: קניות הביתה (לימונצ'לו €8–12, קפה נאפוליטני €4–6, פסטה די גרניאנו, טאראלי) עושים בסופר <b>ביום 7 בערב</b> בנאפולי או בסלרנו ביום 6 — לא משאירים לסוף!</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPORT -->
+<section id="transport">
+  <h2 class="sec">🚌 טבלת תחבורה (לאדם)</h2>
+  <table>
+    <tr><th>קטע</th><th>קו</th><th>זמן</th><th>€</th><th>₪</th></tr>
+    <tr><td>שדה"ת ⇄ נאפולי</td><td>Alibus</td><td>20 דק'</td><td>5</td><td>17</td></tr>
+    <tr><td>נאפולי ⇄ פרוצ'ידה</td><td>Caremar/SNAV, Molo Beverello (7:30 / חזרה 16:50, 18:05)</td><td>35–40 דק'</td><td>17–22 לכיוון</td><td>59–76</td></tr>
+    <tr><td>נאפולי ← פומפיי ← סורנטו</td><td>Circumvesuviana</td><td>30–35 דק'</td><td>2.60–2.80</td><td>~10</td></tr>
+    <tr><td>פומפיי ⇄ וזוב</td><td>שאטל EAV + כרטיס לוע</td><td>50 דק'</td><td>~3 + 12 כניסה</td><td>10+41</td></tr>
+    <tr><td>סורנטו ← אמלפי</td><td>SITA</td><td>100 דק'</td><td>3.40</td><td>12</td></tr>
+    <tr><td>אמלפי ⇄ ראבלו / בומראנו</td><td>SITA 5110</td><td>25–40 דק'</td><td>1.80–2.60</td><td>6–9</td></tr>
+    <tr><td>אמלפי/פוזיטאנו ← סלרנו</td><td>מעבורת Travelmar</td><td>35–75 דק'</td><td>10–15</td><td>35–52</td></tr>
+    <tr><td>סלרנו ← נאפולי (ערב יום 7)</td><td>רכבת Trenitalia</td><td>35–45 דק'</td><td>5.60–6.60</td><td>19–23</td></tr>
+    <tr><td>נאפולי ← שדה"ת, 03:30</td><td>מונית — Tariffa fissa (למונית, לא לאדם)</td><td>15 דק'</td><td>20–28</td><td>69–97</td></tr>
+  </table>
+  <p class="sec-note">חוקי ברזל: כרטיס SITA מראש בטבקריה · כרטיס נייר מתקפים במכונה · מעבורות אוקטובר — לוודא בבוקר, לא לתכנן על ההפלגה האחרונה · שביתות: scioperi.mit.gov.it לילה לפני כל יום מעבר · ראשון = לוח מופחת.</p>
+</section>
+
+<!-- TOP10 -->
+<section id="top10">
+  <h2 class="sec">⭐ טופ 10 חוויות</h2>
+  <ol class="top10">
+    <li>🌋 הליכה על שפת לוע הווזוב — כל המפרץ מתחת לרגליים (41₪)</li>
+    <li>🏛️ פומפיי ב־4.5 שעות דחוסות — עיר קפואה בזמן</li>
+    <li>🥾 שביל האלים בומראנו←נוצ'לה — ההליכה הכי יפה באיטליה, חינם</li>
+    <li>🏝️ פרוצ'ידה: טרה מוראטה + קוריצ'לה הפסטלית + תצפית פונטה פיצאקו</li>
+    <li>🛶 קיאק שקיעה בפוזיליפו — מערות רומאיות מהמים (95₪)</li>
+    <li>🕳️ נאפולי סוטרנאה — 40 מטר מתחת לעיר</li>
+    <li>⛴️ מעבורת השקיעה אמלפי←סלרנו — כל החוף בזהב (38₪)</li>
+    <li>🛍️ התמקחות בשוק פוגיוריאלה — 200 דוכנים בלי תייר אחד</li>
+    <li>🍸 ספריץ ב־€1 ב־Cammarota ולילה ברובע הספניולי</li>
+    <li>❤️ שולחן על המזח ב־Da Emilia — ערב הפינוק היחיד, שווה הכול</li>
+  </ol>
+</section>
+
+<!-- SECRETS -->
+<section id="secrets">
+  <h2 class="sec">🤫 צעד אחד לפני כולם</h2>
+  <p class="sec-note">מה שראיתם בטיקטוק (פוזיטאנו מפוצצת, תור של שעתיים ל־Da Michele) = תיירי־יום שמגיעים 10:00 ונעלמים 17:00. <b>החוק: מקומות מפורסמים לפני 9:30 או אחרי 17:30 — דברים שקטים באמצע היום.</b> מקורות: תושבים, קואופרטיבים ועיתונות אוכל איטלקית — אפס אתרי מכירות.</p>
+  <div class="two-col">
+    <div class="pocket">
+      <h4>☕ להיראות מקומי בשנייה</h4>
+      <ul>
+        <li><b>קפה בעמידה בבר, לעולם לא בשולחן</b> (שולחן = תוספת נוף). משלמים בקופה, שמים את הקבלה על הדלפק עם מטבע 10–20 סנט — מקבלים שירות של קבוע</li>
+        <li><b>Caffè sospeso</b> — משלמים על 2, משאירים 1 לזר. מסורת נאפוליטנית אמיתית; הברמן יסתכל עליכם אחרת</li>
+        <li>"Buongiorno" לפני כל בקשה · בשוק לא נוגעים בסחורה — מצביעים</li>
+        <li>מסעדה עם מאכר בכניסה שמושך פנימה = דלגו. בלי מאכר = סימן טוב</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🏘️ ריונה סניטה — נאפולי בלי תיירים</h4>
+      <ul>
+        <li>אותה אנרגיה של ספאקאנאפולי, עשירית מהתיירים. מתאים לבוקר יום 3</li>
+        <li><b>קטקומבות סן ג'נארו</b> — מנוהלות ע"י La Paranza, קואופרטיב נוער שכונתי (44 משרות לשכונה). הכרטיס הכי "בלי אינטרס מכירתי" בעיר</li>
+        <li><b>Poppella</b> (הסניף המקורי בסניטה!) — <b>fiocco di neve</b> ‎€1.5, המאפה שהשכונה המציאה</li>
+        <li><b>Concettina ai Tre Santi</b> — פיצה עם מסורת "pizza sospesa", מקבלים הזמנות</li>
+        <li>ערב: <b>Antica Cantina Sepe</b> — מרתף יין דור רביעי, ג'ובאנה מבשלת עד שנגמר (~21:00)</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🌅 תצפיות שהתיירים מפספסים</h4>
+      <ul>
+        <li><b>Monte Echia</b> — מעלית חדשה (2024) מטיילת קיאיה, <b>€1.50</b>: פנורמת וזוב־עד־פוזיליפו, בשקיעה יש שם תושבים עם כלבים, לא קבוצות</li>
+        <li><b>Belvedere San Martino</b> (וומרו) — פוניקולר €1.30 למעלה בשעת זהב; הנוף של ספאקאנאפולי חוצה את העיר. בדרך חזרה: cuoppo מטוגן ב־<b>Friggitoria Vomero</b> (מ־1938)</li>
+        <li><b>אטרני</b> — 7 דק' הליכה מאמלפי, הקומונה הקטנה באיטליה: אותה גלויה, אפס תיירים. קפה בפיאצטה במחיר של מקומיים</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🍝 איפה מקומיים באמת אוכלים</h4>
+      <ul>
+        <li><b>Cibi Cotti Nonna Anna</b> — בתוך שוק La Torretta (מרג'לינה): מצביעים על ויטרינה, ‎€4–7 למנה, עו"ד ליד סבלים. צהריים בלבד, מזומן — מושלם לפני הקיאק ביום 3</li>
+        <li><b>Da Attilio</b> (פיניאסקה) — הפיצה שהנאפוליטנים בוחרים כשלא בא להם תור</li>
+        <li><b>אפריטיבו אמיתי:</b> פיאצה בליני (סטודנטים, "Peppe Spritz" €3) · סמטאות קיאיה (Vico Belledonne) · מדרגות Puteca ברובע הספניולי</li>
+        <li><b>סורנטו:</b> מסעדה עם קנקן ברחוב = תיירים. Marina di Puolo (30 דק' הליכה) = החוף שהסורנטינים שומרים לעצמם</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🏝️ פרוצ'ידה ופוזיליפו כמו מקומיים</h4>
+      <ul>
+        <li><b>Bar Dal Cavaliere</b> (מרינה גרנדה) — lingue di Procida עם הדייגים ב־9 בבוקר</li>
+        <li><b>Pozzo Vecchio</b> — החוף מ"אל פוסטינו", ריק באוקטובר, גיבוי ל־Chiaiolella</li>
+        <li><b>פארק גאיולה</b> (פוזיליפו, יום 3) — שמורה ימית עם וילות רומאיות שקועות, <b>חינם אבל 200 איש לסלוט</b> — נרשמים ב־areamarinaprotettagaiola.it (סלוטים נפתחים ראשון 18:00!), צילום מסך לברקוד — אין קליטה למטה</li>
+        <li><b>Marechiaro</b> — כפר הדייגים שכל שיר נאפוליטני נכתב עליו, ספגטי אחרי קיאק</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>⏰ מתי לאן (חוק ה־10:00–17:00)</h4>
+      <ul>
+        <li><b>פוזיטאנו</b> — הגרידלוק מהטיקטוק = 10:00–17:00 בלבד. אתם מגיעים ברגל מהשביל ב־15:00 — עדיף להתעכב עד 17:30 לשעת הזהב הריקה ואז מעבורת</li>
+        <li><b>שביל האלים</b> — כולם הולכים לאותו כיוון; הקבוצות נכנסות 9:30–10:30. יוצאים מבומראנו לפני 9:00 = נשארים לפני כולם כל היום</li>
+        <li><b>ספאקאנאפולי</b> — לפני 9:30 (סחורות, מקומיים) או אחרי 21:30 (ברים). באמצע היום: סמטה מקבילה אחת = ריק</li>
+        <li><b>ראבלו</b> — אוטובוסי תיירים 10:30+; מי שמגיע 8:15 מקבל וילה פרטית</li>
+        <li><b>Da Michele</b> בכל זאת? החלון המת: 15:00–16:30</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SLEEP -->
+<section id="sleep">
+  <h2 class="sec">🛏️ איפה ישנים</h2>
+  <p class="sec-note">חדר זוגי פרטי. <b>אתם מחפשים את הדיל בעצמכם</b> (Booking / Airbnb / אתר המקום ישירות — לרוב זול יותר) — פה רק <b>האזורים הנכונים</b> וטווח מחיר הוגן לאוקטובר. מזמינים בביטול חינם ובודקים שוב חודש לפני. מס עירוני €2–5 לאדם/לילה במזומן.</p>
+  <div class="two-col">
+    <div class="pocket">
+      <h4>🏙️ נאפולי · 3 לילות (17–20.10)</h4>
+      <ul>
+        <li>✅ <b>צ'נטרו סטוריקו / דקומאני</b> — ספאקאנאפולי, Via dei Tribunali, פיאצה בליני, Via Duomo: הכול ברגל, 10 דק'/תחנת מטרו מגריבלדי. זה האזור.</li>
+        <li>✅ גם טוב: <b>Toledo/Via Toledo</b> (מרכזי, מסודר) · <b>קיאיה</b> (שקט ויפה, טיפה יקר, רחוק מהתחנה)</li>
+        <li>⚠️ <b>לא לישון:</b> הרחובות סביב פיאצה גריבלדי/וסטו (זול כי מפחיד בלילה), עומק הרובע הספניולי, פורצ'לה, סניטה — מבקרים ביום, לא ישנים</li>
+        <li>💰 מחיר הוגן: <b>€50–75 ללילה לזוג</b> (170–260₪). מעל €80 בנאפולי = משלמים יותר מדי</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🍋 סורנטו · 2 לילות (20–22.10)</h4>
+      <ul>
+        <li>✅ עד 10 דק' הליכה מ<b>פיאצה טאסו / קורסו איטליה</b> — או ליד תחנת הרכבת (נוח לימי SITA ווזוב)</li>
+        <li>💡 <b>הטריק: סנט'אניילו</b> — תחנת רכבת אחת לפני סורנטו (או 20 דק' הליכה): אותו חוף, אותה גישה לכל דבר, <b>€15–25 פחות ללילה</b>. חפשו שם קודם</li>
+        <li>כל סורנטו בטוחה — אין אזור אסור</li>
+        <li>💰 מחיר הוגן: סורנטו עצמה <b>€75–100</b> (260–345₪) — הבסיס היקר של הטיול; סנט'אניילו <b>€55–85</b> (190–295₪). מתחת ל־€70 בסורנטו עצמה = לבדוק ביקורות טוב</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🌊 סלרנו · לילה 1 (22–23.10)</h4>
+      <ul>
+        <li>✅ <b>צ'נטרו סטוריקו</b> (סביב Via dei Mercanti / הדואומו) או לאורך <b>קורסו ויטוריו אמנואלה</b> בין התחנה לעיר העתיקה — הכול 5–15 דק' ברגל: רכבת, מעבורת, מסעדות, מובידה</li>
+        <li>עיר עובדת נורמלית, רגועה בהרבה מנאפולי — אין אזור בעייתי במרכז</li>
+        <li>💰 מחיר הוגן: <b>€45–70 ללילה לזוג</b> (155–240₪) — הלינה הזולה בטיול; פה מפצים על סורנטו</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>✈️ נאפולי · לילה אחרון (23–24.10)</h4>
+      <ul>
+        <li><b>למה פה:</b> טיסה 06:05 — ישנים 5 שעות וקמים למונית של 03:30. פונקציה, לא חוויה</li>
+        <li>✅ <b>צמוד לתחנת גריבלדי/צ'נטרלה</b> — הלילה היחיד שבו האזור הזה דווקא נכון: מלונות רשת מודרניים, בטוחים בפנים, והמונית אוספת מהדלת. לא מסתובבים בחוץ בלילה וזהו</li>
+        <li>✅ חלופה: קצה הצ'נטרו סטוריקו הקרוב לתחנה (Via Duomo המזרחית)</li>
+        <li>💰 מחיר הוגן: <b>€45–65</b> (155–225₪). לבקש מהקבלה לתאם מונית כבר בצ'ק־אין</li>
+      </ul>
+    </div>
+  </div>
+  <p class="sec-note" style="margin-top:14px">💰 יעד משוקלל: <b>~€60/לילה ≈ 205₪</b> → סה"כ לינה ~1,450₪ לזוג ל־7 לילות. סופ"ש 17–18.10 הכי מבוקש — לנעול את נאפולי קודם. כלל אצבע: ציון 8.5+ עם 200+ ביקורות מנצח כל שם מפואר.</p>
+
+  <h2 class="sec" style="margin-top:30px">🎯 מציאות שמצאנו (מאומת 2025)</h2>
+  <p class="sec-note">יפה־אבל־לא־הון: נבדקו Booking, Hostelworld, Airbnb, אתרים ישירים ופורטלים איטלקיים. מחירים = הערכת אוקטובר ללילה לזוג; מחירי 2026 נפתחים בהדרגה — לנעול בביטול חינם.</p>
+  <div class="two-col">
+    <div class="pocket">
+      <h4>🏙️ נאפולי · 3 לילות</h4>
+      <ul>
+        <li>🏆 <b>B&B Al Centro Storico</b> (Via dei Tribunali 138) — ~€65 / 225₪ כולל בוקר במרפסת · 10/10 · ⚠️ מזומן בלבד, צ'ק־אין עד 20:00</li>
+        <li><b>B&B Bellini</b> (ליד פיאצה בליני) — ~€60–70 / 207–241₪ · 9.0 · מטבח משותף + מרפסת</li>
+        <li>💸 הזול: <b>Tric Trac Hostel</b> חדר פרטי — ~€49–65 / 169–224₪ כולל בוקר · הוסטל־דיזיין ליד בליני</li>
+        <li>פינוק קטן: <b>The Bellini House</b> — ~€80 · 9.4 (636 ביקורות)</li>
+        <li style="border-top:2px solid var(--line);margin-top:4px;padding-top:8px">🔴 <b>Airbnb חי (נבדק לתאריכים שלכם!):</b> <a href="https://www.airbnb.com/rooms/1173690657409217692">Naples 4 Botanical Garden</a> — <b>₪688 סה"כ ל־3 לילות כולל מס</b> (₪229/לילה!) · 4.95★ (232) · דירה שלמה</li>
+        <li>🔴 <a href="https://www.airbnb.com/rooms/1272641853385972209">Dante-Museum Urban</a> — ₪723 סה"כ · 4.9★ (153) · ליד פיאצה דנטה — מיקום מושלם</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🍋 סורנטו · 2 לילות</h4>
+      <ul>
+        <li>🏆 <b>Seven Hostel</b> (סנט'אניילו) — ~€65–80 / 225–275₪ · חדר זוגי פרטי+שירותים+מרפסת, <b>בוקר לשניים כלול</b>, טרסת גג · <b>2 דק' מהתחנה</b></li>
+        <li><b>Casa Aristide</b> (סנט'אניילו) — ~€70–85 / 240–295₪ · 8.8 · גסטהאוס משפחתי, בוקר ביתי</li>
+        <li>עם נוף ים בזול: <b>Agriturismo Piccolo Paradiso</b> (גבעות פיאנו) — ~€65–80 · תלוי אוטובוס</li>
+        <li>אוקטובר = סוף עונה: מרכז סורנטו יורד ~25% — Hotel Savoia ~€80–90 אם רוצים מרכז</li>
+        <li style="border-top:2px solid var(--line);margin-top:4px;padding-top:8px">🔴 <b>Airbnb חי — המציאה הרומנטית:</b> <a href="https://www.airbnb.com/rooms/6246381">בית בכרם ענבים בארולה</a> (גבעות ויקו אקוונסה) — <b>₪381 סה"כ ל־2 לילות</b> (₪190/לילה!) · 4.84★ (425) Superhost · נוף לכל המפרץ, יקב+מחלבה משפחתיים ליד, המארח אוסף מהתחנה. ⚠️ תלוי אוטובוס/טרמפ מתחנת Vico Equense — פחות נוח לימי SITA</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🌊 סלרנו · לילה 1</h4>
+      <ul>
+        <li>💸🏰 <b>Ostello Ave Gratia Plena</b> — מנזר מ־1650 עם חצר קלויסטר, חדר זוגי פרטי <b>€39–55 / 135–190₪</b> · 100 מ' מהדואומו · <b>קבלה 24ש' + שמירת מזוודות</b> — מושלם לצ'ק־אאוט 7:20!</li>
+        <li>🏆 <b>Salerno Antica B&B</b> — ~€60–75 / 207–259₪ · <b>9.9 (244 ביקורות)</b> · בוקר לחדר, בין התחנה לעיר העתיקה</li>
+        <li>ליד הרכבת: <b>SalernoPrestige Rooms</b> — ~€55–65 · 5 דק' מהתחנה, מרפסת</li>
+        <li>🔴 Airbnb נבדק חי ללילה הזה — <b>אין היצע אמיתי במרכז סלרנו ללילה בודד</b> (מינימום לילות + עמלת ניקיון). Booking מנצח פה</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>✈️ נאפולי · לילה אחרון</h4>
+      <ul>
+        <li>🏆 <b>B&B Hotel Napoli</b> (Piazza Garibaldi 32) — ~€55–75 / 190–259₪ · רשת מודרנית על הכיכר, קבלה 24ש' — המונית של 03:30 מהדלת</li>
+        <li><b>Hotel Potenza</b> — ~€70–80 כולל בוקר · 9.0 לזוגות · המשפחתי מהשלושה</li>
+        <li><b>ibis Styles Garibaldi</b> — ~€70–85 · מבודד רעש; לבקש חדר לא לכיוון הרכבת</li>
+      </ul>
+    </div>
+  </div>
+  <div class="warn" style="margin-top:16px">
+    <b>💸 פלייבוק חיסכון (15–30% פחות, בחינם):</b> ① מזמינים הכול <b>עכשיו באפליקציית Booking</b> (מחיר־מובייל עד 10% + Genius) בביטול חינם ② שולחים את מייל האישור ל־<b>save@pruvo.net</b> (Pruvo, חינם, ישראלי) — עוקב אחרי ירידות מחיר; ירד → מבטלים ומזמינים מחדש ③ מצאתם B&B קטן? וואטסאפ ישיר: <i>"Ho visto su Booking a €X — se prenotiamo direttamente, prezzo migliore?"</i> — לבעלים חוסך 15–25% עמלה, הרבה יתנו 10–15% הנחה ④ <b>Airbnb רק ל־3+ לילות</b> — עמלת ניקיון הורגת לילה בודד ⑤ תמיד לשלם ב־<b>EUR</b>, אף פעם לא בשקלים ⑥ אדום: בקשה לשלם מחוץ לפלטפורמה / העברה בנקאית מראש / מודעה בלי קוד CIN (חוק איטלקי 2025) = עוקץ.
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book">
+  <h2 class="sec">📲 מה מזמינים מראש</h2>
+  <table>
+    <tr><th>מה</th><th>מתי</th><th>איפה</th><th>הערה</th></tr>
+    <tr><td>🌋 <b>וזוב — חובה אונליין!</b></td><td>~3–4 שבועות לפני</td><td>Vivaticket</td><td><b>אין קופה בשער.</b> סלוט 10:30 ליום 5</td></tr>
+    <tr><td>🏛️ פומפיי</td><td>1–2 שבועות לפני</td><td>pompeiisites.org</td><td>סלוט 9:00 ליום 4, €18</td></tr>
+    <tr><td>🛏️ מלונות (לפחות נאפולי)</td><td>עכשיו, בביטול חינם</td><td>Booking</td><td>17–18.10 = סופ"ש, מתייקר</td></tr>
+    <tr><td>🛶 קיאק פוזיליפו</td><td>כמה ימים לפני</td><td>Kayak Napoli (וואטסאפ)</td><td>תלוי מזג ים — גמיש</td></tr>
+    <tr><td>🛏️ מלון לילה אחרון בנאפולי (ליד גריבלדי)</td><td>עכשיו</td><td>Booking</td><td>23–24.10 · צ'ק־אין מאוחר, יציאה 03:30</td></tr>
+    <tr><td>🚕 מונית לשדה"ת 03:30</td><td>ערב קודם</td><td>דרך המלון</td><td>Tariffa fissa ~€20–28</td></tr>
+    <tr><td>📱 eSIM</td><td>לפני הטיסה</td><td>Airalo / Saily</td><td>~€12 ל־10GB</td></tr>
+  </table>
+</section>
+
+<!-- POCKET -->
+<section id="pocket">
+  <h2 class="sec">📇 דף כיס</h2>
+  <div class="two-col">
+    <div class="pocket">
+      <h4>🚨 חירום</h4>
+      <ul>
+        <li><b>112</b> — חירום כללי (מדברים אנגלית) · 113 משטרה · 118 אמבולנס</li>
+        <li><b>שגרירות ישראל ברומא:</b> ‎+39 06 3619 8500</li>
+        <li>דרכון אבד: קודם דו"ח משטרה (denuncia) ← שגרירות</li>
+        <li>כסף וכרטיסים מפוצלים בין שניכם תמיד</li>
+        <li>כספומט: רק של בנק אמיתי — <b>אף פעם לא Euronet</b>. לחייב ב־EUR, לא בשקלים</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>⚠️ עוקצים — גרסת 2025/26</h4>
+      <ul>
+        <li><b>משרדי כרטיסים מזויפים בפומפיי</b> + קודי QR בתחנה — Vivaticket בלבד; כרטיס שמי מול דרכון</li>
+        <li><b>חטיפת טלפון תוך ניווט</b> (הגל של 2025, אזור צ'נטרלה) — לשנן מסלול לפני שהולכים, טלפון קשור ליד</li>
+        <li><b>כייסים בצ'ירקומווזוביאנה</b> — צופים ליד מכונות הכרטיסים רואים לאיזה כיס נכנס הארנק; קרון ראשון (ליד הנהג), תיק על הברכיים</li>
+        <li><b>"service charge" מומצא במסעדה</b> — טיפ לא חובה באיטליה; coperto חוקי רק אם בתפריט. בודקים חשבון שורה־שורה + מסך האשראי לפני Tap</li>
+        <li><b>מונית</b> — QR על הדלת האחורית (2025) מציג את המחירון; או פשוט FREE NOW/appTaxi ואין על מה לריב</li>
+        <li><b>"מכונת אשראי מקולקלת"</b> — מזומן בלי קבלה = עוקץ; scontrino חובה בחוק</li>
+        <li><b>צמיד ידידות / ורד / גלדיאטור</b> — "No grazie" וממשיכים</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🗣️ איטלקית שווה</h4>
+      <ul>
+        <li><b>Grazie mille</b> (גרציה מילה) — תודה רבה</li>
+        <li><b>Quanto costa?</b> (קואנטו קוסטה) — כמה עולה?</li>
+        <li><b>Il conto, per favore</b> — חשבון בבקשה</li>
+        <li><b>Sconto?</b> (סקונטו) — הנחה? 😉 (בשוק)</li>
+        <li><b>Tariffa fissa</b> — מחיר קבוע (מונית!)</li>
+        <li><b>No, grazie</b> — לא תודה (לרוכלים, בהחלטיות)</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🎒 אריזה — אוקטובר</h4>
+      <ul class="check">
+        <li>נעלי הליכה עם אחיזה (וזוב, שביל האלים — קריטי!)</li>
+        <li>פליז + מעיל גשם דק (ערבים 13–16°, בלוע קר ורוח)</li>
+        <li>בגד ים + מגבת מהירת־ייבוש (ים 21°)</li>
+        <li>תיק צד עם רוכסן + תיק גב קטן ליום</li>
+        <li>בקבוק רב־פעמי (מי ברז מצוינים) + סוללת גיבוי</li>
+        <li>מתאם Type C · כדורים לבחילת ים (מעבורות)</li>
+        <li>ביטוח נסיעות! + צילומי דרכונים בנפרד</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>📱 אפליקציות</h4>
+      <ul>
+        <li><b>Unico Campania</b> — כרטיסי רכבת/SITA (להירשם מהבית)</li>
+        <li><b>Ferryhopper</b> — מעבורות · travelmar.it — לוח בוקר</li>
+        <li><b>Trenitalia</b> + <b>FlixBus</b></li>
+        <li><b>Google Maps</b> — מפות אופליין: נאפולי, סורנטו, חוף אמלפי</li>
+        <li>וואטסאפ: Kayak Napoli + המלונות</li>
+      </ul>
+    </div>
+    <div class="pocket">
+      <h4>🎁 קניות למזוודה (~120₪)</h4>
+      <ul>
+        <li>לימונצ'לו 50cl — €8–12 (סופר, לא מזכרות!)</li>
+        <li>קפה נאפוליטני Passalacqua/Kimbo — €4–6</li>
+        <li>פסטה די גרניאנו IGP ×2 — €2–3 לחבילה</li>
+        <li>טאראלי שקדים — €3–4 · שוקולד לימון — €3–5</li>
+      </ul>
+    </div>
+  </div>
+  <p class="sec-note" style="margin-top:18px">⏰ איטליה שעה אחורה מישראל. שעון קיץ מסתיים 25.10 — יום אחרי שחוזרים, לא נוגע בכם. 🌅 שקיעה בשבוע שלכם: 18:20←18:10.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="buon">Buon viaggio! 🍋</div>
+  <div>נבנה מ־5 סוכני מחקר · שער €1 ≈ 3.45₪ (יולי 2026) · מחירים נכונים ל־2025/26 — לאמת לפני הזמנה</div>
+</footer>
+
+<button class="print-btn" onclick="window.print()">🖨️ שמירה כ־PDF</button>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map = L.map('tripmap', {scrollWheelZoom:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
+
+const bases = [
+  {n:1, name:'נאפולי', sub:'3 לילות · 17–20.10 · צ\'נטרו סטוריקו', ll:[40.8518,14.2570]},
+  {n:2, name:'סורנטו / סנט\'אניילו', sub:'2 לילות · 20–22.10', ll:[40.6263,14.3758]},
+  {n:3, name:'סלרנו', sub:'לילה 1 · 22–23.10 · עיר עתיקה', ll:[40.6806,14.7594]},
+  {n:4, name:'נאפולי — לילה אחרון', sub:'23–24.10 · ליד גריבלדי, מונית 03:30', ll:[40.8530,14.2720]},
+];
+const spots = [
+  {name:'✈️ שדה"ת NAP', sub:'נחיתה 13:35 · המראה 06:05', ll:[40.8830,14.2866]},
+  {name:'🏝️ פרוצ\'ידה', sub:'יום 2 · טרה מוראטה + קוריצ\'לה + פונטה פיצאקו', ll:[40.7590,14.0160]},
+  {name:'🏛️ פומפיי', sub:'יום 4 · 9:00–13:30, מזוודות בפיקדון', ll:[40.7510,14.4870]},
+  {name:'🌋 לוע הווזוב', sub:'יום 5 · סלוט 10:30, שערים נסגרים 16:00', ll:[40.8214,14.4260]},
+  {name:'🛶 קיאק פוזיליפו', sub:'יום 3 · 16:15 שקיעה מהמים', ll:[40.7960,14.1980]},
+  {name:'🍋 אמלפי', sub:'יום 6 · דואומו + פיקדון מזוודות', ll:[40.6340,14.6027]},
+  {name:'🎼 ראבלו', sub:'יום 6 · תצפיות + Villa Rufolo', ll:[40.6490,14.6120]},
+  {name:'📸 אטרני', sub:'יום 6 · 10 דק\' הליכה מאמלפי, חינם', ll:[40.6360,14.6100]},
+  {name:'🥾 בומראנו — תחילת שביל האלים', sub:'יום 7 · הולכים מערבה!', ll:[40.6386,14.5560]},
+  {name:'🍧 נוצ\'לה', sub:'יום 7 · גרניטה + 1,700 מדרגות', ll:[40.6320,14.5040]},
+  {name:'🌅 פוזיטאנו', sub:'יום 7 · חוף פורנילו + cuoppo', ll:[40.6280,14.4850]},
+];
+
+bases.forEach(b=>{
+  L.marker(b.ll,{icon:L.divIcon({className:'',html:
+    `<div style="background:#e9b62c;border:2.5px solid #20242c;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font:700 15px 'Miriam Libre',sans-serif;box-shadow:2px 2px 0 rgba(0,0,0,.35)">${b.n}</div>`,
+    iconSize:[32,32],iconAnchor:[16,16]})})
+  .addTo(map).bindPopup(`<div dir="rtl" style="font-family:'Miriam Libre',sans-serif"><b style="font-size:1.05em">🛏️ ${b.name}</b><br>${b.sub}</div>`);
+});
+spots.forEach(s=>{
+  L.circleMarker(s.ll,{radius:7,color:'#20242c',weight:2,fillColor:'#20707e',fillOpacity:.95})
+  .addTo(map).bindPopup(`<div dir="rtl" style="font-family:'Miriam Libre',sans-serif"><b>${s.name}</b><br>${s.sub}</div>`);
+});
+
+// main base route (land)
+L.polyline([[40.8830,14.2866],[40.8518,14.2570],[40.7510,14.4870],[40.6263,14.3758],[40.6340,14.6027],[40.6806,14.7594]],
+  {color:'#20242c',weight:3,opacity:.85}).addTo(map);
+// evening train Salerno→Naples + taxi to airport
+L.polyline([[40.6806,14.7594],[40.8530,14.2720],[40.8830,14.2866]],
+  {color:'#c2503c',weight:2.5,opacity:.8,dashArray:'2 7'}).addTo(map);
+// day trips (dashed teal)
+[[[40.8518,14.2570],[40.7590,14.0160]],           // Procida ferry
+ [[40.7510,14.4870],[40.8214,14.4260]],           // Vesuvius shuttle
+ [[40.8518,14.2570],[40.7960,14.1980]],           // kayak
+ [[40.6340,14.6027],[40.6490,14.6120]],           // Ravello
+ [[40.6340,14.6027],[40.6386,14.5560],[40.6320,14.5040],[40.6280,14.4850]], // Path of the Gods
+ [[40.6280,14.4850],[40.6806,14.7594]]            // Positano→Salerno ferry
+].forEach(line=>L.polyline(line,{color:'#20707e',weight:2.5,opacity:.75,dashArray:'6 6'}).addTo(map));
+
+map.fitBounds([[40.60,13.95],[40.90,14.80]],{padding:[20,20]});
+</script>
+</body>
+</html>

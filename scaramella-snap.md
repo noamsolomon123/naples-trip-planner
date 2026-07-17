@@ -1,0 +1,903 @@
+- generic [active] [ref=f6e1]:
+  - link "Skip to main content" [ref=f6e3] [cursor=pointer]:
+    - /url: "#basiclayout"
+  - banner [ref=f6e10]:
+    - generic [ref=f6e11]:
+      - navigation [ref=f6e12]:
+        - link "Booking.com" [ref=f6e16] [cursor=pointer]:
+          - /url: https://www.booking.com/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+        - generic [ref=f6e19]:
+          - link "Log in or create an account" [ref=f6e21] [cursor=pointer]:
+            - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UsMCZCOAbrU3eeHUHRnWVTymlOtEq3COLKLRM1popHGmXdRYkreYQBYtX51KD8VGx5gjjRbHVtyO1uRM-sbknjjsFjF1mDwangkxD7F96X3uq2e65IlePoFFsoT-xBWUnBzigXyZRahLleIXhGjGC2MkVQqoxpx8ZybkYjzH4vrVJvODFgCMio93ZrQ89OGYAKUlJWwcu8m-MGzEFd0gySPrHHBKm_AXPph3GJDCaHfUKpjM__oScyvli6FVXod91Sam6srZpjsXn0pA68uS_FsVAgMUgqq_rgb45sW1mjgumj9-fXp-J8mPip7M41tAe-Kt5iAUWMKiKs0bUcAFb_Gv_eUSd0sJl1Iq4QXro-c2oZJSnKmAVFHWRCumMDBGyFx_E2IQ-uZJgUxBan-1au4MQPpnAEZ_OAodTC-LHdGOZDIn5yM%3D*eyJpZCI6InRyYXZlbGxlcl9oZWFkZXIifQ%3D%3D
+            - status [ref=f6e27]
+          - button "Menu" [ref=f6e29] [cursor=pointer]
+      - navigation "What are you looking for?" [ref=f6e34]:
+        - menubar [ref=f6e36]:
+          - menuitem "Stays" [ref=f6e37] [cursor=pointer]
+          - menuitem "Flights" [ref=f6e43] [cursor=pointer]
+          - menuitem "Car rental" [ref=f6e49] [cursor=pointer]
+          - menuitem "Attractions" [ref=f6e55] [cursor=pointer]
+          - menuitem "Airport taxis" [ref=f6e61] [cursor=pointer]
+  - region "Search properties" [ref=f6e72]:
+    - generic [ref=f6e73]:
+      - generic [ref=f6e77]:
+        - generic [ref=f6e82]:
+          - generic [ref=f6e83]: Enter destination
+          - combobox "Enter destination" [ref=f6e87]: Salerno
+        - button [ref=f6e89] [cursor=pointer]:
+          - img "Clear" [ref=f6e90]
+      - button "Select dates Thu 22 Oct — Fri 23 Oct" [ref=f6e95] [cursor=pointer]:
+        - generic [ref=f6e100]:
+          - generic [ref=f6e101]: Select dates
+          - generic [ref=f6e102]: Thu 22 Oct — Fri 23 Oct
+      - generic [ref=f6e108] [cursor=pointer]:
+        - generic [ref=f6e109]: Select occupancy
+        - 'button "Number of travellers and rooms. Currently selected: 2 adults · 0 children · 1 room" [ref=f6e111]':
+          - generic [ref=f6e112]: 2 adults · 0 children · 1 room
+      - button "Search" [ref=f6e118] [cursor=pointer]
+  - generic [ref=f6e121]:
+    - navigation "Breadcrumbs" [ref=f6e125]:
+      - list [ref=f6e126]:
+        - listitem [ref=f6e127]:
+          - link "Home" [ref=f6e128] [cursor=pointer]:
+            - /url: https://www.booking.com/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+        - listitem [ref=f6e133]:
+          - link "Hotels" [ref=f6e134] [cursor=pointer]:
+            - /url: https://www.booking.com/hotel/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+        - listitem [ref=f6e139]:
+          - link "All B&Bs" [ref=f6e140] [cursor=pointer]:
+            - /url: https://www.booking.com/bed-and-breakfast/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+        - listitem [ref=f6e145]:
+          - link "Italy" [ref=f6e146] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&dest_id=104&dest_type=country&nflt=sth%3D2
+        - listitem [ref=f6e151]:
+          - link "Campania" [ref=f6e152] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&dest_id=898&dest_type=region&nflt=sth%3D2
+        - listitem [ref=f6e157]:
+          - link "Salerno" [ref=f6e158] [cursor=pointer]:
+            - /url: https://www.booking.com/searchresults.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&dest_id=-127126&dest_type=city&nflt=sth%3D2
+        - listitem [ref=f6e163]:
+          - heading "B&B RESTO AL SUD (Bed and breakfast) (Italy) deals" [level=1] [ref=f6e165]
+    - generic [ref=f6e167]:
+      - main [ref=f6e168]:
+        - generic [ref=f6e169]:
+          - generic [ref=f6e170]:
+            - generic [ref=f6e171]:
+              - navigation "Internal page link" [ref=f6e175]:
+                - list [ref=f6e177]:
+                  - listitem [ref=f6e178]:
+                    - link "Overview" [ref=f6e179] [cursor=pointer]:
+                      - /url: "#hotelTmpl"
+                  - listitem [ref=f6e182]:
+                    - link "Info & prices" [ref=f6e183] [cursor=pointer]:
+                      - /url: "#availability"
+                  - listitem [ref=f6e186]:
+                    - link "Facilities" [ref=f6e187] [cursor=pointer]:
+                      - /url: "#hp_facilities_box"
+                  - listitem [ref=f6e190]:
+                    - link "House rules" [ref=f6e191] [cursor=pointer]:
+                      - /url: "#policies"
+                  - listitem [ref=f6e194]:
+                    - link "Important & legal info" [ref=f6e195] [cursor=pointer]:
+                      - /url: "#important_info"
+                  - listitem [ref=f6e198]:
+                    - link "Guest reviews (92)" [ref=f6e199] [cursor=pointer]:
+                      - /url: "#blockdisplay4"
+              - generic [ref=f6e203]:
+                - generic [ref=f6e204]:
+                  - button "Save this item to a trip list" [ref=f6e211] [cursor=pointer]
+                  - button "Share this property" [ref=f6e222] [cursor=pointer]
+                  - button "Reserve" [ref=f6e227] [cursor=pointer]
+                  - button "We Price Match" [ref=f6e232] [cursor=pointer]
+                - generic [ref=f6e239]:
+                  - button [ref=f6e244] [cursor=pointer]
+                  - heading "B&B RESTO AL SUD" [level=2] [ref=f6e249]
+                - generic [ref=f6e253]:
+                  - link "B&B RESTO AL SUD, Salerno - Check location" [ref=f6e254] [cursor=pointer]:
+                    - /url: "#map_opened-map_trigger_header_pin"
+                  - generic [ref=f6e259]:
+                    - button [ref=f6e261] [cursor=pointer]:
+                      - generic [ref=f6e262]:
+                        - text: 9 Via Giovanni Cuomo 9/A Secondo Piano Interno 10, 84122 Salerno, Italy
+                        - generic [ref=f6e263]:
+                          - generic [ref=f6e264]:
+                            - text: Excellent location — rated 9.8/10!
+                            - generic [ref=f6e265]: (score from 92 reviews)
+                          - generic [ref=f6e266]: Real guests • Real stays • Real opinions
+                    - text: –
+                    - link "Excellent location - show map" [ref=f6e267] [cursor=pointer]:
+                      - /url: "#map_opened-map_trigger_header"
+              - generic "Photo gallery of B&B RESTO AL SUD" [ref=f6e271]:
+                - region "Photo gallery for B&B RESTO AL SUD" [ref=f6e273]:
+                  - generic [ref=f6e276]:
+                    - generic [ref=f6e277]:
+                      - button [ref=f6e279] [cursor=pointer]:
+                        - img "Bed with patterned duvet, gray pillows, bedside tray with red heart, framed photos and potted poinsettia by sheer curtains at B&B RESTO AL SUD in Salerno" [ref=f6e281]
+                      - generic [ref=f6e282]:
+                        - button [ref=f6e284] [cursor=pointer]:
+                          - img "Double bed with patterned linens, folded towels on foot, tray with coffee and chocolates, framed art and white wardrobe at B&B RESTO AL SUD in Salerno" [ref=f6e286]
+                        - button [ref=f6e288] [cursor=pointer]:
+                          - img "Tiled bathroom with pedestal sink, wall mirror, towel radiator, soap dispenser, toiletries caddy and towel shelves at B&B RESTO AL SUD in Salerno" [ref=f6e290]
+                    - generic [ref=f6e291]:
+                      - button [ref=f6e293] [cursor=pointer]:
+                        - img "Croissant and coffee on a saucer beside a folded newspaper, a breakfast spread with a pastry and beverage at B&B RESTO AL SUD in Salerno" [ref=f6e295]
+                      - button [ref=f6e297] [cursor=pointer]:
+                        - img "Room with wall-mounted air conditioner and TV, small fridge, luggage rack, bench and orange bed with folded towels at B&B RESTO AL SUD in Salerno" [ref=f6e299]
+                      - button [ref=f6e301] [cursor=pointer]:
+                        - img "City street with 'Prendi' no-smoking sign, parking and scooter parking, Bar/Tabacchi and Audio/Medical shops at B&B RESTO AL SUD in Salerno" [ref=f6e303]
+                      - button [ref=f6e305] [cursor=pointer]:
+                        - img "Double bed with red quilt, gray pillows, folded towels and rolled towels on bed, bedside tables with tea set and wall art at B&B RESTO AL SUD in Salerno" [ref=f6e307]
+                      - generic [ref=f6e308]:
+                        - button [ref=f6e309] [cursor=pointer]:
+                          - img "Walk-in shower with rain showerhead, sliding glass door and vertical mosaic tile band with horizontal gray-brown stripes at B&B RESTO AL SUD in Salerno +37 photos" [ref=f6e311]
+                        - generic: +37 photos
+              - generic [ref=f6e316]:
+                - link "Scored 8.5 Rated very good" [ref=f6e318] [cursor=pointer]:
+                  - /url: "#blockdisplay4"
+                  - generic [ref=f6e321]:
+                    - generic [ref=f6e322]: Scored 8.5
+                    - generic [ref=f6e323]: "8.5"
+                    - generic [ref=f6e324]: Rated very good
+                    - generic [ref=f6e325]:
+                      - generic [ref=f6e326]: Very good
+                      - generic [ref=f6e327]: 92 reviews
+                - separator [ref=f6e328]
+                - separator [ref=f6e338]
+                - generic [ref=f6e339]:
+                  - paragraph [ref=f6e340]: Excellent location!
+                  - generic "Scored 9.8" [ref=f6e342]: "9.8"
+            - generic [ref=f6e349]:
+              - heading "Property highlights" [level=3] [ref=f6e353]
+              - region [ref=f6e356]:
+                - group [ref=f6e357]:
+                  - button "Wellness Massage, Couples massage, Barber/beauty shop, Beauty services" [ref=f6e359] [cursor=pointer]:
+                    - generic [ref=f6e364]:
+                      - generic [ref=f6e365]: Wellness
+                      - generic [ref=f6e366]: Massage, Couples massage, Barber/beauty shop, Beauty services
+                - group [ref=f6e371]:
+                  - button "View all" [ref=f6e373] [cursor=pointer]
+          - generic [ref=f6e380]:
+            - generic [ref=f6e381]:
+              - generic [ref=f6e382]:
+                - generic [ref=f6e384]:
+                  - paragraph [ref=f6e385]:
+                    - text: You might be eligible for a Genius discount at B&B RESTO AL SUD. To check if a Genius discount is available for your selected dates
+                    - link "sign in" [ref=f6e386] [cursor=pointer]:
+                      - /url: https://account.booking.com/auth/oauth2?aid=304142&client_id=vO1Kblk7xX9tUn2cpZLS&dt=1784282782&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&state=UuYCZCOAbrU3eeE__Y4ucYfEx19XjWRYRknqUJUHQUUGZleQ8_b9rFFFQOsyrjgvOoxnTlEW_DJ3po6M3oeCbPGjRfZsegbQSTN82_sif7FXKD5B13KCgSbeNNZ0dNqh-mRXqeDlAoLIwkfYx4wLGKZOY1dPF17gtAixvXjvTLZlAPIW6XVHt3pdoSrgO1HSBBUbbwFX68IHnI0Zm5j-R0feo50yjQCbJtwRDsrTT1r8lHcWM6fOOQhXCqhsCh8BGrKytO6XjQQFyoAdXayubRL07o1WzdjJSRYQamSexmZF4lqfyfwIBsooYWXnTHfucYHS7IPi3GRO9k4U0U9UaL0owg-V1coF1uW7eFOtkJMkDzYXWlhhoT5wiKcmwz35eE5Xixhy3vWhc0_nxq4j2OsC9uCisBjmJiA_ZuJiaAtSqKrH59F-tSkT5eNbYHK0dCKfP4phNde0R6UtOhj876bUdc27A_485A&response_type=sso&bkng_action=hotel&lang=en-gb
+                    - text: .
+                  - paragraph [ref=f6e387]: Genius discounts at this property are subject to book dates, stay dates and other available deals.
+                  - generic [ref=f6e389]:
+                    - heading "About this property" [level=3] [ref=f6e390]
+                    - paragraph [ref=f6e391]: "Comfortable Accommodations: B&B RESTO AL SUD in Salerno offers spacious rooms with air-conditioning, private bathrooms, and modern amenities. Each room includes a kitchenette, balcony, and free WiFi. Convenient Facilities: Guests enjoy private check-in and check-out, a lounge, beauty services, lift, minimarket, coffee shop, hairdresser, family rooms, breakfast in the room, room service, and a tour desk. Prime Location: Located 16 km from Salerno - Costa d'Amalfi Airport, the property is a short walk from Santa Teresa Beach (14 minutes) and Salerno Cathedral (6 minutes). Nearby attractions include Provincial Pinacotheca of Salerno (500 metres) and Castello di Arechi (2 km). Guest Favorites: Guests appreciate the convenient and central location, spacious rooms, and excellent service."
+                    - paragraph [ref=f6e392]: Couples particularly like the location — they rated it 9.7 for a two-person trip.
+                    - paragraph [ref=f6e393]: Distance in property description is calculated using © OpenStreetMap
+                - generic [ref=f6e397]:
+                  - heading "Most popular facilities" [level=3] [ref=f6e398]
+                  - list [ref=f6e400]:
+                    - listitem [ref=f6e401]:
+                      - generic [ref=f6e402]: Non-smoking rooms
+                    - listitem [ref=f6e410]:
+                      - generic [ref=f6e411]: Room service
+                    - listitem [ref=f6e419]:
+                      - generic [ref=f6e420]: Free WiFi
+                    - listitem [ref=f6e428]:
+                      - generic [ref=f6e429]: Family rooms
+                    - listitem [ref=f6e437]:
+                      - generic [ref=f6e438]: Lift
+                    - listitem [ref=f6e446]:
+                      - generic [ref=f6e447]: Heating
+              - generic [ref=f6e459]:
+                - generic [ref=f6e460]:
+                  - heading "Perfect for a 1-night stay!" [level=4] [ref=f6e461]
+                  - paragraph [ref=f6e462]:
+                    - generic [ref=f6e466]: Situated in the best rated area in Salerno, this property has an excellent location score of 9.8
+                - generic [ref=f6e467]:
+                  - heading "Options with:" [level=4] [ref=f6e468]
+                  - list [ref=f6e469]:
+                    - listitem [ref=f6e470]:
+                      - paragraph [ref=f6e471]:
+                        - generic [ref=f6e475]: Inner courtyard view
+                    - listitem [ref=f6e476]:
+                      - paragraph [ref=f6e477]:
+                        - generic [ref=f6e481]: Quiet street view
+                    - listitem [ref=f6e482]:
+                      - paragraph [ref=f6e483]:
+                        - generic [ref=f6e487]: Landmark view
+                - button "Reserve" [ref=f6e489] [cursor=pointer]
+            - separator [ref=f6e491]
+            - generic [ref=f6e501]:
+              - generic [ref=f6e503]:
+                - heading "Sign in, save money" [level=3] [ref=f6e504]
+                - generic [ref=f6e505]: To see if you can save 10% or more at this property, sign in
+                - generic [ref=f6e507]:
+                  - link "Sign in to Booking.com." [ref=f6e508] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UsMCZCOAbrU3eeHUHRnWVTymlOtEq3COLKLRM1popHGmXdRYkreYQBYtX51KD8VGx5gjjRbHVtyO1uRM-sbknjjsFjF1mDwangkxD7F96X3uq2e65IlePoFFsoT-xBWUnBzigXyZRahLleIXhGjGC2MkVQqoxpx8ZybkYjzH4vrVJvODFgCMio93ZrQ89OGYAKUlJWwcu8m-MGzEFd0gySPrHHBKm_AXPph3GJDCaHfUKpjM__oScyvli6FVXod91Sam6srZpjsXn0pA68uS_FsVAgMUgqq_rgb45sW1mjgumj9-fXp-J8mPip7M41tAe-Kt5iAUWMKiKs0bUcAFb_Gv_eUSd0sJl1Iq4QXro-c2oZJSnKmAVFHWRCumMDBGyFx_E2IQ-uZJgUxBan-1au4MQPpnAEZ_OAodTC-LHdGOZDIn5yM%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+                    - generic [ref=f6e509]: Sign in
+                  - link "Create a free account" [ref=f6e510] [cursor=pointer]:
+                    - /url: https://account.booking.com/auth/oauth2?client_id=vO1Kblk7xX9tUn2cpZLS&redirect_uri=https%3A%2F%2Fsecure.booking.com%2Flogin.html%3Fop%3Doauth_return&response_type=code&lang=en-gb&aid=304142&bkng_action=hotel&prompt=signin&state=UsMCZCOAbrU3eeHUHRnWVTymlOtEq3COLKLRM1popHGmXdRYkreYQBYtX51KD8VGx5gjjRbHVtyO1uRM-sbknjjsFjF1mDwangkxD7F96X3uq2e65IlePoFFsoT-xBWUnBzigXyZRahLleIXhGjGC2MkVQqoxpx8ZybkYjzH4vrVJvODFgCMio93ZrQ89OGYAKUlJWwcu8m-MGzEFd0gySPrHHBKm_AXPph3GJDCaHfUKpjM__oScyvli6FVXod91Sam6srZpjsXn0pA68uS_FsVAgMUgqq_rgb45sW1mjgumj9-fXp-J8mPip7M41tAe-Kt5iAUWMKiKs0bUcAFb_Gv_eUSd0sJl1Iq4QXro-c2oZJSnKmAVFHWRCumMDBGyFx_E2IQ-uZJgUxBan-1au4MQPpnAEZ_OAodTC-LHdGOZDIn5yM%3D*eyJpZCI6Im1lcmNoX3BsYXRmb3JtX3Byb3BlcnR5X3BhZ2VfY3RhIn0%3D
+              - img "Sign in, save money" [ref=f6e515]
+            - generic [ref=f6e517]:
+              - generic [ref=f6e518]:
+                - heading "Availability" [level=2] [ref=f6e519]
+                - button "We Price Match" [ref=f6e523] [cursor=pointer]
+              - generic [ref=f6e533]:
+                - generic [ref=f6e534]:
+                  - button "Select dates" [ref=f6e538] [cursor=pointer]:
+                    - generic [ref=f6e539]: Thu 22 Oct - Fri 23 Oct
+                  - button "Select occupancy" [ref=f6e548] [cursor=pointer]:
+                    - generic [ref=f6e549]: 2 adults · 0 children · 1 room
+                - button "Change search" [ref=f6e556] [cursor=pointer]
+              - generic [ref=f6e564]:
+                - table [ref=f6e566]:
+                  - caption [ref=f6e567]: Select a room type and the number of rooms you want to reserve.
+                  - rowgroup [ref=f6e568]:
+                    - row [ref=f6e569]:
+                      - columnheader "Room type" [ref=f6e570]
+                      - columnheader "Today's price" [ref=f6e571]
+                      - columnheader "Your choices" [ref=f6e572]
+                      - columnheader "Select amount" [ref=f6e573]
+                  - rowgroup [ref=f6e574]:
+                    - row [ref=f6e575]:
+                      - 'rowheader "Double Room with Shared Bathroom Sleeps: 2 adults 1 large double bed 20 m² Air conditioning Free WiFi Included facilities" [ref=f6e576]':
+                        - generic [ref=f6e577]:
+                          - link "Double Room with Shared Bathroom" [ref=f6e579] [cursor=pointer]:
+                            - /url: "#RD431854810"
+                          - generic [ref=f6e580]: "Sleeps: 2 adults"
+                          - list [ref=f6e586]:
+                            - listitem [ref=f6e587]:
+                              - generic [ref=f6e588]:
+                                - text: 1 large double bed
+                                - generic [ref=f6e589]: 녌
+                          - generic [ref=f6e591]:
+                            - list [ref=f6e592]:
+                              - listitem [ref=f6e593]:
+                                - generic [ref=f6e594]: 20 m²
+                              - listitem [ref=f6e597]:
+                                - generic [ref=f6e598]: Air conditioning
+                              - listitem [ref=f6e601]:
+                                - generic [ref=f6e602]: Free WiFi
+                            - separator [ref=f6e605]
+                            - list "Included facilities" [ref=f6e606]:
+                              - listitem [ref=f6e607]:
+                                - generic [ref=f6e608]: Towels
+                              - listitem [ref=f6e612]:
+                                - generic [ref=f6e613]: Tile/marble floor
+                              - listitem [ref=f6e617]:
+                                - generic [ref=f6e618]: Shared bathroom
+                              - listitem [ref=f6e622]:
+                                - generic [ref=f6e623]: Heating
+                              - listitem [ref=f6e627]:
+                                - generic [ref=f6e628]: Toilet paper
+                      - cell "Price € 66 Includes taxes and charges" [ref=f6e632]:
+                        - generic [ref=f6e634]:
+                          - generic [ref=f6e636]:
+                            - generic [ref=f6e637]: € 66
+                            - generic [ref=f6e638]: Price € 66
+                          - generic [ref=f6e639]: Includes taxes and charges
+                      - cell "Breakfast not included Partially refundable Pay online Genius discount may be available when you sign in. • We have 1 left More details on meals and cancellation and prepayment policies" [ref=f6e640]:
+                        - generic [ref=f6e641]:
+                          - list [ref=f6e642]:
+                            - listitem [ref=f6e643]:
+                              - generic [ref=f6e646]: Breakfast not included
+                            - listitem [ref=f6e648]:
+                              - strong [ref=f6e658]: Partially refundable
+                            - listitem [ref=f6e659]:
+                              - generic [ref=f6e660]:
+                                - generic [ref=f6e661]: •
+                                - generic [ref=f6e663]: Pay online
+                            - listitem [ref=f6e667]:
+                              - generic "Genius discount may be available when you sign in." [ref=f6e671]: discount may be available
+                            - listitem [ref=f6e681]:
+                              - generic [ref=f6e682]: •
+                              - generic [ref=f6e683]: We have 1 left
+                          - button "More details on meals and cancellation and prepayment policies" [ref=f6e686] [cursor=pointer]
+                      - cell [ref=f6e690]:
+                        - generic [ref=f6e691]:
+                          - generic: Select rooms
+                          - combobox "Select rooms" [ref=f6e693]:
+                            - option "0" [selected]
+                            - option "1 (€ 66)"
+                    - row [ref=f6e694]:
+                      - 'rowheader "Triple Room with Shared Bathroom Sleeps: 2 adults 1 single bed and 1 double bed 25 m² Air conditioning Free WiFi Show more facilities" [ref=f6e695]':
+                        - generic [ref=f6e696]:
+                          - link "Triple Room with Shared Bathroom" [ref=f6e698] [cursor=pointer]:
+                            - /url: "#RD431854811"
+                          - generic [ref=f6e699]: "Sleeps: 2 adults"
+                          - list [ref=f6e705]:
+                            - listitem [ref=f6e706]:
+                              - generic [ref=f6e707]:
+                                - text: 1 single bed
+                                - generic [ref=f6e708]: 끉
+                              - text: and
+                            - listitem [ref=f6e709]:
+                              - generic [ref=f6e710]:
+                                - text: 1 double bed
+                                - generic [ref=f6e711]: 녌
+                          - generic [ref=f6e713]:
+                            - list [ref=f6e714]:
+                              - listitem [ref=f6e715]:
+                                - generic [ref=f6e716]: 25 m²
+                              - listitem [ref=f6e719]:
+                                - generic [ref=f6e720]: Air conditioning
+                              - listitem [ref=f6e723]:
+                                - generic [ref=f6e724]: Free WiFi
+                            - button "Show more facilities" [ref=f6e727] [cursor=pointer]: More
+                      - cell "Price € 61 Includes taxes and charges" [ref=f6e728]:
+                        - generic [ref=f6e730]:
+                          - generic [ref=f6e732]:
+                            - generic [ref=f6e733]: € 61
+                            - generic [ref=f6e734]: Price € 61
+                          - generic [ref=f6e735]: Includes taxes and charges
+                      - cell "Breakfast not included Partially refundable Pay online Genius discount may be available when you sign in. • We have 1 left More details on meals and cancellation and prepayment policies" [ref=f6e736]:
+                        - generic [ref=f6e737]:
+                          - list [ref=f6e738]:
+                            - listitem [ref=f6e739]:
+                              - generic [ref=f6e742]: Breakfast not included
+                            - listitem [ref=f6e744]:
+                              - strong [ref=f6e754]: Partially refundable
+                            - listitem [ref=f6e755]:
+                              - generic [ref=f6e756]:
+                                - generic [ref=f6e757]: •
+                                - generic [ref=f6e759]: Pay online
+                            - listitem [ref=f6e763]:
+                              - generic "Genius discount may be available when you sign in." [ref=f6e767]: discount may be available
+                            - listitem [ref=f6e777]:
+                              - generic [ref=f6e778]: •
+                              - generic [ref=f6e779]: We have 1 left
+                          - button "More details on meals and cancellation and prepayment policies" [ref=f6e782] [cursor=pointer]
+                      - cell [ref=f6e786]:
+                        - generic [ref=f6e787]:
+                          - generic: Select rooms
+                          - combobox "Select rooms" [ref=f6e789]:
+                            - option "0" [selected]
+                            - option "1 (€ 61)"
+                    - row [ref=f6e790]:
+                      - 'rowheader "Quadruple Room with Private External Bathroom Sleeps: 2 adults 1 sofa bed and 1 large double bed 45 m² Private kitchen Private bathroom Balcony Landmark view Inner courtyard view Air conditioning Flat-screen TV Coffee machine Free WiFi Show more facilities" [ref=f6e791]':
+                        - generic [ref=f6e792]:
+                          - link "Quadruple Room with Private External Bathroom" [ref=f6e794] [cursor=pointer]:
+                            - /url: "#RD431854804"
+                          - generic [ref=f6e795]: "Sleeps: 2 adults"
+                          - list [ref=f6e801]:
+                            - listitem [ref=f6e802]:
+                              - generic [ref=f6e803]:
+                                - text: 1 sofa bed
+                                - generic [ref=f6e804]: 녑
+                              - text: and
+                            - listitem [ref=f6e805]:
+                              - generic [ref=f6e806]:
+                                - text: 1 large double bed
+                                - generic [ref=f6e807]: 녌
+                          - generic [ref=f6e809]:
+                            - list [ref=f6e810]:
+                              - listitem [ref=f6e811]:
+                                - generic [ref=f6e812]: 45 m²
+                              - listitem [ref=f6e815]:
+                                - generic [ref=f6e816]: Private kitchen
+                              - listitem [ref=f6e819]:
+                                - generic [ref=f6e820]: Private bathroom
+                              - listitem [ref=f6e823]:
+                                - generic [ref=f6e824]: Balcony
+                              - listitem [ref=f6e827]:
+                                - generic [ref=f6e828]: Landmark view
+                              - listitem [ref=f6e831]:
+                                - generic [ref=f6e832]: Inner courtyard view
+                              - listitem [ref=f6e835]:
+                                - generic [ref=f6e836]: Air conditioning
+                              - listitem [ref=f6e839]:
+                                - generic [ref=f6e840]: Flat-screen TV
+                              - listitem [ref=f6e843]:
+                                - generic [ref=f6e844]: Coffee machine
+                              - listitem [ref=f6e847]:
+                                - generic [ref=f6e848]: Free WiFi
+                            - button "Show more facilities" [ref=f6e851] [cursor=pointer]: More
+                      - cell "Price € 86 Includes taxes and charges" [ref=f6e852]:
+                        - generic [ref=f6e854]:
+                          - generic [ref=f6e856]:
+                            - generic [ref=f6e857]: € 86
+                            - generic [ref=f6e858]: Price € 86
+                          - generic [ref=f6e859]: Includes taxes and charges
+                      - cell "Breakfast not included Partially refundable Pay online • We have 1 left More details on meals and cancellation and prepayment policies" [ref=f6e860]:
+                        - generic [ref=f6e861]:
+                          - list [ref=f6e862]:
+                            - listitem [ref=f6e863]:
+                              - generic [ref=f6e866]: Breakfast not included
+                            - listitem [ref=f6e868]:
+                              - strong [ref=f6e878]: Partially refundable
+                            - listitem [ref=f6e879]:
+                              - generic [ref=f6e880]:
+                                - generic [ref=f6e881]: •
+                                - generic [ref=f6e883]: Pay online
+                            - listitem [ref=f6e887]:
+                              - generic [ref=f6e888]: •
+                              - generic [ref=f6e889]: We have 1 left
+                          - button "More details on meals and cancellation and prepayment policies" [ref=f6e892] [cursor=pointer]
+                      - cell [ref=f6e896]:
+                        - generic [ref=f6e897]:
+                          - generic: Select rooms
+                          - combobox "Select rooms" [ref=f6e899]:
+                            - option "0" [selected]
+                            - option "1 (€ 86)"
+                - generic [ref=f6e902]:
+                  - button "I'll reserve" [ref=f6e904] [cursor=pointer]
+                  - list [ref=f6e907]:
+                    - listitem [ref=f6e908]: You won't be charged yet
+            - generic [ref=f6e930]:
+              - generic [ref=f6e932]:
+                - text: B&B RESTO AL SUD may charge additional fees not shown above. See
+                - link "the fine print" [ref=f6e933] [cursor=pointer]:
+                  - /url: "#important_info"
+                - text: to read more about this property.
+              - generic [ref=f6e935]:
+                - generic [ref=f6e936]:
+                  - heading "Guest reviews" [level=2] [ref=f6e938]
+                  - button "See availability" [ref=f6e940] [cursor=pointer]
+                - generic [ref=f6e944]:
+                  - button "Scored 8.5 Rated very good" [ref=f6e945] [cursor=pointer]:
+                    - generic [ref=f6e946]:
+                      - generic [ref=f6e947]: Scored 8.5
+                      - generic [ref=f6e948]: "8.5"
+                      - generic [ref=f6e949]: Rated very good
+                      - generic [ref=f6e950]:
+                        - generic [ref=f6e951]: Very good
+                        - generic [ref=f6e952]: · 92 reviews
+                  - button "Read all reviews" [ref=f6e953] [cursor=pointer]
+                - group "Review categories" [ref=f6e956]:
+                  - heading "Categories:" [level=3] [ref=f6e958]
+                  - generic [ref=f6e959]:
+                    - generic "Average rating out of 10" [ref=f6e961]:
+                      - generic [ref=f6e962]:
+                        - generic [ref=f6e963]:
+                          - generic [ref=f6e964]: Staff
+                          - generic [ref=f6e967]: "9.5"
+                        - meter "Staff" [ref=f6e969]
+                    - generic "Average rating out of 10" [ref=f6e972]:
+                      - generic [ref=f6e973]:
+                        - generic [ref=f6e974]:
+                          - generic [ref=f6e975]: Facilities
+                          - generic [ref=f6e978]: "8.5"
+                        - meter "Facilities" [ref=f6e980]
+                    - generic "Average rating out of 10" [ref=f6e983]:
+                      - generic [ref=f6e984]:
+                        - generic [ref=f6e985]:
+                          - generic [ref=f6e986]: Cleanliness
+                          - generic [ref=f6e989]: "8.5"
+                        - meter "Cleanliness" [ref=f6e991]
+                    - generic "Average rating out of 10" [ref=f6e994]:
+                      - generic [ref=f6e995]:
+                        - generic [ref=f6e996]:
+                          - generic [ref=f6e997]: Comfort
+                          - generic [ref=f6e1000]: "8.7"
+                        - meter "Comfort" [ref=f6e1002]
+                    - generic "Average rating out of 10" [ref=f6e1005]:
+                      - generic [ref=f6e1006]:
+                        - generic [ref=f6e1007]:
+                          - generic [ref=f6e1008]: Value for money
+                          - generic [ref=f6e1011]: "8.7"
+                        - meter "Value for money" [ref=f6e1013]
+                    - generic "Average rating out of 10" [ref=f6e1016]:
+                      - generic [ref=f6e1017]:
+                        - generic [ref=f6e1018]:
+                          - generic [ref=f6e1019]: Location
+                          - generic [ref=f6e1022]: "9.8"
+                        - meter "Location" [ref=f6e1024]
+                    - generic "Average rating out of 10" [ref=f6e1027]:
+                      - generic [ref=f6e1028]:
+                        - generic [ref=f6e1029]:
+                          - generic [ref=f6e1030]: Free WiFi
+                          - generic [ref=f6e1033]: "7.5"
+                        - meter "Free WiFi" [ref=f6e1035]
+                - group "Select topics to read reviews:" [ref=f6e1038]:
+                  - heading "Select topics to read reviews:" [level=3] [ref=f6e1041]
+                  - group "Select topics to read reviews:" [ref=f6e1043]:
+                    - generic [ref=f6e1044]:
+                      - checkbox "Location" [ref=f6e1045]
+                      - generic [ref=f6e1046] [cursor=pointer]: Location
+                    - generic [ref=f6e1051]:
+                      - checkbox "Room" [ref=f6e1052]
+                      - generic [ref=f6e1053] [cursor=pointer]: Room
+                    - generic [ref=f6e1058]:
+                      - checkbox "Bathroom" [ref=f6e1059]
+                      - generic [ref=f6e1060] [cursor=pointer]: Bathroom
+                    - generic [ref=f6e1065]:
+                      - checkbox "Toilet" [ref=f6e1066]
+                      - generic [ref=f6e1067] [cursor=pointer]: Toilet
+                    - generic [ref=f6e1072]:
+                      - checkbox "Breakfast" [ref=f6e1073]
+                      - generic [ref=f6e1074] [cursor=pointer]: Breakfast
+                - generic [ref=f6e1080]:
+                  - generic [ref=f6e1081]:
+                    - heading "See what guests loved the most:" [level=3] [ref=f6e1082]
+                    - region "See what guests loved the most:" [ref=f6e1084]:
+                      - group [ref=f6e1085]:
+                        - generic [ref=f6e1087]:
+                          - generic [ref=f6e1089]:
+                            - generic [ref=f6e1090]: K
+                            - generic [ref=f6e1092]:
+                              - generic [ref=f6e1093]: Karine
+                              - generic [ref=f6e1094]:
+                                - img "France" [ref=f6e1095]
+                                - generic [ref=f6e1096]: France
+                          - generic [ref=f6e1097]: Very well siuated, rigjt in thé city centre by u foot. Thé entitre flat IS équipped with a kitchen . It suits for 2 3 persons. Very accommodating host
+                          - generic [ref=f6e1105]: Some équipement IS missing to cook
+                          - button "Read more of Karine's review" [ref=f6e1114] [cursor=pointer]: Read more
+                      - group [ref=f6e1115]:
+                        - generic [ref=f6e1117]:
+                          - generic [ref=f6e1119]:
+                            - generic [ref=f6e1120]: O
+                            - generic [ref=f6e1122]:
+                              - generic [ref=f6e1123]: Oksana
+                              - generic [ref=f6e1124]:
+                                - img "Spain" [ref=f6e1125]
+                                - generic [ref=f6e1126]: Spain
+                          - generic [ref=f6e1127]: The location is great, 10 minutes from the sea and it’s located in the central street where all the shops are. It has air conditioning, which is really necessary in summer, comfortable beds and the owners are really sweet.
+                          - button "Read more of Oksana's review" [ref=f6e1136] [cursor=pointer]: Read more
+                      - group [ref=f6e1137]:
+                        - generic [ref=f6e1139]:
+                          - generic [ref=f6e1144]:
+                            - generic [ref=f6e1145]: Poplacean
+                            - generic [ref=f6e1146]:
+                              - img "Romania" [ref=f6e1147]
+                              - generic [ref=f6e1148]: Romania
+                          - generic [ref=f6e1149]: Totul este superb!!! Foarte aproape de centru orașului,de gară ,de plajă,de port!! Curățenia este exemplară și prosoape curate suficiente!! Nota 1000 dacă se putea!
+                          - button "Read more of Poplacean's review" [ref=f6e1158] [cursor=pointer]: Read more
+                      - group [ref=f6e1159]:
+                        - generic [ref=f6e1161]:
+                          - generic [ref=f6e1166]:
+                            - generic [ref=f6e1167]: Iamandei
+                            - generic [ref=f6e1168]:
+                              - img "Romania" [ref=f6e1169]
+                              - generic [ref=f6e1170]: Romania
+                          - generic [ref=f6e1171]: Poziția, zonă liniștită, gazda foarte de treabă si comunică permanent.
+                          - generic [ref=f6e1179]: .
+                          - button "Read more of Iamandei's review" [ref=f6e1188] [cursor=pointer]: Read more
+                      - group [ref=f6e1189]:
+                        - generic [ref=f6e1191]:
+                          - generic [ref=f6e1193]:
+                            - generic [ref=f6e1194]: A
+                            - generic [ref=f6e1196]:
+                              - generic [ref=f6e1197]: Ainhoa
+                              - generic [ref=f6e1198]:
+                                - img "Spain" [ref=f6e1199]
+                                - generic [ref=f6e1200]: Spain
+                          - generic [ref=f6e1201]: Me ha gustado mucho el alojamiento en general. La habitación estaba genial, muy cómoda y limpia, y el trato por parte del personal ha sido de diez. Sin duda, un lugar para repetir.
+                          - button "Read more of Ainhoa's review" [ref=f6e1210] [cursor=pointer]: Read more
+                      - group [ref=f6e1211]:
+                        - generic [ref=f6e1213]:
+                          - generic [ref=f6e1218]:
+                            - generic [ref=f6e1219]: Roberto
+                            - generic [ref=f6e1220]:
+                              - img "Chile" [ref=f6e1221]
+                              - generic [ref=f6e1222]: Chile
+                          - generic [ref=f6e1223]: La ubicación es muy buena puedes llegar en pocos minutos al lugar que quieras de salerno, el barrio tranquilo. Justo al lado del alojamiento hay un supermercado. Los dueños muy amables, dejaban cosas para beber y comer en la entrada, además de que nos ayudaron en todo momento.
+                          - button "Read more of Roberto's review" [ref=f6e1232] [cursor=pointer]: Read more
+                      - group [ref=f6e1233]:
+                        - generic [ref=f6e1235]:
+                          - generic [ref=f6e1240]:
+                            - generic [ref=f6e1241]: Wendy
+                            - generic [ref=f6e1242]:
+                              - img "Ecuador" [ref=f6e1243]
+                              - generic [ref=f6e1244]: Ecuador
+                          - generic [ref=f6e1245]: La ubicación es perfecta, muy central a donde sea que necesites ir.
+                          - generic [ref=f6e1253]: La única cosa que faltaría en el cuarto es un lugar&#47;ganchos para colgar las toallas.
+                          - button "Read more of Wendy's review" [ref=f6e1262] [cursor=pointer]: Read more
+                      - group [ref=f6e1263]:
+                        - generic [ref=f6e1265]:
+                          - generic [ref=f6e1270]:
+                            - generic [ref=f6e1271]: Antonietta
+                            - generic [ref=f6e1272]:
+                              - img "Italy" [ref=f6e1273]
+                              - generic [ref=f6e1274]: Italy
+                          - generic [ref=f6e1275]: Gestore competente, disponibile, accogliente. Esperienza eccellente top
+                          - button "Read more of Antonietta's review" [ref=f6e1284] [cursor=pointer]: Read more
+                      - group [ref=f6e1285]:
+                        - generic [ref=f6e1287]:
+                          - generic [ref=f6e1292]:
+                            - generic [ref=f6e1293]: Brenda
+                            - generic [ref=f6e1294]:
+                              - img "Argentina" [ref=f6e1295]
+                              - generic [ref=f6e1296]: Argentina
+                          - generic [ref=f6e1297]: El propietario fue muy amable. Todo está muy limpio, ordenado y la ubicación estaba muy bien
+                          - button "Read more of Brenda's review" [ref=f6e1306] [cursor=pointer]: Read more
+                      - group [ref=f6e1307]:
+                        - generic [ref=f6e1309]:
+                          - generic [ref=f6e1311]:
+                            - generic [ref=f6e1312]: M
+                            - generic [ref=f6e1314]:
+                              - generic [ref=f6e1315]: Mickaele
+                              - generic [ref=f6e1316]:
+                                - img "France" [ref=f6e1317]
+                                - generic [ref=f6e1318]: France
+                          - generic [ref=f6e1319]: J&#39;ai apprécié l&#39;équipement, le confort, la dimension, la tranquillité, logement à l&#39;ombre
+                          - generic [ref=f6e1327]: Les travaux matinaux dans le quartier
+                          - button "Read more of Mickaele's review" [ref=f6e1336] [cursor=pointer]: Read more
+                  - button "Read all reviews" [ref=f6e1337] [cursor=pointer]
+              - generic [ref=f6e1344]:
+                - generic [ref=f6e1345]: Travellers are asking
+                - generic [ref=f6e1347]: See availability
+              - generic [ref=f6e1390]:
+                - heading "Property surroundings" [level=2] [ref=f6e1392]
+                - button "See availability" [ref=f6e1395] [cursor=pointer]
+              - generic [ref=f6e1420]:
+                - generic [ref=f6e1421]:
+                  - generic [ref=f6e1422]:
+                    - heading "Facilities of B&B RESTO AL SUD" [level=2] [ref=f6e1423]
+                    - generic [ref=f6e1425]: Great facilities! Review score, 8.5
+                  - button "See availability" [ref=f6e1427] [cursor=pointer]
+                - generic [ref=f6e1432]:
+                  - heading "Most popular facilities" [level=3] [ref=f6e1433]
+                  - list [ref=f6e1435]:
+                    - listitem [ref=f6e1436]:
+                      - generic [ref=f6e1437]: Non-smoking rooms
+                    - listitem [ref=f6e1445]:
+                      - generic [ref=f6e1446]: Room service
+                    - listitem [ref=f6e1454]:
+                      - generic [ref=f6e1455]: Free WiFi
+                    - listitem [ref=f6e1463]:
+                      - generic [ref=f6e1464]: Family rooms
+                    - listitem [ref=f6e1472]:
+                      - generic [ref=f6e1473]: Lift
+                    - listitem [ref=f6e1481]:
+                      - generic [ref=f6e1482]: Heating
+              - generic [ref=f6e1493]:
+                - generic [ref=f6e1494]:
+                  - generic [ref=f6e1495]:
+                    - heading "House rules" [level=2] [ref=f6e1496]
+                    - generic [ref=f6e1498]: B&B RESTO AL SUD takes special requests - add in the next step!
+                  - button "See availability" [ref=f6e1500] [cursor=pointer]
+                - generic [ref=f6e1503]:
+                  - generic [ref=f6e1504]:
+                    - generic [ref=f6e1505]: Check-in
+                    - generic [ref=f6e1511]:
+                      - generic [ref=f6e1512]: From 13:00 to 22:30
+                      - generic [ref=f6e1513]: You'll need to let the property know in advance what time you'll arrive.
+                  - separator [ref=f6e1514]
+                  - generic [ref=f6e1515]:
+                    - generic [ref=f6e1516]: Check-out
+                    - generic [ref=f6e1522]: From 10:00 to 10:30
+                  - separator [ref=f6e1524]
+                  - generic [ref=f6e1525]:
+                    - generic [ref=f6e1526]: Cancellation/ prepayment
+                    - generic [ref=f6e1533]:
+                      - text: Cancellation and prepayment policies vary according to accommodation type. Please check what
+                      - link "conditions" [ref=f6e1534] [cursor=pointer]:
+                        - /url: "#availability_target"
+                      - text: may apply to each option when making your selection.
+                  - separator [ref=f6e1535]
+                  - generic [ref=f6e1536]:
+                    - generic [ref=f6e1537]: Children and beds
+                    - generic [ref=f6e1544]:
+                      - generic [ref=f6e1545]:
+                        - heading "Child policies" [level=3] [ref=f6e1546]
+                        - paragraph [ref=f6e1547]: Children of any age are welcome.
+                        - paragraph [ref=f6e1548]: To see correct prices and occupancy information, please add the number of children in your group and their ages to your search.
+                      - heading "Cot and extra bed policies" [level=3] [ref=f6e1549]
+                      - paragraph [ref=f6e1550]: Cots and extra beds are not available at this property.
+                  - separator [ref=f6e1551]
+                  - generic [ref=f6e1552]:
+                    - generic [ref=f6e1553]: No age restriction
+                    - generic [ref=f6e1559]: There is no age requirement for check-in
+                  - separator [ref=f6e1561]
+                  - generic [ref=f6e1562]:
+                    - generic [ref=f6e1563]: Pets
+                    - generic [ref=f6e1569]: Pets are allowed on request. Charges may be applicable.
+                  - separator [ref=f6e1571]
+                  - generic [ref=f6e1572]:
+                    - generic [ref=f6e1573]: Payments by Booking.com
+                    - generic [ref=f6e1579]: Booking.com takes your payment on behalf of the property for this stay, but make sure you have cash for any extras once you get there.
+                  - separator [ref=f6e1581]
+                  - generic [ref=f6e1582]:
+                    - generic [ref=f6e1583]: Smoking
+                    - generic [ref=f6e1589]: Smoking is not allowed.
+                  - separator [ref=f6e1591]
+                  - generic [ref=f6e1592]:
+                    - generic [ref=f6e1593]: Parties
+                    - generic [ref=f6e1599]: Parties/events are not allowed
+                  - separator [ref=f6e1601]
+                  - generic [ref=f6e1602]:
+                    - generic [ref=f6e1603]: Quiet hours
+                    - generic [ref=f6e1609]: Guests must be quiet between 13:00 and 16:00.
+              - generic [ref=f6e1614]:
+                - generic [ref=f6e1615]:
+                  - generic [ref=f6e1616]:
+                    - heading "The fine print" [level=2] [ref=f6e1617]
+                    - generic [ref=f6e1619]: Need-to-know information for guests at this property
+                  - button "See availability" [ref=f6e1621] [cursor=pointer]
+                - generic [ref=f6e1625]:
+                  - paragraph [ref=f6e1626]: Please inform B&B RESTO AL SUD in advance of your expected arrival time. You can use the Special Requests box when booking, or contact the property directly with the contact details provided in your confirmation.
+                  - paragraph [ref=f6e1627]: Payment before arrival via bank transfer is required. The property will contact you after you book to provide instructions.
+                  - paragraph [ref=f6e1628]: This property will not accommodate hen, stag or similar parties.
+                  - paragraph [ref=f6e1629]: Quiet hours are between 13:00:00 and 16:00:00.
+                  - paragraph [ref=f6e1630]: "License number: 15065116EXT0926, IT065116C1A7WGTY7G"
+      - button "The best of Salerno Click here to see more hotels and accommodation near popular landmarks in Salerno" [ref=f6e1634] [cursor=pointer]:
+        - generic [ref=f6e1636]:
+          - generic [ref=f6e1637]: The best of Salerno
+          - generic [ref=f6e1639]: Click here to see more hotels and accommodation near popular landmarks in Salerno
+  - contentinfo [ref=f6e1643]:
+    - contentinfo [ref=f6e1647]:
+      - navigation "Quick links" [ref=f6e1650]:
+        - list [ref=f6e1651]:
+          - listitem [ref=f6e1652]:
+            - link "Countries" [ref=f6e1653] [cursor=pointer]:
+              - /url: https://www.booking.com/country.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1656]:
+            - link "Regions" [ref=f6e1657] [cursor=pointer]:
+              - /url: https://www.booking.com/region.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1660]:
+            - link "Cities" [ref=f6e1661] [cursor=pointer]:
+              - /url: https://www.booking.com/city.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1664]:
+            - link "Districts" [ref=f6e1665] [cursor=pointer]:
+              - /url: https://www.booking.com/district.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1668]:
+            - link "Airports" [ref=f6e1669] [cursor=pointer]:
+              - /url: https://www.booking.com/airport.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1672]:
+            - link "Hotels" [ref=f6e1673] [cursor=pointer]:
+              - /url: https://www.booking.com/hotel/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1676]:
+            - link "Places of interest" [ref=f6e1677] [cursor=pointer]:
+              - /url: https://www.booking.com/landmark.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1680]:
+            - link "Holiday Homes" [ref=f6e1681] [cursor=pointer]:
+              - /url: https://www.booking.com/booking-home/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1684]:
+            - link "Apartments" [ref=f6e1685] [cursor=pointer]:
+              - /url: https://www.booking.com/apartments/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1688]:
+            - link "Resorts" [ref=f6e1689] [cursor=pointer]:
+              - /url: https://www.booking.com/resorts/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1692]:
+            - link "Villas" [ref=f6e1693] [cursor=pointer]:
+              - /url: https://www.booking.com/villas/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1696]:
+            - link "Hostels" [ref=f6e1697] [cursor=pointer]:
+              - /url: https://www.booking.com/hostels/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1700]:
+            - link "B&Bs" [ref=f6e1701] [cursor=pointer]:
+              - /url: https://www.booking.com/bed-and-breakfast/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1704]:
+            - link "Guest Houses" [ref=f6e1705] [cursor=pointer]:
+              - /url: https://www.booking.com/guest-house/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1708]:
+            - link "Unique places to stay" [ref=f6e1709] [cursor=pointer]:
+              - /url: https://www.booking.com/accommodations.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - text: .
+          - listitem [ref=f6e1712]:
+            - link "Discover monthly stays" [ref=f6e1713] [cursor=pointer]:
+              - /url: https://www.booking.com/extended-stays/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+      - generic [ref=f6e1717]:
+        - generic [ref=f6e1718]:
+          - heading "Support" [level=3] [ref=f6e1720]
+          - list [ref=f6e1721]:
+            - listitem [ref=f6e1722]:
+              - link "Manage your trips" [ref=f6e1723] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/cs.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1725]:
+              - link "Contact Customer Service" [ref=f6e1726] [cursor=pointer]:
+                - /url: https://secure.booking.com/help.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1728]:
+              - link "Safety resource centre" [ref=f6e1729] [cursor=pointer]:
+                - /url: https://www.booking.com/trust_and_safety.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+        - generic [ref=f6e1731]:
+          - heading "Discover" [level=3] [ref=f6e1733]
+          - list [ref=f6e1734]:
+            - listitem [ref=f6e1735]:
+              - link "Genius loyalty programme" [ref=f6e1736] [cursor=pointer]:
+                - /url: https://www.booking.com/genius.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1738]:
+              - link "Seasonal and holiday deals" [ref=f6e1739] [cursor=pointer]:
+                - /url: https://www.booking.com/deals/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1741]:
+              - link "Travel articles" [ref=f6e1742] [cursor=pointer]:
+                - /url: https://www.booking.com/articles.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1744]:
+              - link "Booking.com for Business" [ref=f6e1745] [cursor=pointer]:
+                - /url: https://business.booking.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1747]:
+              - link "Traveller Review Awards" [ref=f6e1748] [cursor=pointer]:
+                - /url: https://www.booking.com/traveller-awards/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1750]:
+              - link "Car hire" [ref=f6e1751] [cursor=pointer]:
+                - /url: https://www.booking.com/cars/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1753]:
+              - link "Flight finder" [ref=f6e1754] [cursor=pointer]:
+                - /url: https://booking.com/pxgo?label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&token=UmFuZG9tSVYkc2RlIyh9YY_oTPIGnIwxsTOANoogQKGS2FRGZv4ZDDJQB7dStrEwwqs8ZzP4KhRJAibm_bv7sJAHcZuN9p15ZJEBejOPo7xU_qLtbCzq8Lr0SFUPToFA0W-daret6J_UiRCCSaj9lLLug-4VN2APZmqESIqyDur0a-k5cUHsWnAuHzp9xyfbTwaoTV_IbAJI-5GrfJiXBm6h9nZ_4vqPXc2fYCl5rCQrURP1NUcTft9AUO-Xb8IRpXThUrWcrykTRYDUHT5VI0WX33qHsUNFQs7KDKg4D_XNg1-yNB3xBx2sZZBMnGpei6JHIjwcJ9MORhTqtL8OJmaRYJTbq-XkYQZIFU5Wl9_B48oAYmJtU6VD1peWHKJX2hnz2g9Mk_ATD1dAzMpc1SbJ91zkxd1eHrA5lZDD7_ZFbkWQXiy7B1-x5TIdLYovntnJakWS2ntPXTIFwT1h6AZaRbEBR-mb8DW6R_tBVYkQ4kJYgA3CKdKamNaFiK9mEGijxVGg2YgIyFTlDaOrFJQ192EOkJQWZB3HUZqgJDBFgkQd4CjeXQ&lang=en-gb&aid=304142&url=https%3A%2F%2Fbooking.kayak.com%2Fin%3Fsid%3D17e75eeba6a5bd656f4306d890e6e49b%26mc%3DEUR%26bdclc%3Den-gb%26p%3Dfooter_link%26a%3Dbdc%252Ffooter_link
+            - listitem [ref=f6e1756]:
+              - link "Restaurant reservations" [ref=f6e1757] [cursor=pointer]:
+                - /url: https://www.opentable.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&ref=16087
+            - listitem [ref=f6e1759]:
+              - link "Booking.com for Travel Agents" [ref=f6e1760] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=booking-footer&utm_content=travel-agents-link&utm_medium=referral&utm_source=booking.com
+        - generic [ref=f6e1762]:
+          - heading "Terms and settings" [level=3] [ref=f6e1764]
+          - list [ref=f6e1765]:
+            - listitem [ref=f6e1766]:
+              - link "Privacy Notice" [ref=f6e1767] [cursor=pointer]:
+                - /url: https://www.booking.com/content/privacy.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1769]:
+              - link "Terms of Service" [ref=f6e1770] [cursor=pointer]:
+                - /url: https://www.booking.com/content/terms.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1772]:
+              - link "Accessibility Statement" [ref=f6e1773] [cursor=pointer]:
+                - /url: https://www.booking.com/content/accessibility_statement.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1775]:
+              - link "Partner dispute" [ref=f6e1776] [cursor=pointer]:
+                - /url: https://secure.booking.com/content/complaints.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1778]:
+              - link "Modern Slavery Statement" [ref=f6e1779] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/modern-slavery-statement/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+            - listitem [ref=f6e1781]:
+              - link "Human Rights Statement" [ref=f6e1782] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/about/compliance-and-ethics/human-rights/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+        - generic [ref=f6e1784]:
+          - heading "Partners" [level=3] [ref=f6e1786]
+          - list [ref=f6e1787]:
+            - listitem [ref=f6e1788]:
+              - link "Extranet login" [ref=f6e1789] [cursor=pointer]:
+                - /url: https://admin.booking.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=login_footer_v0&utm_medium=frontend&utm_source=extranet_login_footer
+            - listitem [ref=f6e1791]:
+              - link "Partner help" [ref=f6e1792] [cursor=pointer]:
+                - /url: https://partner.booking.com/en-gb?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=footer_list&utm_medium=frontend_footer&utm_source=booking.com
+            - listitem [ref=f6e1794]:
+              - link "List your property" [ref=f6e1795] [cursor=pointer]:
+                - /url: https://join.booking.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&lang=en-gb&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_medium=frontend&utm_source=footer_menu
+            - listitem [ref=f6e1797]:
+              - link "Become an affiliate" [ref=f6e1798] [cursor=pointer]:
+                - /url: https://www.booking.com/affiliate-program/v2/index.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b&utm_campaign=booking-footer&utm_content=become-an-affiliate-link&utm_medium=referral&utm_source=booking.com
+        - generic [ref=f6e1800]:
+          - heading "About" [level=3] [ref=f6e1802]
+          - list [ref=f6e1803]:
+            - listitem [ref=f6e1804]:
+              - link "About Booking.com" [ref=f6e1805] [cursor=pointer]:
+                - /url: https://www.booking.com/content/about.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1807]:
+              - link "How we work" [ref=f6e1808] [cursor=pointer]:
+                - /url: https://www.booking.com/content/how_we_work.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1810]:
+              - link "Sustainability" [ref=f6e1811] [cursor=pointer]:
+                - /url: https://sustainability.booking.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+            - listitem [ref=f6e1813]:
+              - link "Press centre" [ref=f6e1814] [cursor=pointer]:
+                - /url: https://news.booking.com/he-il
+            - listitem [ref=f6e1816]:
+              - link "Careers" [ref=f6e1817] [cursor=pointer]:
+                - /url: https://careers.booking.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+            - listitem [ref=f6e1819]:
+              - link "Investor relations" [ref=f6e1820] [cursor=pointer]:
+                - /url: https://www.bookingholdings.com/?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB
+            - listitem [ref=f6e1822]:
+              - link "Corporate contact" [ref=f6e1823] [cursor=pointer]:
+                - /url: https://www.booking.com/content/contact-us.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+            - listitem [ref=f6e1825]:
+              - link "Content guidelines and reporting" [ref=f6e1826] [cursor=pointer]:
+                - /url: https://www.booking.com/content-moderation-policy/overview-page.en-gb.html?aid=304142&label=gen173nr-10CAsocUIUYi1hbXAtYi1yZXN0by1hbC1zdWRICVgEaGqIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Ap3959IGwAIB0gIkYmFjMDZjNjAtYmMzZi00N2Q0LWFiMmYtYmM1ZjhkMGEwNzI22AIB4AIB&sid=17e75eeba6a5bd656f4306d890e6e49b
+      - generic [ref=f6e1829]:
+        - generic [ref=f6e1830]:
+          - 'button "Language: English (UK)" [ref=f6e1832] [cursor=pointer]'
+          - button "Prices in Euro" [ref=f6e1837] [cursor=pointer]:
+            - generic [ref=f6e1838]: EUR
+        - separator [ref=f6e1839]
+        - generic [ref=f6e1840]:
+          - generic [ref=f6e1841]: Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.
+          - generic [ref=f6e1843]: Copyright © 1996–2026 Booking.com™. All rights reserved.
+        - generic [ref=f6e1844]:
+          - img "Booking.com" [ref=f6e1845]
+          - img "Priceline.com" [ref=f6e1848]
+          - img "Kayak" [ref=f6e1852]
+          - img "Agoda" [ref=f6e1867]
+          - img "OpenTable" [ref=f6e1876]
+  - text: 끖 낝 끲 낝 넌

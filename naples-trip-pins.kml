@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>נאפולי 17–24.10.2026 — כל הפינים</name>
+<description>🟡 לינה · 🔵 לראות · 🟢 לאכול · 🔴 אזהרה/עוקץ · 🟣 תחבורה</description>
+
+<Style id="base"><IconStyle><color>ff00d7ff</color><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon></IconStyle></Style>
+<Style id="see"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon></IconStyle></Style>
+<Style id="food"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href></Icon></IconStyle></Style>
+<Style id="warn"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href></Icon></IconStyle></Style>
+<Style id="go"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/pushpin/purple-pushpin.png</href></Icon></IconStyle></Style>
+
+<Folder><name>🛏️ בסיסים</name>
+<Placemark><name>🛏️ בסיס 1: נאפולי צ'נטרו סטוריקו</name><description>3 לילות 17–20.10</description><styleUrl>#base</styleUrl><Point><coordinates>14.2570,40.8518,0</coordinates></Point></Placemark>
+<Placemark><name>🛏️ בסיס 2: סנט'אניילו (סורנטו)</name><description>2 לילות 20–22.10 · תחנה אחת לפני סורנטו, זול יותר</description><styleUrl>#base</styleUrl><Point><coordinates>14.3980,40.6320,0</coordinates></Point></Placemark>
+<Placemark><name>🛏️ בסיס 3: סלרנו עיר עתיקה</name><description>לילה 22–23.10 · טיפ: Ostello Ave Gratia Plena — מנזר, €39–55</description><styleUrl>#base</styleUrl><Point><coordinates>14.7570,40.6790,0</coordinates></Point></Placemark>
+<Placemark><name>🛏️ בסיס 4: ליד גריבלדי — לילה אחרון</name><description>23–24.10 · מונית 03:30 לשדה"ת, טיסה 06:05!</description><styleUrl>#base</styleUrl><Point><coordinates>14.2720,40.8530,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🔵 נאפולי — לראות</name>
+<Placemark><name>ספאקאנאפולי</name><description>יום 1 · הרחוב שחוצה את העיר העתיקה. הכי טוב לפני 9:30 או אחרי 21:30</description><styleUrl>#see</styleUrl><Point><coordinates>14.2547,40.8482,0</coordinates></Point></Placemark>
+<Placemark><name>Via dei Tribunali</name><description>יום 1 · רחוב הפיצריות · pizza a portafoglio €2–3</description><styleUrl>#see</styleUrl><Point><coordinates>14.2565,40.8511,0</coordinates></Point></Placemark>
+<Placemark><name>פיאצה דל פלביסיטו + גלריה אומברטו</name><description>יום 1 · 17:45</description><styleUrl>#see</styleUrl><Point><coordinates>14.2488,40.8359,0</coordinates></Point></Placemark>
+<Placemark><name>קסטל דל'אובו — שקיעה</name><description>יום 1 · מצודה על אי קטן, חינם 🌅</description><styleUrl>#see</styleUrl><Point><coordinates>14.2477,40.8283,0</coordinates></Point></Placemark>
+<Placemark><name>פיאצה בליני</name><description>ערבים · כיכר סטודנטים, חומה יוונית, ספריץ €3–5</description><styleUrl>#see</styleUrl><Point><coordinates>14.2527,40.8489,0</coordinates></Point></Placemark>
+<Placemark><name>שוק פוגיוריאלה</name><description>יום 3 · 8:00 · פתוח שישי/ראשון/שני 7:00–14:00 · סמטת הנעליים, להתמקח מחצי מחיר!</description><styleUrl>#see</styleUrl><Point><coordinates>14.2917,40.8637,0</coordinates></Point></Placemark>
+<Placemark><name>נאפולי סוטרנאה</name><description>יום 3 · 12:00 · מחילות 40 מ' מתחת לעיר, €10 · אנגלית בשעות זוגיות · napolisotterranea.org</description><styleUrl>#see</styleUrl><Point><coordinates>14.2565,40.8508,0</coordinates></Point></Placemark>
+<Placemark><name>סן גרגוריו ארמנו — סמטת חג המולד</name><description>יום 3 · בתי מלאכה של פרספה</description><styleUrl>#see</styleUrl><Point><coordinates>14.2571,40.8497,0</coordinates></Point></Placemark>
+<Placemark><name>קפלת סנסוורו — המשיח המצועף</name><description>אופציה יום 3 · €10, להזמין אונליין, סגור שלישי</description><styleUrl>#see</styleUrl><Point><coordinates>14.2549,40.8492,0</coordinates></Point></Placemark>
+<Placemark><name>Via Mezzocannone — וינטג'</name><description>יום 3 · חנויות יד שנייה, רחוב סטודנטים</description><styleUrl>#see</styleUrl><Point><coordinates>14.2551,40.8468,0</coordinates></Point></Placemark>
+<Placemark><name>מוזיאון MANN</name><description>גיבוי גשם · כל אוצרות פומפיי פה, €22</description><styleUrl>#see</styleUrl><Point><coordinates>14.2503,40.8534,0</coordinates></Point></Placemark>
+<Placemark><name>גלריה בורבוניקה</name><description>גיבוי גשם · מנהרת בריחה מלכותית, קבוצות קטנות</description><styleUrl>#see</styleUrl><Point><coordinates>14.2440,40.8353,0</coordinates></Point></Placemark>
+<Placemark><name>🤫 מונטה אקיה — שקיעה בלי תיירים</name><description>מעלית €1.50 מטיילת קיאיה · פנורמת וזוב עד פוזיליפו</description><styleUrl>#see</styleUrl><Point><coordinates>14.2445,40.8317,0</coordinates></Point></Placemark>
+<Placemark><name>🤫 בלוודרה סן מרטינו (וומרו)</name><description>פוניקולר €1.30 · הנוף של ספאקאנאפולי מלמעלה, חינם</description><styleUrl>#see</styleUrl><Point><coordinates>14.2408,40.8437,0</coordinates></Point></Placemark>
+<Placemark><name>🤫 קטקומבות סן ג'נארו (סניטה)</name><description>קואופרטיב שכונתי La Paranza · catacombedinapoli.it</description><styleUrl>#see</styleUrl><Point><coordinates>14.2453,40.8622,0</coordinates></Point></Placemark>
+<Placemark><name>פארקו וירג'יליאנו — תצפית</name><description>חלופת קיאק יום 3 · תצפית על כל המפרץ, חינם</description><styleUrl>#see</styleUrl><Point><coordinates>14.1836,40.8004,0</coordinates></Point></Placemark>
+<Placemark><name>מארקיארו — כפר דייגים</name><description>שקיעה + ספגטי · הכפר מהשירים הנאפוליטניים</description><styleUrl>#see</styleUrl><Point><coordinates>14.1852,40.7926,0</coordinates></Point></Placemark>
+<Placemark><name>🛶 קיאק — נקודת מפגש Rocce Verdi</name><description>יום 3 · 16:15 · Via Posillipo 68 · kayaknapoli.com · €30 · באוקטובר רק ה'-ש' — וואטסאפ לסיור פרטי!</description><styleUrl>#see</styleUrl><Point><coordinates>14.2078,40.8104,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🟢 נאפולי — לאכול</name>
+<Placemark><name>🍝 טרטוריה דה ננלה</name><description>יום 1 ערב · תפריט קבוע €13–17 · מלצרים רוקדים · שבת עמוס — בתור 30-45 דק' לפני פתיחה</description><styleUrl>#food</styleUrl><Point><coordinates>14.2465,40.8419,0</coordinates></Point></Placemark>
+<Placemark><name>🍕 פיצריה דה אטיליו</name><description>גיבוי לננלה · מ־1938, הבחירה של המקומיים, בלי תור ענק</description><styleUrl>#food</styleUrl><Point><coordinates>14.2477,40.8437,0</coordinates></Point></Placemark>
+<Placemark><name>🍸 קמרוטה ספריץ — €1!</name><description>ערבים · חור בקיר ברובע הספניולי, ספריץ באירו</description><styleUrl>#food</styleUrl><Point><coordinates>14.2470,40.8412,0</coordinates></Point></Placemark>
+<Placemark><name>🥐 ספוליאטלה אטנאזיו</name><description>יום 3 בוקר · sfogliatella riccia חמה מהתנור €2 · ליד תחנת צ'נטרלה</description><styleUrl>#food</styleUrl><Point><coordinates>14.2705,40.8528,0</coordinates></Point></Placemark>
+<Placemark><name>🍕 די מתאו — חלון סטריט-פוד</name><description>יום 3 צהריים · frittatina €2 + pizza fritta · צהריים לזוג 25₪</description><styleUrl>#food</styleUrl><Point><coordinates>14.2578,40.8511,0</coordinates></Point></Placemark>
+<Placemark><name>🍦 קאזה אינפנטה — ג'לטו</name><description>€2–3</description><styleUrl>#food</styleUrl><Point><coordinates>14.2490,40.8430,0</coordinates></Point></Placemark>
+<Placemark><name>🍕 סטריטה א-מטרדיי</name><description>יום 2 ערב · מ־1901, רוב הסועדים איטלקים · להזמין montanara · מטרו קו 1 Materdei</description><styleUrl>#food</styleUrl><Point><coordinates>14.2453,40.8564,0</coordinates></Point></Placemark>
+<Placemark><name>🍕 קונצ'טינה איי טרה סנטי</name><description>סניטה · מקבלת הזמנות = אפס תור · pizza sospesa</description><styleUrl>#food</styleUrl><Point><coordinates>14.2495,40.8595,0</coordinates></Point></Placemark>
+<Placemark><name>🍦 פופלה — fiocco di neve</name><description>סניטה, הסניף המקורי · המאפה של השכונה €1.5</description><styleUrl>#food</styleUrl><Point><coordinates>14.2490,40.8585,0</coordinates></Point></Placemark>
+<Placemark><name>🍝 צ'יבי קוטי נונה אנה</name><description>צהריים בלבד · בתוך שוק לה טורטה · מנות ביתיות €4–7, מזומן · לפני הקיאק</description><styleUrl>#food</styleUrl><Point><coordinates>14.2230,40.8300,0</coordinates></Point></Placemark>
+<Placemark><name>🍟 פריג'יטוריה וומרו</name><description>מ־1938 · cuoppo מטוגן אחרי בלוודרה סן מרטינו</description><styleUrl>#food</styleUrl><Point><coordinates>14.2296,40.8446,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🏝️ פרוצ'ידה — יום 2</name>
+<Placemark><name>🥐 בר דל קבליירה</name><description>9:00 · lingue di Procida €2 עם הדייגים · הבר של התושבים</description><styleUrl>#food</styleUrl><Point><coordinates>14.0330,40.7660,0</coordinates></Point></Placemark>
+<Placemark><name>🏰 טרה מוראטה + מנזר סן מיכלה</name><description>9:30 · הכפר המבוצר בפסגה · מנזר ~€3 · תצפית חינם</description><styleUrl>#see</styleUrl><Point><coordinates>14.0333,40.7573,0</coordinates></Point></Placemark>
+<Placemark><name>📸 מרינה קוריצ'לה</name><description>11:30 · כפר הדייגים הפסטלי, "אל פוסטינו" · צהריים: spaghetti al limone €10–14</description><styleUrl>#see</styleUrl><Point><coordinates>14.0300,40.7580,0</coordinates></Point></Placemark>
+<Placemark><name>קזאלה ואשלו</name><description>14:30 · חצר מבוצרת נגד פיראטים מהמאה ה־16</description><styleUrl>#see</styleUrl><Point><coordinates>14.0280,40.7590,0</coordinates></Point></Placemark>
+<Placemark><name>🌅 פונטה פיצאקו — תצפית</name><description>15:00 · הפנורמה הכי יפה באי, שביל ~20 דק'</description><styleUrl>#see</styleUrl><Point><coordinates>14.0320,40.7520,0</coordinates></Point></Placemark>
+<Placemark><name>מרינת קיאיולה</name><description>16:00 · אפרטיבו מול אי ויוארה</description><styleUrl>#see</styleUrl><Point><coordinates>14.0100,40.7450,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🏛️ פומפיי + וזוב</name>
+<Placemark><name>🚉 תחנת Pompei Scavi + פיקדון מזוודות</name><description>יום 4 · פיקדון במפלס התחתון €8 למזוודה · בפנים רק תיק 30×30×15</description><styleUrl>#go</styleUrl><Point><coordinates>14.4813,40.7495,0</coordinates></Point></Placemark>
+<Placemark><name>💸 עוקץ! משרדי כרטיסים מזויפים</name><description>ליד התחנה: "Pompei Service"/"Tempio Travel" + קודי QR בתחנה = מתחזים +50% · גם המסעדות פה מלכודת · כרטיס רק ב-pompeiisites.org, אוכל מביאים מראש</description><styleUrl>#warn</styleUrl><Point><coordinates>14.4818,40.7497,0</coordinates></Point></Placemark>
+<Placemark><name>🏛️ כניסת פיאצה אסדרה — הריקה</name><description>יום 4 · 9:00 · 200 מ' משמאל לכניסה הראשית · הולכים נגד כיוון הקבוצות</description><styleUrl>#see</styleUrl><Point><coordinates>14.4842,40.7477,0</coordinates></Point></Placemark>
+<Placemark><name>וילה דיי מיסטרי</name><description>הפרסקאות האדומות המפורסמות</description><styleUrl>#see</styleUrl><Point><coordinates>14.4776,40.7538,0</coordinates></Point></Placemark>
+<Placemark><name>גן הנמלטים</name><description>יציקות הגבס של התושבים</description><styleUrl>#see</styleUrl><Point><coordinates>14.4936,40.7469,0</coordinates></Point></Placemark>
+<Placemark><name>🌋 כניסת לוע הווזוב</name><description>יום 5 · סלוט 10:30 · שערים נסגרים 16:00 · כרטיס אונליין בלבד vesuviopark.vivaticket.it €12 · פליז — קר ורוח!</description><styleUrl>#see</styleUrl><Point><coordinates>14.4260,40.8214,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🍋 סורנטו</name>
+<Placemark><name>🚏 תחנת סורנטו — רכבת + SITA</name><description>האוטובוסים לאמלפי יוצאים מפה · כרטיסים בטבקריה מראש!</description><styleUrl>#go</styleUrl><Point><coordinates>14.3799,40.6255,0</coordinates></Point></Placemark>
+<Placemark><name>🌅 וילה קומונאלה — שקיעה</name><description>יום 4 · 17:45 · מרפסת צוק חינמית</description><styleUrl>#see</styleUrl><Point><coordinates>14.3735,40.6274,0</coordinates></Point></Placemark>
+<Placemark><name>🍕 פיצריה דה פרנקו</name><description>יום 4 ערב · פיצה בתבנית פח €6–9 · ארוחה לזוג ~60₪</description><styleUrl>#food</styleUrl><Point><coordinates>14.3812,40.6259,0</coordinates></Point></Placemark>
+<Placemark><name>🍋 ג'ארדיני די קטלדו</name><description>טעימות לימונצ'לו חינם בחורשת לימונים</description><styleUrl>#food</styleUrl><Point><coordinates>14.3790,40.6262,0</coordinates></Point></Placemark>
+<Placemark><name>⚓ מרינה גרנדה — כפר הדייגים</name><description>יום 5 · 17:00 · הנמל הישן והשקט, לא הנמל הראשי!</description><styleUrl>#see</styleUrl><Point><coordinates>14.3640,40.6295,0</coordinates></Point></Placemark>
+<Placemark><name>💍 טרטוריה דה אמיליה</name><description>יום 5 · 19:00 בפתיחה, אין הזמנות · שולחן על המזח · gnocchi alla sorrentina · €20–27 לאדם</description><styleUrl>#food</styleUrl><Point><coordinates>14.3646,40.6297,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>⛴️ חוף אמלפי — ימים 6–7</name>
+<Placemark><name>דואומו די אמלפי</name><description>יום 6 · 10:30 · המדרגות + החזית חינם, קלויסטר €4 · פיקדון מזוודות ליד הנמל €5–8</description><styleUrl>#see</styleUrl><Point><coordinates>14.6030,40.6346,0</coordinates></Point></Placemark>
+<Placemark><name>🎼 ראבלו</name><description>יום 6 · 11:15 · הסוד: הסמטאות מאחורי הכנסייה · Villa Rufolo €8 אופציה</description><styleUrl>#see</styleUrl><Point><coordinates>14.6116,40.6491,0</coordinates></Point></Placemark>
+<Placemark><name>🤫 אטרני — הכפר בלי תיירים</name><description>יום 6 · 14:30 · 10 דק' הליכה מאמלפי · קפה בפיאצטה במחיר מקומי</description><styleUrl>#see</styleUrl><Point><coordinates>14.6098,40.6363,0</coordinates></Point></Placemark>
+<Placemark><name>🥾 בומראנו — תחילת שביל האלים</name><description>יום 7 · 10:15 · הולכים מערבה! · פוקצ'ה מהמאפייה בכיכר לפני — אין כלום על השביל</description><styleUrl>#see</styleUrl><Point><coordinates>14.5560,40.6386,0</coordinates></Point></Placemark>
+<Placemark><name>🍧 נוצ'לה — קיוסק הגרניטה</name><description>יום 7 · 13:15 · גרניטת לימון €2.5 בסוף השביל · ואז 1,700 מדרגות או אוטובוס €1.30</description><styleUrl>#food</styleUrl><Point><coordinates>14.5069,40.6338,0</coordinates></Point></Placemark>
+<Placemark><name>פוזיטאנו — ספיאג'ה גרנדה</name><description>יום 7 · 15:00 · צילום החובה · cuoppo di mare €7–10 על החוף</description><styleUrl>#see</styleUrl><Point><coordinates>14.4879,40.6276,0</coordinates></Point></Placemark>
+<Placemark><name>💸 אזהרה! מסעדות הנוף של פוזיטאנו</name><description>ספריץ בפיאצה ליד החוף = €15! · שני רחובות במעלה המדרגות = מחירים נורמליים (ספריץ €5–8)</description><styleUrl>#warn</styleUrl><Point><coordinates>14.4870,40.6280,0</coordinates></Point></Placemark>
+<Placemark><name>חוף פורנילו — השקט</name><description>יום 7 · טבילה אופציונלית, יש אזור חינמי</description><styleUrl>#see</styleUrl><Point><coordinates>14.4820,40.6265,0</coordinates></Point></Placemark>
+<Placemark><name>🚏 תחנת ספונדה — SITA מזרחה</name><description>גיבוי יום 7: אם המעבורת בוטלה עולים פה לכיוון אמלפי — האוטובוס עוד ריק</description><styleUrl>#go</styleUrl><Point><coordinates>14.4930,40.6288,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🌊 סלרנו</name>
+<Placemark><name>⛴️ מולו מנפרדי — מעבורות Travelmar</name><description>יום 7 · 7:50 לאמלפי · לאשר לוח בבוקר ב-travelmar.it</description><styleUrl>#go</styleUrl><Point><coordinates>14.7440,40.6760,0</coordinates></Point></Placemark>
+<Placemark><name>🚉 תחנת סלרנו + פיקדון Radical Storage</name><description>יום 7 · אין פיקדון רשמי בתחנה — מזמינים Radical Storage מראש €2.5–5</description><styleUrl>#go</styleUrl><Point><coordinates>14.7723,40.6754,0</coordinates></Point></Placemark>
+<Placemark><name>🍰 פסטיצריה פנטליאונה</name><description>יום 6 ערב · מ־1868 בתוך קפלה · scazzetta del cardinale — הקינוח של העיר</description><styleUrl>#food</styleUrl><Point><coordinates>14.7565,40.6790,0</coordinates></Point></Placemark>
+<Placemark><name>🍸 סמטאות בוטגלה</name><description>יום 6 לילה · Botteghelle 65 מ־1919 · ספריץ €3–4 · מובידה של סטודנטים</description><styleUrl>#food</styleUrl><Point><coordinates>14.7580,40.6784,0</coordinates></Point></Placemark>
+<Placemark><name>🌊 טיילת לונגומארה</name><description>יום 6 · 18:30 פסג'טה — כל העיר בחוץ</description><styleUrl>#see</styleUrl><Point><coordinates>14.7600,40.6770,0</coordinates></Point></Placemark>
+<Placemark><name>🌿 ג'רדינו דלה מינרווה</name><description>גיבוי גשם · הגן הבוטני-רפואי העתיק באירופה €3</description><styleUrl>#see</styleUrl><Point><coordinates>14.7530,40.6803,0</coordinates></Point></Placemark>
+</Folder>
+
+<Folder><name>🟣 תחבורה נאפולי</name>
+<Placemark><name>⛴️ מולו בוורלו — מעבורות לפרוצ'ידה</name><description>יום 2 · Caremar 7:30 (אין 8:00!) · חזרה SNAV 18:05 · €17–22 לכיוון</description><styleUrl>#go</styleUrl><Point><coordinates>14.2528,40.8402,0</coordinates></Point></Placemark>
+<Placemark><name>🚉 פורטה נולאנה — Circumvesuviana</name><description>יום 4 · 7:40 · תחנת המוצא = מקומות ישיבה · ⚠️ קו הכייסים — קרון ראשון, תיק על הברכיים</description><styleUrl>#go</styleUrl><Point><coordinates>14.2690,40.8493,0</coordinates></Point></Placemark>
+<Placemark><name>💸 אזהרה: אזור גריבלדי</name><description>כייסים + חטיפות טלפון (הגל של 2025) · תיק קדמי סגור, טלפון לא ביד · מוניות: רק Tariffa predeterminata או FREE NOW</description><styleUrl>#warn</styleUrl><Point><coordinates>14.2723,40.8526,0</coordinates></Point></Placemark>
+</Folder>
+
+</Document>
+</kml>
